@@ -46,6 +46,7 @@ function updateSuggestions() {
 				"</li>");
 				
 			}
+			shouldprocess=false;
 		},
 		error : function (xhr) {
 			console.log(xhr);
