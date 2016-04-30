@@ -3,7 +3,7 @@ const PORT = 80;
 
 const INDEX = "index.html"
 
-const RES_ROOT = "./";
+const RES_ROOT = __dirname+"/";
 
 var express = require('express');
 var app = express();
@@ -13,7 +13,7 @@ var charinfo = require('./charinfo.js');
 
 function getResource(req, res) {
 	
-	var path = RES_ROOT + req.url;
+	var path = RES_ROOT + req.url.replace("resource", "frontend");
 	FS.stat(path, 
 		function (err, stats) {
 			if (err) {
@@ -38,7 +38,7 @@ app.get('/', function (req, res) {
 	if(len == 0) {
 			console.log("Sending index");
 			res.setHeader('content-type', 'text/html');
-			res.sendFile(RES_ROOT + INDEX)
+			res.sendFile(RES_ROOT + "frontend/" + INDEX)
 	}
 })
 
