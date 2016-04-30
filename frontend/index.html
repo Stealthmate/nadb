@@ -11,24 +11,202 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		
 		<script type="text/javascript" src="resource/scripts/queryUpdate.js"> </script>
+		<script type="text/javascript" src="resource/scripts/characterinfo.js"> </script>
+		
 		<link rel="stylesheet" type="text/css" href="resource/styles/style_index.css">
+		<link rel="stylesheet" type="text/css" href="resource/styles/ability.css">
 		
 	</head>
 
 	
-	<body>
-	<div id="searchpane">
-		<form style="margin-bottom: 1px;">
-			<input 
-			id="searchbox" 
-			name="characterQuery" 
-			type="text" 
-			placeholder="Character name"
-			oninput    = "updateSuggestions();"></input>
-		</form>
+	<body onkeydown="onKeyDown();">
+		<div id="searchpane">
+			<form style="margin-bottom: 1px;">
+				<input 
+				id="searchbox" 
+				name="characterQuery" 
+				type="text" 
+				autocomplete="off"
+				placeholder="Character name"
+				oninput    = "updateSuggestions();"></input>
+			</form>
+			
+			<ol id="resultlist">
+			</ol>
+		</div>
 		
-		<ol id="resultlist">
-		</ol>
-	</div>
+		<div id="character_pane">
+		
+			<div class="characterinfo">
+				
+				<div class="header">
+					
+					<img class="icon" src=""></img>
+					
+					<div class="headertext">
+						<div class="name"></div>
+					
+				</div>
+					
+				</div>
+				
+				<div class="description"></div>
+			
+			</div>
+		
+			<div class="ability" id="ab1">
+				<div class="header">
+					<img class="icon" src=""></img>
+						
+					<div class="headertext">
+						<div class="name"></div>
+						
+						<table class="cost">
+							<tr>
+							</tr>
+						</table>
+						
+						<div class="cd"><span class="label">Cooldown: </span><span class="value"></span></div>
+						<br />
+					</div>
+						
+					<div class="classes">
+						<table>
+							<tr>
+								<td class="abilityclass" data-active="false" id="physical">Physical</td>
+								<td class="abilityclass" data-active="false" id="melee">Melee</td>
+								<td class="abilityclass" data-active="false" id="action">Action</td>
+								<td class="abilityclass" data-active="false" id="affliction">Affliction</td>
+								<td class="abilityclass" data-active="false" id="instant">Instant</td>
+							</tr>
+							<tr>
+								<td class="abilityclass" data-active="false" id="chakra">Chakra</td>
+								<td class="abilityclass" data-active="false" id="ranged">Ranged</td>
+								<td class="abilityclass" data-active="false" id="mental">Mental</td>
+								<td class="abilityclass" data-active="false" id="unique">Unique</td>
+								<td class="abilityclass" data-active="false" id="control">Control</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<span class="description"></span>
+			</div>
+				
+			<div class="ability" id="ab2">
+				<div class="header">
+					<img class="icon" src=""></img>
+						
+					<div class="headertext">
+						<div class="name"></div>
+						
+						<table class="cost">
+							<tr>
+							</tr>
+						</table>
+						
+						<div class="cd"><span class="label">Cooldown: </span><span class="value"></span></div>
+						<br />
+					</div>
+						
+					<div class="classes">
+						<table>
+							<tr>
+								<td class="abilityclass" data-active="false" id="physical">Physical</td>
+								<td class="abilityclass" data-active="false" id="melee">Melee</td>
+								<td class="abilityclass" data-active="false" id="action">Action</td>
+								<td class="abilityclass" data-active="false" id="affliction">Affliction</td>
+								<td class="abilityclass" data-active="false" id="instant">Instant</td>
+							</tr>
+							<tr>
+								<td class="abilityclass" data-active="false" id="chakra">Chakra</td>
+								<td class="abilityclass" data-active="false" id="ranged">Ranged</td>
+								<td class="abilityclass" data-active="false" id="mental">Mental</td>
+								<td class="abilityclass" data-active="false" id="unique">Unique</td>
+								<td class="abilityclass" data-active="false" id="control">Control</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<span class="description"></span>
+			</div>
+			
+			<div class="ability" id="ab3">
+				<div class="header">
+					<img class="icon" src=""></img>
+						
+					<div class="headertext">
+						<div class="name"></div>
+						
+						<table class="cost">
+							<tr>
+							</tr>
+						</table>
+						
+						<div class="cd"><span class="label">Cooldown: </span><span class="value"></span></div>
+						<br />
+					</div>
+						
+					<div class="classes">
+						<table>
+							<tr>
+								<td class="abilityclass" data-active="false" id="physical">Physical</td>
+								<td class="abilityclass" data-active="false" id="melee">Melee</td>
+								<td class="abilityclass" data-active="false" id="action">Action</td>
+								<td class="abilityclass" data-active="false" id="affliction">Affliction</td>
+								<td class="abilityclass" data-active="false" id="instant">Instant</td>
+							</tr>
+							<tr>
+								<td class="abilityclass" data-active="false" id="chakra">Chakra</td>
+								<td class="abilityclass" data-active="false" id="ranged">Ranged</td>
+								<td class="abilityclass" data-active="false" id="mental">Mental</td>
+								<td class="abilityclass" data-active="false" id="unique">Unique</td>
+								<td class="abilityclass" data-active="false" id="control">Control</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<span class="description"></span>
+			</div>
+			
+			<div class="ability" id="ab4">
+				<div class="header">
+					<img class="icon" src=""></img>
+						
+					<div class="headertext">
+						<div class="name"></div>
+						
+						<table class="cost">
+							<tr>
+							</tr>
+						</table>
+						
+						<div class="cd"><span class="label">Cooldown: </span><span class="value"></span></div>
+						<br />
+					</div>
+						
+					<div class="classes">
+						<table>
+							<tr>
+								<td class="abilityclass" data-active="false" id="physical">Physical</td>
+								<td class="abilityclass" data-active="false" id="melee">Melee</td>
+								<td class="abilityclass" data-active="false" id="action">Action</td>
+								<td class="abilityclass" data-active="false" id="affliction">Affliction</td>
+								<td class="abilityclass" data-active="false" id="instant">Instant</td>
+							</tr>
+							<tr>
+								<td class="abilityclass" data-active="false" id="chakra">Chakra</td>
+								<td class="abilityclass" data-active="false" id="ranged">Ranged</td>
+								<td class="abilityclass" data-active="false" id="mental">Mental</td>
+								<td class="abilityclass" data-active="false" id="unique">Unique</td>
+								<td class="abilityclass" data-active="false" id="control">Control</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<span class="description"></span>
+			</div>
+		
+		</div>
+	
 	</body>
 </html>

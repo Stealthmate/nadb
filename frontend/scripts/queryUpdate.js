@@ -1,18 +1,15 @@
-function hello() {
-	console.log("World!");
+const KEY_UP = 38;
+const KEY_DOWN = 40;
+const KEY_ENTER = 13;
 
-	//var xhttp;
-	//xhttp = new XMLHttpRequest();
-	//xhttp.onreadystatechange = function() {
-	//document.getElementById("test").innerHTML = xhttp.responseText;
-	//};
-
-	//xhttp.open("GET", "test", true);
-	//xhttp.send();
-
-}
 var shouldprocess = true;
+var charobjs = [];
+
+var selected = 0;
+
 function updateSuggestions() {
+	
+	selected = 0;
 	
 	var results = $("#resultlist");
 	results.empty();
@@ -38,9 +35,9 @@ function updateSuggestions() {
 			}
 			
 			for(var i = 0; i<=response.length - 1; i++) {
-				
+				charobjs.push(response[i]);
 				results.append(
-				"<li class=\"searchresult\">"+
+				"<li class=\"searchresult\" data-selected=\"false\">"+
 				"<span class=\"searchresult_name\">"+response[i].name+"</span>"+
 				"<img class=\"searchresult_avatar\" src=\"resource/images/characters/"+response[i].id+"/avatar.jpeg\"></img>"+
 				"</li>");
@@ -55,4 +52,59 @@ function updateSuggestions() {
 	
 	shouldprocess = true;
 	
+}
+
+
+function deselect(n) {
+	$($(".searchresult").get(n-1)).attr("data-selected", "false");
+}
+
+function selectSuggestion(n) {
+	var elem = $(".searchresult").get(n-1);
+	$(elem).attr("data-selected", "true");
+}
+
+function selectNext() {
+	var elemlist = $(".searchresult");
+	if(elemlist.length == 0) return;
+	
+	deselect(selected);
+	
+	if(selected == elemlist.length) selected = 1;
+	else selected = selected + 1;
+	
+	selectSuggestion(selected); 
+}
+
+function selectPrev() {
+	var elemlist = $(".searchresult");
+	if(elemlist.length == 0) return;
+	
+	deselect(selected);
+	
+	if(selected == 1) selected = elemlist.length;
+	else selected = selected - 1;
+	
+	selectSuggestion(selected); 
+}
+
+function confirmSelect() {
+	updateinfo(charobjs[selected-1]);
+}
+
+function onKeyDown() {
+	var key = event.which;
+	if(key == KEY_DOWN) {	
+		event.preventDefault();
+		selectNext();
+	}
+	else if(key == KEY_UP) {
+		event.preventDefault();
+		selectPrev();
+	}
+	
+	else if(key == KEY_ENTER) {
+		event.preventDefault();
+		confirmSelect();
+	}
 }

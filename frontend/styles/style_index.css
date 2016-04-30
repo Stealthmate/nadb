@@ -1,8 +1,17 @@
+body {
+	margin: 0px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
 #searchpane {
-	width: 25%;
+	border-style:solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	margin: 0px;
+	width: 20%;
 	height: 100%;
 	float:left;
-	margin: -7px;
 	background-color: #44AAFF;
 	padding: 1px;
 }
@@ -28,6 +37,10 @@
 	border-style: solid;
 	border-width: 1px;
 	border-color: #0000FF;
+}
+
+.searchresult[data-selected="true"] {
+	background-color: pink;
 }
 
 .searchresult_avatar {
