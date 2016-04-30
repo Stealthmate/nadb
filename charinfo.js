@@ -5,8 +5,11 @@ var CHARDB = [];
 var fs = require('fs');
 var char_folder_list = fs.readdirSync(CHARS_LOCATION);
 for (var i=0;i<=char_folder_list.length-1; i++) {
-	var charinfo = fs.readFileSync(CHARS_LOCATION+char_folder_list[i]+"/"+char_folder_list[i]+".json");
-	CHARDB.push(charinfo);
+	var jsonpath = CHARS_LOCATION+char_folder_list[i]+"/"+char_folder_list[i]+".json";
+	//console.log(jsonpath);
+	var charinfo = fs.readFileSync(jsonpath, "utf-8");
+	//console.log(charinfo);
+	CHARDB.push(JSON.parse(charinfo));
 }
 
 function getInfo(req, res) {
