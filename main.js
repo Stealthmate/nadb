@@ -1,9 +1,9 @@
-const HOST = "192.168.100.2";
+//const HOST = "192.168.100.2";
 const PORT = 80;
 
 const INDEX = "index.html"
 
-const RES_ROOT = "D:\\Programming\\Naruto-Arena\\FrontEnd\\";
+const RES_ROOT = "./";
 
 var express = require('express');
 var app = express();
@@ -13,7 +13,7 @@ var charinfo = require('./charinfo.js');
 
 function getResource(req, res) {
 	
-	var path = RES_ROOT + req.url.replace("resource/", "");
+	var path = RES_ROOT + req.url;
 	FS.stat(path, 
 		function (err, stats) {
 			if (err) {
@@ -42,7 +42,7 @@ app.get('/', function (req, res) {
 	}
 })
 
-var server = app.listen(PORT, HOST, function () {
+var server = app.listen(PORT, function () {
 		var host = server.address().address;
 		var port = server.address().port;
 		console.log(host + " " + port);

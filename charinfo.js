@@ -1,5 +1,13 @@
+const CHARS_LOCATION = "./chardb/";
 
 var CHARDB = [];
+
+var fs = require('fs');
+var char_folder_list = fs.readdirSync(CHARS_LOCATION);
+for (var i=0;i<=char_folder_list.length-1; i++) {
+	var charinfo = fs.readFileSync(CHARS_LOCATION+char_folder_list[i]+".json");
+	CHARDB.push(charinfo);
+}
 
 function getInfo(req, res) {
 	
@@ -31,11 +39,3 @@ function getInfo(req, res) {
 }
 
 module.exports.getInfo = getInfo;
-
-const CHARS_LOCATION = "./chardb/";
-
-var fs = require('fs');
-var char_file_list = fs.readdirSync(CHARS_LOCATION);
-for (var i=0;i<=char_file_list.length-1; i++) {
-	if(char_file_list[i].indexOf("json") > 0) CHARDB.push(JSON.parse(fs.readFileSync(CHARS_LOCATION + char_file_list[i])));
-}
