@@ -11,14 +11,19 @@ function hello() {
 	//xhttp.send();
 
 }
-
+var shouldprocess = true;
 function updateSuggestions() {
 	
 	var results = $("#resultlist");
 	results.empty();
 	var query = $("#searchbox").val();
 	
-	if(query.length == 0) return;
+	if(query.length == 0) {
+		shouldprocess = false;
+		return;
+	}
+	
+	shouldprocess = false;
 	
 	$.ajax({
 		url : "charinfo",
@@ -27,6 +32,10 @@ function updateSuggestions() {
 			searchquery : query
 		},
 		success : function (response) {
+			
+			if(!shouldprocess) {
+				return;
+			}
 			
 			for(var i = 0; i<=response.length - 1; i++) {
 				
@@ -42,4 +51,7 @@ function updateSuggestions() {
 			console.log(xhr);
 		}
 	});
+	
+	shouldprocess = true;
+	
 }
