@@ -1,0 +1,34 @@
+<html lang="en-US">
+
+	<head>
+
+		<meta charset="utf-8">
+		
+		</meta>
+	
+		<title>Shippuuden-Arena</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="resource/script/queryUpdate.js"> </script>
+		<link rel="stylesheet" type="text/css" href="resource/style/style_index.css">
+		
+	</head>
+
+	
+	<body>
+	<div id="searchpane">
+		<form style="margin-bottom: 1px;">
+			<input 
+			id="searchbox" 
+			name="characterQuery" 
+			type="text" 
+			placeholder="Character name"
+			oninput    = "updateSuggestions();"></input>
+		</form>
+		
+		<ol id="resultlist">
+		</ol>
+	</div>
+	</body>
+</html>
