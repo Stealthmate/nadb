@@ -4,7 +4,7 @@ const PORT = 80;
 const INDEX = "index.html"
 
 const RES_ROOT = __dirname+"/";
-
+console.log(__dirname)
 var express = require('express');
 var app = express();
 var FS = require('fs');
