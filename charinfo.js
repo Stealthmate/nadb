@@ -5,7 +5,7 @@ var CHARDB = [];
 var fs = require('fs');
 var char_folder_list = fs.readdirSync(CHARS_LOCATION);
 for (var i=0;i<=char_folder_list.length-1; i++) {
-	var charinfo = fs.readFileSync(CHARS_LOCATION+char_folder_list[i]+".json");
+	var charinfo = fs.readFileSync(CHARS_LOCATION+char_folder_list[i]+"/"+char_folder_list[i]+".json");
 	CHARDB.push(charinfo);
 }
 
