@@ -1,15 +1,22 @@
 const CHARS_LOCATION = "./chardb/";
 
+const Logger = require('./logger.js');
+
 var CHARDB = [];
 
-var fs = require('fs');
-var char_folder_list = fs.readdirSync(CHARS_LOCATION);
-for (var i=0;i<=char_folder_list.length-1; i++) {
-	var jsonpath = CHARS_LOCATION+char_folder_list[i]+"/"+char_folder_list[i]+".json";
-	//console.log(jsonpath);
-	var charinfo = fs.readFileSync(jsonpath, "utf-8");
-	//console.log(charinfo);
-	CHARDB.push(JSON.parse(charinfo));
+function loadData() {
+	
+	var fs = require('fs');
+	
+	Logger.log("Reading character data...", Logger.INFO);
+	var char_folder_list = fs.readdirSync(CHARS_LOCATION);
+	for (var i=0;i<=char_folder_list.length-1; i++) {
+		
+		Logger.log("Reading " + char_folder_list[i] + "...", Logger.INFO);
+		var jsonpath = CHARS_LOCATION+char_folder_list[i]+"/"+char_folder_list[i]+".json";
+		var charinfo = fs.readFileSync(jsonpath, "utf-8");
+		CHARDB.push(JSON.parse(charinfo));
+	}
 }
 
 function getInfo(req, res) {
@@ -42,3 +49,4 @@ function getInfo(req, res) {
 }
 
 module.exports.getInfo = getInfo;
+module.exports.loadData = loadData;
