@@ -107,6 +107,7 @@ function start() {
 
 function pause() {
 	if(typeof rl !== 'undefined') rl.pause();
+	//process.stdout.write("\n");
 }
 
 function resume() {

@@ -11,8 +11,7 @@ function logfunc(msg, level) {
 	
 	if(typeof level === 'undefined') level = LOG_LEVELS[0];
 	if(level.lvl >= LOG_LEVEL) {
-		process.stdout.clearLine();
-		process.stdout.cursorTo(0);
+		process.stdout.write("\b\b\b");
 		process.stdout.write(level.msg);
 		console.log(msg);
 	}
