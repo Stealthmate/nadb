@@ -7,7 +7,9 @@ const LOG_LEVELS = [
 
 var LOG_LEVEL = 0;
 
-function log(msg, level=LOG_LEVELS[0]) {
+function logfunc(msg, level) {
+	
+	if(typeof level === 'undefined') level = LOG_LEVELS[0];
 	if(level.lvl >= LOG_LEVEL) {
 		process.stdout.clearLine();
 		process.stdout.cursorTo(0);
@@ -19,7 +21,7 @@ function setLogLevel(lvl) {
 	
 	for(var i=1;i<=LOG_LEVELS.length-1;i++) {
 		if(lvl === LOG_LEVELS[i].name) {
-			log("Setting log level to " + LOG_LEVELS[i].name);
+			logfunc("Setting log level to " + LOG_LEVELS[i].name);
 			LOG_LEVEL = LOG_LEVELS[i].lvl;
 			return;
 		}
@@ -30,12 +32,12 @@ function setLogLevel(lvl) {
 		loglvls = loglvls + ("\n\t" + LOG_LEVELS[i].name);
 	}
 
-	log("Invalid log level. Log levels can be:"+loglvls);
+	logfunc("Invalid log level. Log levels can be:"+loglvls);
 }
 
-module.exports.log = log;
-module.exports.LVL_VERBOSE = LOG_LEVELS[0];
-module.exports.LVL_INFO = LOG_LEVELS[1];
-module.exports.LVL_WARNING = LOG_LEVELS[2];
-module.exports.LVL_ERROR = LOG_LEVELS[3];
+module.exports.log = logfunc;
+module.exports.LVL_VERBOSE = LOG_LEVELS[1];
+module.exports.LVL_INFO = LOG_LEVELS[2];
+module.exports.LVL_WARNING = LOG_LEVELS[3];
+module.exports.LVL_ERROR = LOG_LEVELS[4];
 module.exports.setLogLevel = setLogLevel;

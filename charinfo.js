@@ -8,15 +8,20 @@ function loadData() {
 	
 	var fs = require('fs');
 	
-	Logger.log("Reading character data...", Logger.INFO);
+	Logger.log("Reading character data...", Logger.LVL_INFO);
 	var char_folder_list = fs.readdirSync(CHARS_LOCATION);
 	for (var i=0;i<=char_folder_list.length-1; i++) {
 		
-		Logger.log("Reading " + char_folder_list[i] + "...", Logger.INFO);
+		Logger.log("Reading " + char_folder_list[i] + "...", Logger.LVL_INFO);
 		var jsonpath = CHARS_LOCATION+char_folder_list[i]+"/"+char_folder_list[i]+".json";
 		var charinfo = fs.readFileSync(jsonpath, "utf-8");
 		CHARDB.push(JSON.parse(charinfo));
 	}
+}
+
+function unloadData() {
+	Logger.log("Unloading character data...", Logger.LVL_INFO);
+	CHARDB = [];
 }
 
 function getInfo(req, res) {
@@ -49,4 +54,5 @@ function getInfo(req, res) {
 }
 
 module.exports.getInfo = getInfo;
-module.exports.loadData = loadData;
+module.exports.load = loadData;
+module.exports.unload = unloadData;

@@ -1,13 +1,25 @@
-const ERR_INVALID_CMD = "System: Invalid command.";
-const ERR_NO_PARAMS = "System: No parameters were passed.";
-const ERR_INVALID_PARAM = "System: Invalid parameter.";
+const ERR_INVALID_CMD = "Invalid command.";
+const ERR_NO_PARAMS = "No parameters were passed.";
+const ERR_INVALID_PARAM = "Invalid parameter.";
 
+const Logger = require('./logger.js');
 
 function setLogLevel(lvl) {
-	require('./logger.js').setLogLevel(lvl);
+	Logger.setLogLevel(lvl);
 }
 
-function reload() {}
+function reload() {
+	const charinfo = require('./charinfo.js');
+	charinfo.unload();
+	
+	if(global.gc) {
+		Logger.log("Running garbage collector...", Logger.LVL_INFO);
+		global.gc();
+	}
+	else Logger.log("Garbage collector not exposed. Cannot immediately clear resources.", Logger.LVL_WARNING);
+	
+	charinfo.load();
+}
 
 function set(arglist) {
 
@@ -21,7 +33,7 @@ function set(arglist) {
 		
 		switch (property) {
 			case "loglvl" : {
-				if(arglist[1] === undefined) {
+				if(typeof arglist[1] === 'undefined') {
 					var err = ERR_INVALID_PARAM + " No value to set.";
 					throw (err);
 					return;
@@ -37,7 +49,7 @@ function set(arglist) {
 			}
 		}
 	} catch (err) {
-			console.log(err);
+			Logger.log(err, Logger.LVL_ERROR);
 	}
 }
 
@@ -48,29 +60,48 @@ const CMD_MAP = [
 
 ];
 
-function start() {
-	const readline = require('readline');
-	const rl = readline.createInterface(process.stdin, process.stdout);
+var rl;
 
-	console.log("> Welcome, Commander!");
-	rl.setPrompt('> ');
-	rl.prompt();
-
-	rl.on('line', (line) => {
-
-			var input = line.trim() + " ";
-			var cmd = input.substring(0, input.indexOf(" "));
-			var args = input.substring(input.indexOf(" ")+1).split(" ");
-			
-			for(var i = 0; i<=CMD_MAP.length-1; i++) {
-				if(CMD_MAP[i].cmd==cmd) CMD_MAP[i].execute(args);
-			}
+function exec_cmd(line) {
+	var input = line.trim() + " ";
+		var cmd = input.substring(0, input.indexOf(" "));
 		
-			rl.prompt();
-		}).on('close', () => {
-			console.log('And now we part company.');
-			process.exit(0);
-		});
+		var args = input.substring(input.indexOf(" ")+1, input.length-1).split(" ");
+		for(var i = 0; i<=CMD_MAP.length-1; i++) {
+			if(CMD_MAP[i].cmd==cmd) CMD_MAP[i].execute(args);
+		}
+	
+		if(typeof rl !== 'undefined') rl.prompt();
+}
+
+function cli() {
+	const readline = require('readline');
+	rl = readline.createInterface(process.stdin, process.stdout);
+	rl.prompt();
+	rl.on('line', exec_cmd);
+	rl.on('close', () => {
+		console.log('And now we part company.');
+		process.exit(0);
+	});
+}
+
+
+//3l!73 h4x0r func
+function fixfunc() {
+	var input = process.stdin.read();
+	if (input == null)
+		return;
+	input = input.toString("utf-8");
+	process.stdin.removeListener('readable', fixfunc);
+	process.stdin.resume();
+	exec_cmd(input);
+	cli();
+}
+
+function start() {
+	process.stdin.pause();
+	process.stdin.on('readable', fixfunc);
+	process.stdout.write("> Welcome back, Commander!\n> ");
 }
 
 module.exports.start = start;
