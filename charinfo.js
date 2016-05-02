@@ -11,11 +11,15 @@ function loadData() {
 	Logger.log("Reading character data...", Logger.LVL_INFO);
 	var char_folder_list = fs.readdirSync(CHARS_LOCATION);
 	for (var i=0;i<=char_folder_list.length-1; i++) {
-		
-		Logger.log("Reading " + char_folder_list[i] + "...", Logger.LVL_INFO);
-		var jsonpath = CHARS_LOCATION+char_folder_list[i]+"/"+char_folder_list[i]+".json";
-		var charinfo = fs.readFileSync(jsonpath, "utf-8");
-		CHARDB.push(JSON.parse(charinfo));
+		try {
+			Logger.log("Loading " + char_folder_list[i] + ".json...", Logger.LVL_INFO);
+			var jsonpath = CHARS_LOCATION+char_folder_list[i]+"/"+char_folder_list[i]+".json";
+			fs.accessSync(jsonpath, fs.F_OK);
+			var charinfo = fs.readFileSync(jsonpath, "utf-8");
+			CHARDB.push(JSON.parse(charinfo));
+		} catch (e) {
+			Logger.log("Could not read " + char_folder_list[i]+".json.", Logger.LVL_ERROR);
+		}
 	}
 }
 

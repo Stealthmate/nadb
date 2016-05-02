@@ -2,7 +2,8 @@
 "name": "nadb",
 "version": "1.0.0",
 "dependencies": {
-	"express": "^4.13.4"
+	"express": "^4.13.4",
+	"ejs":"^2.4.1"
 },
 "scripts": {
   "start": "node  --expose_gc main.js"

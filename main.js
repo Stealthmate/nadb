@@ -1,12 +1,16 @@
-var INDEX = "index.html";
+var INDEX = "index.ejs";
 const RES_ROOT = __dirname+"/";
 var express = require('express');
 var app = express();
 var FS = require('fs');
-var Logger = require('./logger.js');
+
+const Globals = require('./globals.js');
+const Logger = Globals.Logger;
+
 function getResource(req, res) {
 	
 	var path = RES_ROOT + req.url.replace("resource", "frontend");
+	if(path.indexOf('characters') >=0) path = path.replace("frontend/images/characters/", "chardb/");
 	FS.stat(path, 
 		function (err, stats) {
 			if (err) {
@@ -20,20 +24,40 @@ function getResource(req, res) {
 		})
 }
 
-
-var charinfo = require('./charinfo.js');
-charinfo.load();
+function getDocument(req, res) {
 	
-app.get('/charinfo', charinfo.getInfo);
+	var path = RES_ROOT + req.url.replace("document", "frontend");
+	FS.stat(path, 
+		function (err, stats) {
+			if (err) {
+			   return Logger.log(err, Logger.LVL_ERROR);
+		   }
+		   
+		   // Check file type
+		   if(stats.isFile()) {
+			   res.sendFile(path);
+		   } 		
+		})
+}
+
+Globals.ResourceManager.loadResources();
+app.set('view engine', 'ejs');
+
+app.get('/charinfo', Globals.CharacterInfo.getInfo);
 
 app.get('/resource/*', getResource);
 
-app.get('/', function (req, res) {
-	var len = Object.keys(req.query).length;
-	Logger.log(req.query);
-	if(len == 0) {
-			res.setHeader('content-type', 'text/html');
-			res.sendFile(RES_ROOT + "frontend/" + INDEX)
+app.get('/document/*', getDocument);
+
+app.get('/:id?', function (req, res) {
+	var url = req.url;
+	Globals.cli.pause();
+	Logger.log(url);
+	Globals.cli.resume();
+	res.setHeader('content-type', 'text/html');
+	if(url.length==1) res.render(INDEX);
+	else {
+		res.sendFile(RES_ROOT + "frontend/" + url.substring(1));
 	}
 })
 
@@ -42,5 +66,5 @@ var server = app.listen(process.env.PORT || PORT, function () {
 		var host = server.address().address;
 		var port = server.address().port;
 		Logger.log("Server is running at " + host + port);
-		require("./cli.js").start();
+		Globals.cli.start();
 	});

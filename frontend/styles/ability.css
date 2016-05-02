@@ -1,35 +1,4 @@
-#character_pane {
-	padding:5px;
-	background-clip: padding-box;
-	background-color:#F5F1DE;
-	box-sizing: border-box;
-	float:left;
-	width: 80%;
-	height: 100%;
-	overflow: auto;
-}
-
-.characterinfo {
-	height: 20%;
-}
-
-.characterinfo .name {
-	line-height: 8vh;
-}
-
-.ability {
-	height: 19.9%;
-}
-
-.characterinfo, .ability {
-	box-sizing: border-box;
-	margin: 1px;
-	display: table;
-	width:100%;
-	border-style: solid;
-	border-width: 1px;
-	padding: 5px;
-}
+@import url("classes.css");
 
 .header {
 	width: 100%;
@@ -64,7 +33,6 @@
 	border-collapse: separate;
 	width: 66vmin;
 }
-
 .classes td {
 	padding: 5px;
 	width: 10vmin;
@@ -74,18 +42,6 @@
 	border-width: 1px;
 }
 
-#physical[data-active="true"] {
-	background-color: #FFFFFF;
-	color: #000000;
-}
-#chakra[data-active="true"] {
-	background-color: #0000FF;
-	color: #FFFF00;
-}
-#melee[data-active="true"] {
-	background-color: #FFFF00;
-	color: #0000FF;
-}
 
 .abilityclass[data-active="false"] {
 	opacity: 0.4;
@@ -139,5 +95,5 @@
 
 .description {
 	font-size: 2vmin;
-	
+	margin-top: 1vh;
 }

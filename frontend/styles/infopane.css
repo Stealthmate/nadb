@@ -1,0 +1,32 @@
+#character_pane {
+	padding:5px;
+	background-clip: padding-box;
+	background-color:#F5F1DE;
+	box-sizing: border-box;
+	float:left;
+	width: 80%;
+	height: 100%;
+	overflow: auto;
+}
+
+.characterinfo {
+	height: 20%;
+}
+
+.characterinfo .name {
+	line-height: 8vh;
+}
+
+.ability {
+	height: 19.9%;
+}
+
+.characterinfo, .ability {
+	box-sizing: border-box;
+	margin: 1px;
+	display: table;
+	width:100%;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+}

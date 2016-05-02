@@ -1,0 +1,13 @@
+
+#physical[data-active="true"] {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+#chakra[data-active="true"] {
+	background-color: #0000FF;
+	color: #FFFF00;
+}
+#melee[data-active="true"] {
+	background-color: #FFFF00;
+	color: #0000FF;
+}

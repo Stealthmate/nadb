@@ -13,7 +13,8 @@ function logfunc(msg, level) {
 	if(level.lvl >= LOG_LEVEL) {
 		process.stdout.clearLine();
 		process.stdout.cursorTo(0);
-		console.log(level.msg+msg);
+		process.stdout.write(level.msg);
+		console.log(msg);
 	}
 }
 

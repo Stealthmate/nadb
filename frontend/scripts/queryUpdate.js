@@ -10,6 +10,7 @@ var selected = 0;
 function updateSuggestions() {
 	
 	selected = 0;
+	charobjs = [];
 	
 	var results = $("#resultlist");
 	results.empty();

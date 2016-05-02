@@ -3,14 +3,13 @@ const ERR_NO_PARAMS = "No parameters were passed.";
 const ERR_INVALID_PARAM = "Invalid parameter.";
 
 const Logger = require('./logger.js');
-
+const ResourceManager = require('./resource_manager.js');
 function setLogLevel(lvl) {
 	Logger.setLogLevel(lvl);
 }
 
 function reload() {
-	const charinfo = require('./charinfo.js');
-	charinfo.unload();
+	ResourceManager.unloadResources();
 	
 	if(global.gc) {
 		Logger.log("Running garbage collector...", Logger.LVL_INFO);
@@ -18,7 +17,7 @@ function reload() {
 	}
 	else Logger.log("Garbage collector not exposed. Cannot immediately clear resources.", Logger.LVL_WARNING);
 	
-	charinfo.load();
+	ResourceManager.loadResources();
 }
 
 function set(arglist) {
@@ -53,15 +52,21 @@ function set(arglist) {
 	}
 }
 
+function exit() {
+	Logger.log("And now we part company.");
+	process.exit(0);
+}
+
 const CMD_MAP = [
 
 {cmd:"reload", execute:reload},
-{cmd:"set", execute:set}
+{cmd:"set", execute:set},
+{cmd:"exit", execute:exit}
 
 ];
 
 var rl;
-
+const readline = require('readline');
 function exec_cmd(line) {
 	var input = line.trim() + " ";
 		var cmd = input.substring(0, input.indexOf(" "));
@@ -75,14 +80,10 @@ function exec_cmd(line) {
 }
 
 function cli() {
-	const readline = require('readline');
 	rl = readline.createInterface(process.stdin, process.stdout);
 	rl.prompt();
 	rl.on('line', exec_cmd);
-	rl.on('close', () => {
-		console.log('And now we part company.');
-		process.exit(0);
-	});
+	rl.on('close', exit);
 }
 
 
@@ -104,4 +105,20 @@ function start() {
 	process.stdout.write("> Welcome back, Commander!\n> ");
 }
 
+function pause() {
+	if(typeof rl !== 'undefined') rl.pause();
+}
+
+function resume() {
+	if(typeof rl !== 'undefined') {
+		rl.resume();
+		rl.prompt();
+	}
+	else {
+		process.stdout.write("> ");
+	}
+}
+
 module.exports.start = start;
+module.exports.pause = pause;
+module.exports.resume = resume;
