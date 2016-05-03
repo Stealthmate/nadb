@@ -38,7 +38,7 @@ function updateSuggestions() {
 			for(var i = 0; i<=response.length - 1; i++) {
 				charobjs.push(response[i]);
 				results.append(
-				"<li class=\"searchresult\" data-selected=\"false\">"+
+				"<li onmouseenter=\"selectMe(this);\" onmouseleave=\"deselectMe(this);\" onclick=\"confirmSelect();\" class=\"searchresult\" data-selected=\"false\">"+
 				"<span class=\"searchresult_name\">"+response[i].name+"</span>"+
 				"<img class=\"searchresult_avatar\" src=\"resource/images/characters/"+response[i].id+"/avatar.jpg\"></img>"+
 				"</li>");
@@ -55,6 +55,15 @@ function updateSuggestions() {
 	
 }
 
+function selectMe(self) {
+	var i = $(".searchresult").index(self);
+	selectSuggestion(i+1);
+	selected = i+1;
+}
+
+function deselectMe(self) {
+	deselect($(".searchresult").index(self)+1);
+}
 
 function deselect(n) {
 	$($(".searchresult").get(n-1)).attr("data-selected", "false");
