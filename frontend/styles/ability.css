@@ -54,12 +54,16 @@
 .name {
 	font-size: 3.5vmin;
 	font-weight: bold;
-	height: 45%;
+	height: 35%;
 }
-
+.label {
+	font-size: 2vmin;
+}
 .cost {
+	font-size: 2vmin;
+	font-style: italic;
+	text-indent: 0px;
 }
-
 .cost td {
 	box-sizing: border-box;
 	width: 1.5vmin;

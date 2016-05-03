@@ -10,7 +10,6 @@ function setLogLevel(lvl) {
 
 function reload() {
 	ResourceManager.unloadResources();
-	
 	if(global.gc) {
 		Logger.log("Running garbage collector...", Logger.LVL_INFO);
 		global.gc();

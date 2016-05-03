@@ -1,0 +1,37 @@
+{"charinfo": {
+	"id":"aburame_shino",
+	"name":"Aburame Shino",
+	"tags":[
+		"aburame", "shino", "bubolechko", "bug"],
+	"description":"A Genin from Team 8, Shino is the successor of the Aburame clan, and a very reserved and tactical fighter. Using the bugs that live inside his body, Shino is able to leech the chakra off his enemies, or protect his entire team.",
+	"abilities": [
+		{
+			"name":"Chakra Leech",
+			"description":"Shino directs his chakra draining bugs to attack one enemy dealing 20 affliction damage and steals 1 random chakra.",
+			"cost":"br",
+			"cd":1,
+			"classes":["affliction", "ranged", "unique", "instant"]
+		},
+		{
+			"name":"Female Bug",
+			"description":"Shino directs one of his female bugs to attach itself to one enemy. For 4 turns, new non-affliction damage that enemy deals is reduced by 5 points. During this time, 'Chakra Leech' will deal 5 additional damage to them. These effects stack.",
+			"cost":"r",
+			"cd":1,
+			"classes":["affliction", "ranged", "unique", "instant"]
+		},
+		{
+			"name":"Bug Wall",
+			"description":"Shino sends millions of bugs to create a wall around his team, making them gain 20 points of destructible defense.",
+			"cost":"br",
+			"cd":3,
+			"classes":["physical", "unique", "instant"]
+		},
+		{
+			"name":"Shino Hide",
+			"description":"This skill makes Aburame Shino invulnerable for 1 turn.",
+			"cost":"r",
+			"cd":4,
+			"classes":["mental", "instant"]
+		}
+	]
+}}

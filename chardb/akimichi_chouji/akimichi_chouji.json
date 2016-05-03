@@ -1,0 +1,37 @@
+{"charinfo": {
+	"id":"akimichi_chouji",
+	"name":"Akimichi Chouji",
+	"tags":[
+		"akimichi", "chouji"],
+	"description":"A Genin from Team 10, Chouji is a member of the Akimichi clan, a large eater, and a close friend to his allies. While innately strong, Chouji is able to sacrifice his own life using special pills from his clan to become insanely powerful.",
+	"abilities": [
+		{
+			"name":"Partial Multi-Size",
+			"description":"Chouji doubles the size of his arms and attacks one enemy dealing 20 damage.",
+			"cost":"t",
+			"cd":0,
+			"classes":["physical", "melee", "instant"]
+		},
+		{
+			"name":"Meat Tank",
+			"description":"Chouji transforms into a Meat Tank dealing 10 damage to one enemy for 2 turns. Chouji is invulnerable for 2 turns.",
+			"cost":"b",
+			"cd":2,
+			"classes":["physical", "melee", "action"]
+		},
+		{
+			"name":"Akimichi Pills",
+			"description":"Chouji eats a pill improving his skills, 'Partial Multi-Size' will deal 20 additional damage and 'Meat Tank' will deal 10 additional damage per turn. Chouji takes 20 affliction damage. Chouji can only eat three pills and this skill is permanent.",
+			"cost":"r",
+			"cd":0,
+			"classes":["affliction", "unique", "instant"]
+		},
+		{
+			"name":"Effortless Block",
+			"description":"This skill makes Akimichi Chouji invulnerable for 1 turn.",
+			"cost":"r",
+			"cd":4,
+			"classes":["physical", "instant"]
+		}
+	]
+}}

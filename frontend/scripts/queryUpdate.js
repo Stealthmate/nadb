@@ -40,7 +40,7 @@ function updateSuggestions() {
 				results.append(
 				"<li class=\"searchresult\" data-selected=\"false\">"+
 				"<span class=\"searchresult_name\">"+response[i].name+"</span>"+
-				"<img class=\"searchresult_avatar\" src=\"resource/images/characters/"+response[i].id+"/avatar.jpeg\"></img>"+
+				"<img class=\"searchresult_avatar\" src=\"resource/images/characters/"+response[i].id+"/avatar.jpg\"></img>"+
 				"</li>");
 				
 			}

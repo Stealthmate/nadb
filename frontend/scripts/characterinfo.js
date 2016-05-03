@@ -3,11 +3,11 @@ function updateinfo(charobj) {
 	var charname = charobj.name;
 	var id = charobj.id;
 	$(".characterinfo .name").text(charobj.name);
-	$(".characterinfo .icon").attr("src", "resource/images/characters/"+id+"/avatar.jpeg");
+	$(".characterinfo .icon").attr("src", "resource/images/characters/"+id+"/avatar.jpg");
 	$(".characterinfo .description").text(charobj.description);
 	
 	for(var i = 1; i <= 4; i++) {		
-		$("#ab" + i + " .icon").attr("src", "resource/images/characters/" + charobj.id + "/ability" + i + ".jpeg");
+		$("#ab" + i + " .icon").attr("src", "resource/images/characters/" + charobj.id + "/ab" + i + ".jpg");
 		$("#ab" + i + " .name").text(charobj.abilities[i-1].name);
 		$("#ab" + i + " .description").text(charobj.abilities[i-1].description);
 		$("#ab" + i + " .cd .value").text(charobj.abilities[i-1].cd);
@@ -16,6 +16,7 @@ function updateinfo(charobj) {
 		var costtable = $("#ab" + i + " .cost tr");
 		costtable.empty();
 		
+		if(cost.length == 0) costtable.text("None"); 
 		for(var j=0;j<=cost.length-1;j++) {
 			switch(cost[j]) {
 				case 't' : {

@@ -30,11 +30,15 @@ function unloadData() {
 
 function getInfo(req, res) {
 	
-	var query = req.url.substr(req.url.indexOf("searchquery")+12);
+	var query = req.url.substr(req.url.indexOf("searchquery")+12).toLowerCase();
 	var taglist = query.split("+");
 	
 	var response_list = [];
-	
+	if(query === "all") {
+		for(var i=0; i<=CHARDB.length-1; i++) response_list.push(CHARDB[i].charinfo);
+		res.send(response_list);
+		return;
+	}
 	for(var i=0; i<=CHARDB.length-1; i++) {
 		
 		var info = CHARDB[i].charinfo;
