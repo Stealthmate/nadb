@@ -8,22 +8,42 @@
 	border-width: 1px;
 }
 
-.abilitycost#taijutsu {
+.abilitycost#t {
 	background: #0F0;
 }
 
-.abilitycost#ninjutsu {
+.abilitycost#t .tooltip:before {
+	content: "taijutsu";
+}
+
+.abilitycost#n {
 	background: #0AF;
 }
 
-.abilitycost#bloodline {
+.abilitycost#n .tooltip:before {
+	content: "ninjutsu";
+}
+
+.abilitycost#b {
 	background: #F00;
 }
 
-.abilitycost#genjutsu {
+.abilitycost#b .tooltip:before {
+	content: "bloodline";
+}
+
+.abilitycost#g {
 	background: #FFF;
 }
 
-.abilitycost#random {
+.abilitycost#g .tooltip:before {
+	content: "genjutsu";
+}
+
+.abilitycost#r {
 	background: #000;
+}
+
+.abilitycost#r .tooltip:before {
+	content: "random";
 }

@@ -1,97 +1,227 @@
-var COST_TEMPLATE = "<td class=\"abilitycost tooltipped\" id=\"%chakra\"><span class=\"tooltip\">%chakra</span></td>";
+//HTML Tempaltes for generating cost/class markers
+var COST_TEMPLATE = "<td class=\"abilitycost tooltipped\" id=\"%chakra\"><span class=\"tooltip\"></span></td>";
 var CLASS_TEMPLATE = "<td class=\"abilityclass tooltipped\" id=\"%class\"><span class=\"tooltip\">%class</span></td>";
-class Ability {
-	
-	constructor(character, abilityobjs, n) {
+
+//Path templates for resources
+var CHAR_AVATAR = "resource/images/characters/%character/avatar.jpg";
+var CHAR_ABILITY = "resource/images/characters/%character/ab%n.jpg";
+var CHAR_ALT_ABILITY = "resource/images/characters/%character/ab%n_%i.jpg";;
+
+class Member {
+	constructor(n) {
 		this.n = n;
-		this.character = character;
-		this.abilityobjs = abilityobjs;
-		this.current = 0;
-		
-		this.setDOMCurrent();
+		this.team = "player";
+		if(this.n > 2) {
+			this.n = this.n - 3;
+			this.team = "enemy";
+		}
+		this.name = "";
+		this.id = "";
+		this.avatar = "";
+		this.abilities = [];
 	}
 	
-	setDOMCurrent() {
+	renderAbility(id, ability) {
 		
-		var icon_path = "resource/images/characters/" + this.character + "/ab"+ this.n;
-		if(this.current > 0) icon_path = icon_path + "_" + this.current;
-		 icon_path = icon_path + ".jpg"
+		var dom_member = "#" + this.team + " #m" + (this.n + 1) + " ";
+		var dom_ability = dom_member + "#ab" + (id+1) + " ";
 		
-		$("#ab" + this.n + " .icon").attr("src", icon_path);
+		$(dom_ability + ".icon").attr("src", ability.iconpath);
 		
-		var ability = this.abilityobjs[this.current];
-		
-		$("#ab" + this.n + " .namse").text(ability.name);
-		$("#ab" + this.n + " .alternate").prop("disabled", this.abilityobjs.length == 1);
-		$("#ab" + this.n + " .description").text(ability.description);
-		$("#ab" + this.n + " .cd .value").text(ability.cd);
-		var cost = ability.cost;
-		var costtable = $("#ab" + this.n + " .cost");
-		costtable.empty();
-		costtable.attr("nocost", false); 
-		
-		if(cost.length == 0) {
-			costtable.attr("nocost", true); 
+		if($(dom_ability + ".icon").attr("locked")==="true") {
+			setAbilityDescription(this.abilities[id].current_ability);
 		}
-		for(var j=0;j<=cost.length-1;j++) {
-			switch(cost[j]) {
-				case 't' : {
-					costtable.append(COST_TEMPLATE.replace(/\%chakra/g, "taijutsu"));
-					break;
-				}
-				case 'n' : {
-					costtable.append(COST_TEMPLATE.replace(/\%chakra/g, "ninjutsu"));
-					break;
-				}
-				case 'b' : {
-					costtable.append(COST_TEMPLATE.replace(/\%chakra/g, "bloodline"));
-					break;
-				}
-				case 'g' : {
-					costtable.append(COST_TEMPLATE.replace(/\%chakra/g, "genjutsu"));
-					break;
-				}
-				case 'r' : {
-					costtable.append(COST_TEMPLATE.replace(/\%chakra/g, "random"));
-					break;
-				}
-					
+		
+		$(dom_ability + " .alternate").attr("alternate", false);
+		if(this.abilities[id].length > 1) {
+			$(dom_ability + " .alternate").attr("alternate", true);
+		}
+		
+		$(dom_ability + ".cost").empty();
+		for(var j=0; j<=ability.cost.length - 1; j++) {
+			$(dom_ability + ".cost").append(COST_TEMPLATE.replace(/%chakra/g, ability.cost[j]));
+		}
+		
+		$(dom_ability + ".classes").empty();
+		for(var j=0; j<=ability.classes.length - 1; j++) {
+			$(dom_ability + ".classes").append(CLASS_TEMPLATE.replace(/%class/g, ability.classes[j]));
+		}
+	}
+	
+	render(characterobject) {
+		
+		//Initialize properties
+		this.name = characterobject.name;
+		this.id = characterobject.id;
+		this.description = characterobject.description;
+		this.avatar = CHAR_AVATAR.replace("%character", this.id);
+		
+		this.abilities = characterobject.abilities;
+		
+		//Set DOM object values
+		var dom_member = "#" + this.team + " #m" + (this.n + 1) + " ";
+		
+		$(dom_member + ".name").text(this.name);
+		$(dom_member + ".avatar").attr("src", this.avatar);
+		
+		for(var i=0; i<=3; i++) {
+			this.abilities[i][0].iconpath = CHAR_ABILITY.replace("%character", this.id).replace("%n", i+1);
+			
+			for(var j=1; j<= this.abilities[i].length - 1; j++) {
+				this.abilities[i][j].iconpath = CHAR_ALT_ABILITY.replace("%character", this.id).replace("%n", i+1).replace("%i", j);
+			}
+			
+			var ability = this.abilities[i][0];
+			
+			this.abilities[i].current_ability = this.abilities[i][0];
+			var dom_ability = dom_member + "#ab" + (i+1) + " ";
+			this.renderAbility(i, ability);
+			
+		}
+		
+	}
+	
+	cycleCurrentAbility(n) {
+		var abilityset = this.abilities[n];
+		if(abilityset.length == 1) return;
+		
+		var index = -1;
+		for(var i=0; i<=abilityset.length-1;i++) {
+			if(abilityset[i] === this.abilities[n].current_ability) {
+				index = i;
+				break;
 			}
 		}
+		if(index === abilityset.length-1) this.abilities[n].current_ability = abilityset[0];
+		else this.abilities[n].current_ability = abilityset[index+1];
 		
-		var classes = ability.classes;
-		var classestable = $("#ab" + this.n + " .classes");
-		classestable.empty();
-		for(var j=0;j<=classes.length - 1;j++) {
-			classestable.append(CLASS_TEMPLATE.replace(/\%class/g, classes[j]));
+		this.renderAbility(n, this.abilities[n].current_ability);
+		
+	}
+}
+
+var TEAM_MEMBERS = [new Member(0), new Member(1), new Member(2), new Member(3), new Member(4), new Member(5)];
+
+var markedMember = -1;
+
+function mark(i, val) {
+	var team = "#player ";
+	
+	if(i > 3) {
+		i = i - 3;
+		team = "#enemy ";
+	}
+	
+	$(team + "#m" + i).attr("marked", val);
+}
+
+function markMember(avatar) {
+	var member_i = $(".member .avatar").index(avatar);
+
+	if(markedMember > 0) mark(markedMember, false);
+	if(markedMember == member_i + 1) {
+		markedMember = -1;
+		return;
+	}
+	markedMember = member_i + 1;
+	mark(markedMember, true);
+}
+
+function setMarkedMember(charobj) {
+	if(markedMember < 0) {
+		for(var i=0;i<=5;i++) {
+			if(TEAM_MEMBERS[i].name.length == 0) {
+				TEAM_MEMBERS[i].render(charobj);
+				break;
+			}
+		}
+		return;
+	}
+	TEAM_MEMBERS[markedMember-1].render(charobj);
+}
+
+function renderAbilityDescription(ability) {
+	
+	var root = "#descriptionpane ";
+	
+	$(root + ".name").text(ability.name);
+	$(root + ".icon").attr("src", ability.iconpath);
+	if(ability.cost.length == 0) $(root + ".cost").attr("nocost", true);
+	else {
+		 $(root + ".cost").attr("nocost", false);
+		for(var j=0; j<=ability.cost.length - 1; j++) {
+			$(root + ".cost").append(COST_TEMPLATE.replace(/%chakra/g, ability.cost[j]));
 		}
 	}
 	
-	cycle() {
-		if(this.current == this.abilityobjs.length-1) this.current = 0;
-		else this.current++;
-		
-		this.setDOMCurrent();
+	for(var j=0; j<=ability.classes.length - 1; j++) {
+		$(root + ".classes").append(CLASS_TEMPLATE.replace(/%class/g, ability.classes[j]));
 	}
+	
+	$(root + ".cd").text(ability.cd);
+	
+	$(root + ".description").text(ability.description);
+}
+
+function setAbilityDescription(abilitysetobject) {
+	
+	var root = "#descriptionpane ";
+	
+	$(root + ".name").text("Ability");
+	$(root + ".icon").attr("src", "");
+	$(root + ".cost").empty();
+	$(root + ".cost").attr("nocost", "true");
+	$(root + ".cd").text("");
+	$(root + ".classes").empty();
+	$(root + ".description").text("");
+	
+	if(abilitysetobject === null) return;
+	
+	var ability = abilitysetobject;
+	renderAbilityDescription(ability);
+}
+
+
+var locked = false;
+
+function onHover(icon) {
+	if(locked) return;
+	var member = Math.floor($(".ability .icon").index(icon) / 4);
+	
+	var ability = $(".ability .icon").index(icon) - (member*4);
+
+	if(TEAM_MEMBERS[member].abilities.length == 0) {
+		setAbilityDescription(null); 
+		return;
+	}
+
+	setAbilityDescription(TEAM_MEMBERS[member].abilities[ability].current_ability);
 	
 }
 
-var abilities = [];
-
-function switchAbility(n) {
-	abilities[n].cycle();
+function lockDescription(icon) {
+	var this_is_locked = $(icon).attr("locked")==="true";
+	if(locked && !this_is_locked) {
+		$(".ability .icon[locked=\"true\"]").attr("locked", false);
+		locked = false;
+		onHover(icon);
+		locked = true;
+		$(icon).attr("locked", true);
+		return;
+	}
+	locked = !locked;
+	$(icon).attr("locked", locked);
+	console.log($(icon).attr("locked"));
 }
 
+function onExit() {
+	if(!locked) setAbilityDescription(null);
+}
 
-function updateinfo(charobj) {
+function cycleAbility(div_ab) {
+	var member = Math.floor($(".ability").index(div_ab) / 4);
 	
-	var charname = charobj.name;
-	var id = charobj.id;
-	$("#infopane .name").text(charobj.name);
-	$("#infopane .avatar").attr("src", "resource/images/characters/"+id+"/avatar.jpg");
-	$("#infopane .description").text(charobj.description);
-	abilities = [];
-	for(var i = 1; i <= 4; i++) {
-		abilities.push(new Ability(charobj.id, charobj.abilities[i-1], i));
-	}
+	var ability = $(".ability").index(div_ab) - (member*4);
+	
+	TEAM_MEMBERS[member].cycleCurrentAbility(ability);
 }

@@ -120,7 +120,7 @@ function selectPrev() {
 }
 
 function confirmSelect() {
-	updateinfo(charobjs[selected-1]);
+	setMarkedMember(charobjs[selected-1]);
 }
 
 function onKeyDown() {

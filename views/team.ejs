@@ -1,19 +1,17 @@
 <%for (var i = 0; i<=2; i++) {%>
-	<div class="member" id="m<%=i+1%>">
+	<div class="member" id="m<%=i+1%>" marked="false">
 		<div class="name"></div>
-		<img class="avatar"></img>
+		<img class="avatar" onclick="markMember(this)"></img>
 		<div class="abilities">
 			<%for (var j = 0; j<=3; j++) {%>
 				<span class="ability" id="ab<%=j+1%>">
 				
-					<div class="alternate tooltipped" disabled>
-						<div class="tooltip" id="alternatetooltip">alternate</div>
-					</div>
+					<div class="alternate" onclick="cycleAbility($(this).parent());" alternate="false"></div>
 					
 					<table class="classes">
 					</table>
 					
-					<img class="icon"></img>
+					<img class="icon" onmouseover="onHover(this);" onmouseleave="onExit();" onclick="lockDescription(this)" locked="false"></img>
 					
 					<table class="cost" nocost="true">
 					</table>

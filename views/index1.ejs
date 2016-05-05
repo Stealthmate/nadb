@@ -12,11 +12,11 @@
 		
 		<script type="text/javascript" src="resource/scripts/queryUpdate.js"> </script>
 		<script type="text/javascript" src="resource/scripts/characterinfo.js"> </script>
+		<script type="text/javascript" src="resource/scripts/ability.js"> </script>
 		
 		<link rel="stylesheet" type="text/css" href="resource/styles/style_index.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/infopane1.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/descriptionpane.css">
-		<!--<link rel="stylesheet" type="text/css" href="resource/styles/ability.css">-->
 		
 	</head>
 
@@ -56,46 +56,38 @@
 		
 			<div class="header">
 			
-				<img class="icon" src="resource/images/characters/uzumaki_naruto/avatar.jpg"></img>
+				<img class="icon"></img>
 				
 				<div class="basicinfo">
 					
-					<div class="name">Name
+					<div class="name">Ability</div>
+					<div class="description"></div>
 					
-					</div>
 					
-					<span class="label">
-						Cost:
-						<span class="nocost" nocost="false">
-							None
-						</span>
-					</span>
-					
-					<table class="cost">
-						<td class="abilitycost tooltipped" id="ninjutsu"><span class="tooltip">ninjutsu</span></td>
-						<td class="abilitycost tooltipped" id="ninjutsu"><span class="tooltip">ninjutsu</span></td>
-						<td class="abilitycost tooltipped" id="ninjutsu"><span class="tooltip">ninjutsu</span></td>
-					</table>
-					
-					<span class="label">
-						CD: <span class="cd">1</span>
-					</span>
 				</div>
 				
-				<table class="classes">
-					
-					<td class="abilityclass tooltipped" id="physical"><span class="tooltip">physical</span></td>
-					<td class="abilityclass tooltipped" id="ranged"><span class="tooltip">ranged</span></td>
-					<td class="abilityclass tooltipped" id="affliction"><span class="tooltip">affliction</span></td>
-					<td class="abilityclass tooltipped" id="unique"><span class="tooltip">unique</span></td>
-					<td class="abilityclass tooltipped" id="instant"><span class="tooltip">instant</span></td>
-					
-				</table>
 			
 			</div>
 			
-			<div class="description">
+			<div class="stats">
 			
+				<span class="label">
+					Cost:
+					<table class="cost" nocost="true">
+						<td class="abilitycost tooltipped" id="n"><span class="tooltip"></span></td>
+					</table>
+					<span class="nocost">
+						None
+					</span>
+				</span>
+				
+				
+				<span class="label">
+					Cooldown: <span class="cd"></span>
+				</span>
+				
+				<table class="classes">			
+				</table>
 			</div>
 			
 		</div>
