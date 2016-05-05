@@ -5,33 +5,41 @@
 		"hyuuga", "hinata"],
 	"description":"A Genin from Team 8, Hinata is the next in line in the Hyuuga clan, but she is shy and very withdrawn. Using the trademark Byakugan of the Hyuuga, Hinata is able to delicately target an enemy's Chakra Points while defending the team.",
 	"abilities": [
-		{
-			"name":"Hinata Gentle Fist",
-			"description":"Using the Hyuuga clan's style of taijutsu Hinata does 20 damage for 2 turns to one enemy. If used during 'Byakugan' this skill will also remove 1 random chakra each turn.",
-			"cost":"tr",
-			"cd":1,
-			"classes":["physical", "melee", "unique", "action"]
-		},
-		{
-			"name":"Protective Eight Trigrams Sixty-Four Palms",
-			"description":"Hinata deals 15 damage to all enemies,* and all allies, including her will gain 10 destructible defense for 1 turn. If used during 'Byakugan' this skill will deal 20 damage.",
-			"cost":"nr",
-			"cd":0,
-			"classes":["chakra", "melee", "unique", "instant"]
-		},
-		{
-			"name":"Byakugan",
-			"description":"Hinata activates her Byakugan gaining 15 points of damage reduction for 4 turns. The following 4 turns, 'Hinata Gentle Fist' and 'Protective Eight Trigrams Sixty-Four Palms' will be improved.",
-			"cost":"r",
-			"cd":4,
-			"classes":["mental", "unique", "instant"]
-		},
-		{
-			"name":"Hinata Block",
-			"description":"This skill makes Hyuuga Hinata invulnerable for 1 turn.",
-			"cost":"r",
-			"cd":4,
-			"classes":["physical", "instant"]
-		}
+		[
+			{
+				"name":"Hinata Gentle Fist",
+				"description":"Using the Hyuuga clan's style of taijutsu Hinata does 20 damage for 2 turns to one enemy. If used during 'Byakugan' this skill will also remove 1 random chakra each turn.",
+				"cost":"tr",
+				"cd":1,
+				"classes":["physical", "melee", "unique", "action"]
+			}
+		],
+		[
+			{
+				"name":"Protective Eight Trigrams Sixty-Four Palms",
+				"description":"Hinata deals 15 damage to all enemies,* and all allies, including her will gain 10 destructible defense for 1 turn. If used during 'Byakugan' this skill will deal 20 damage.",
+				"cost":"nr",
+				"cd":0,
+				"classes":["chakra", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Byakugan",
+				"description":"Hinata activates her Byakugan gaining 15 points of damage reduction for 4 turns. The following 4 turns, 'Hinata Gentle Fist' and 'Protective Eight Trigrams Sixty-Four Palms' will be improved.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Hinata Block",
+				"description":"This skill makes Hyuuga Hinata invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
 	]
 }}

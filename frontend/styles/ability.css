@@ -7,8 +7,8 @@
 
 .icon {
 	float:left;
-	width: 10vh;
-	height: 10vh;
+	width: 8vh;
+	height: 8vh;
 	vertical-align: middle;
 	box-sizing: border-box;
 	border-style: solid;
@@ -31,13 +31,16 @@
 
 .classes table {
 	border-collapse: separate;
-	width: 66vmin;
+	width: 30vmin;
+	height: 12vmin;
+	padding: 0px;
 }
 .classes td {
+	width: 6vmin;
+	height: 6vmin;
 	padding: 5px;
-	width: 10vmin;
 	text-align: center;
-	font-size: 2vmin;
+	font-size: 1vmin;
 	border-style: solid;
 	border-width: 1px;
 }
@@ -52,12 +55,24 @@
 }
 
 .name {
-	font-size: 3.5vmin;
-	font-weight: bold;
-	height: 35%;
+	font-size: 3vmin;
+	height: 3.5vmin;
+	width: 50vmin;
+	background: linear-gradient(to bottom right, white, #F5F1DE);
 }
+
+.alternate {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.alternate:disabled {
+	visibility: hidden;
+}
+
 .label {
 	font-size: 2vmin;
+	height: 2vh;
 }
 .cost {
 	font-size: 2vmin;
@@ -92,9 +107,10 @@
 	background-color: #000000;
 }
 
-.cd {
-	font-size: 3vmin;
-	height: 45%;
+.cd .value {
+	font-size: 2.3vmin;
+	font-weight: bold;
+	height: 3vh;
 }
 
 .description {

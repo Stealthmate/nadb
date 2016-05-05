@@ -57,12 +57,14 @@ function updateSuggestions() {
 
 function selectMe(self) {
 	var i = $(".searchresult").index(self);
+	if(selected > 0) $($(".searchresult").get(selected-1)).attr("data-selected", "false");
 	selectSuggestion(i+1);
 	selected = i+1;
 }
 
 function deselectMe(self) {
 	deselect($(".searchresult").index(self)+1);
+	selected = 0;
 }
 
 function deselect(n) {
@@ -74,6 +76,22 @@ function selectSuggestion(n) {
 	$(elem).attr("data-selected", "true");
 }
 
+function scrollBy(n) {
+	console.log(n);
+	$("#searchpane").scrollTop($("#searchpane").scrollTop() + ($(".searchresult").height()*n));
+}
+
+function scrollIfNeeded() {
+	var view_h = $("#searchpane").height();
+	var li_h = $(".searchresult").height();
+	var max_li = Math.floor(view_h/li_h) - 1;
+	
+	var current_top = Math.floor($("#searchpane").scrollTop()/li_h)+1;;
+	
+	if(selected < current_top) scrollBy(selected - current_top);
+	if(selected > current_top + max_li) scrollBy(selected - current_top - max_li);
+}
+
 function selectNext() {
 	var elemlist = $(".searchresult");
 	if(elemlist.length == 0) return;
@@ -83,7 +101,9 @@ function selectNext() {
 	if(selected == elemlist.length) selected = 1;
 	else selected = selected + 1;
 	
-	selectSuggestion(selected); 
+	selectSuggestion(selected);
+	scrollIfNeeded();
+		
 }
 
 function selectPrev() {
@@ -96,6 +116,7 @@ function selectPrev() {
 	else selected = selected - 1;
 	
 	selectSuggestion(selected); 
+	scrollIfNeeded();
 }
 
 function confirmSelect() {

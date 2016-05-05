@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"tenten",
+	"name":"Tenten",
+	"tags":[
+		"tenten"],
+	"description":"A member of team Gai, Tenten is a tomboyish weapon specialist who believes a kunoichi can be as strong as a male ninja. In battle, Tenten surrounds the battlefield in weapons, using them for damage and for disabling her opponents.",
+	"abilities": [
+		[
+			{
+				"name":"Twin Rising Dragons",
+				"description":"Tenten deals 20 damage to one enemy, and 10 to all other enemies. All enemies will receive 10 additional damage from 'Twin Rising Dragons Trap' and will have their physical and chakra damage lowered by an additional 10 from it. This skill cannot be countered.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Twin Rising Dragons Trap",
+				"description":"Tenten deals 5 damage to all enemies. For 1 turn, their physical and chakra damage will be lowered by 5. All stacks of 'Twin Rising Dragons' will be removed from all targets afterwards. This skill cannot be countered.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Twin Rising Dragons Full Release",
+				"description":"Tenten becomes invulnerable to physical and chakra skills for 1 turn and improves her skills until the next time she uses one; this does not stack. 'Twin Rising Dragons' will apply its non-damage effect twice and the damage reduction effect of 'Twin Rising Dragons Trap' will last an additional turn.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Spiked Boulder Wall",
+				"description":"This skill makes Tenten invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

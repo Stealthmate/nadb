@@ -5,40 +5,48 @@
 		"rock", "lee"],
 	"description":"A member of team Gai; Lee is a genin with no talent at all in ninjutsu or genjutsu, so he has focused his life all on taijutsu. With his powerful hand to hand techniques, Lee can crush any defense with his immense power.",
 	"abilities": [
-		{
-			"name":"High Speed Taijutsu",
-			"description":"Lee deals 10 damage to one enemy for 3 turns. The following 3 turns, Lee will gain 10 points of damage reduction and that enemy will receive an additional 10 damage from 'Front Lotus'.* This skill stacks and will deal 15 additional damage during 'Fifth Gate Opening'.",
-			"cost":"t",
-			"cd":0,
-			"classes":["physical", "melee", "action", "instant"]
-		},
-		{
-			"name":"Front Lotus",
-			"description":"Opening the first gate, Lee uses a high powered taijutsu to deal 30 damage to one enemy. This skill will deal 30 additional damage during 'Fifth Gate Opening'.",
-			"cost":"tr",
-			"cd":0,
-			"classes":["physical", "melee", "instant"]
-		},
-		{
-			"name":"Fifth Gate Opening",
-			"description":"Lee removes all harmful effects on him, losing 50 health*, and then becoming invulnerable to all harmful skills for 2 turns. The following 2 turns, this skill will be replaced by 'Final Lotus'. The affliction damage this skill deals cannot be ignored and cannot kill Lee.",
-			"cost":"t",
-			"cd":4,
-			"classes":["mental", "affliction", "instant"],
-			"alt:":{
+		[
+			{
+				"name":"High Speed Taijutsu",
+				"description":"Lee deals 10 damage to one enemy for 3 turns. The following 3 turns, Lee will gain 10 points of damage reduction and that enemy will receive an additional 10 damage from 'Front Lotus'.* This skill stacks and will deal 15 additional damage during 'Fifth Gate Opening'.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "action", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Front Lotus",
+				"description":"Opening the first gate, Lee uses a high powered taijutsu to deal 30 damage to one enemy. This skill will deal 30 additional damage during 'Fifth Gate Opening'.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Fifth Gate Opening",
+				"description":"Lee removes all harmful effects on him, losing 50 health*, and then becoming invulnerable to all harmful skills for 2 turns. The following 2 turns, this skill will be replaced by 'Final Lotus'. The affliction damage this skill deals cannot be ignored and cannot kill Lee.",
+				"cost":"t",
+				"cd":4,
+				"classes":["mental", "affliction", "instant"]
+			},
+			{
 				"name":"Final Lotus",
 				"description":"Lee uses his strongest ability, expending all his chakra and dealing 100 damage to one enemy.",
 				"cost":"tt",
 				"cd":0,
 				"classes":["physical", "melee", "instant"]
 			}
-		},
-		{
-			"name":"Lee Block",
-			"description":"This skill makes Rock Lee invulnerable for 1 turn.",
-			"cost":"r",
-			"cd":4,
-			"classes":["physical", "instant"]
-		}
+		],
+		[
+			{
+				"name":"Lee Block",
+				"description":"This skill makes Rock Lee invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
 	]
 }}

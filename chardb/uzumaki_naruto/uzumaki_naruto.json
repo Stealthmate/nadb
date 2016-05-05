@@ -5,33 +5,41 @@
 		"uzumaki", "naruto"],
 	"description":"A Genin from Team 7, Naruto is an orphan with the goal to one day become Hokage. Using his signature move, Shadow Clones, Naruto is able to perform powerful moves such as the Uzumaki Naruto Combo and the Rasengan.",
 	"abilities": [
-		{
-			"name":"Uzumaki Naruto Combo",
-			"description":"Naruto's version of the Lion Combo. This skill deals 20 damage to one enemy. During 'Shadow Clones' this skill will deal 10 additional damage.",
-			"cost":"t",
-			"cd":0,
-			"classes":["physical", "melee", "instant"]
-		},
-		{
-			"name":"Rasengan",
-			"description":"Naruto hits one enemy with a ball of chakra dealing 45 damage to them and stunning their skills for 1 turn. This skill requires 'Shadow Clones'.",
-			"cost":"nr",
-			"cd":1,
-			"classes":["chakra", "melee", "instant"]
-		},
-		{
-			"name":"Shadow Clones",
-			"description":"Naruto creates multiple shadow clones hiding his true self. Naruto gains 15 points of damage reduction for 4 turns. During this time 'Uzumaki Naruto Combo' will deal 10 additional damage and 'Rasengan' can be used.",
-			"cost":"r",
-			"cd":3,
-			"classes":["chakra", "instant"]
-		},
-		{
-			"name":"Sexy Technique",
-			"description":"This skill makes Uzumaki Naruto invulnerable for 1 turn.",
-			"cost":"r",
-			"cd":4,
-			"classes":["chakra", "instant"]
-		}
+		[
+			{
+				"name":"Uzumaki Naruto Combo",
+				"description":"Naruto's version of the Lion Combo. This skill deals 20 damage to one enemy. During 'Shadow Clones' this skill will deal 10 additional damage.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Rasengan",
+				"description":"Naruto hits one enemy with a ball of chakra dealing 45 damage to them and stunning their skills for 1 turn. This skill requires 'Shadow Clones'.",
+				"cost":"nr",
+				"cd":1,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Shadow Clones",
+				"description":"Naruto creates multiple shadow clones hiding his true self. Naruto gains 15 points of damage reduction for 4 turns. During this time 'Uzumaki Naruto Combo' will deal 10 additional damage and 'Rasengan' can be used.",
+				"cost":"r",
+				"cd":3,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sexy Technique",
+				"description":"This skill makes Uzumaki Naruto invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
 	]
 }}

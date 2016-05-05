@@ -5,33 +5,41 @@
 		"uzumaki", "naruto", "kyuubi", "nine", "tails", "fox"],
 	"description":"Naruto's anger and desperation has forced the Kyuubi's chakra to come up to the surface, changing Naruto into a single-minded beast with a nearly endless amount of chakra. With the Kyuubi chakra around Naruto, he is able to unleash powerful waves of raw chakra to endow his power further, or gather it back to guard and heal him.",
 	"abilities": [
-		{
-			"name":"Kyuubi Rasengan",
-			"description":"Naruto's version of the Lion Combo. This skill deals 20 damage to one enemy. During 'Shadow Clones' this skill will deal 10 additional damage.",
-			"cost":"nr",
-			"cd":1,
-			"classes":["chakra", "melee", "affliction", "instant"]
-		},
-		{
-			"name":"Kyuubi Rage",
-			"description":"The Kyuubi's chakra is let loose, dealing 15 damage to all enemies for 3 turns.* During this time, 'Kyuubi Rasengan' will deal an additional 10 damage. 'Kyuubi Chakra' may not be used during this time.",
-			"cost":"tb",
-			"cd":3,
-			"classes":["chakra", "melee", "unique", "instant", "action"]
-		},
-		{
-			"name":"Kyuubi Chakra",
-			"description":"Naruto begins using the Kyuubi's chakra, healing himself 15 health for 5 turns.* During this time, Naruto will have 10 points of damage reduction and 'Kyuubi Rasengan' will deal 10 less damage. 'Kyuubi Rage' may not be used during this time.",
-			"cost":"br",
-			"cd":5,
-			"classes":["chakra", "unique", "instant", "action"]
-		},
-		{
-			"name":"Kyuubi Dodge",
-			"description":"This skill makes Kyuubi Naruto invulnerable for 1 turn.",
-			"cost":"r",
-			"cd":4,
-			"classes":["physical",  "instant"]
-		}
+		[
+			{
+				"name":"Kyuubi Rasengan",
+				"description":"Naruto's version of the Lion Combo. This skill deals 20 damage to one enemy. During 'Shadow Clones' this skill will deal 10 additional damage.",
+				"cost":"nr",
+				"cd":1,
+				"classes":["chakra", "melee", "affliction", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Kyuubi Rage",
+				"description":"The Kyuubi's chakra is let loose, dealing 15 damage to all enemies for 3 turns.* During this time, 'Kyuubi Rasengan' will deal an additional 10 damage. 'Kyuubi Chakra' may not be used during this time.",
+				"cost":"tb",
+				"cd":3,
+				"classes":["chakra", "melee", "unique", "instant", "action"]
+			}
+		],
+		[
+			{
+				"name":"Kyuubi Chakra",
+				"description":"Naruto begins using the Kyuubi's chakra, healing himself 15 health for 5 turns.* During this time, Naruto will have 10 points of damage reduction and 'Kyuubi Rasengan' will deal 10 less damage. 'Kyuubi Rage' may not be used during this time.",
+				"cost":"br",
+				"cd":5,
+				"classes":["chakra", "unique", "instant", "action"]
+			}
+		],
+		[
+			{
+				"name":"Kyuubi Dodge",
+				"description":"This skill makes Kyuubi Naruto invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical",  "instant"]
+			}
+		]
 	]
 }}

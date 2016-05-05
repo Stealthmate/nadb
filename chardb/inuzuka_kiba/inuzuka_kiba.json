@@ -5,33 +5,41 @@
 		"inuzuka", "kiba", "kuchakis", "zubakis"],
 	"description":"A Genin from Team 8, Kiba is a member of the Inuzuka clan, and is both short-tempered and impulsive. Using his dog, Akamaru, Kiba is capable of powerful taijutsu or fusing with Akamaru to become a deadly double headed dog.",
 	"abilities": [
-		{
-			"name":"Garouga",
-			"description":"This skill does 30 damage to one enemy. During 'Double-Headed Wolf' this skill is improved and costs 1 less random chakra.",
-			"cost":"tr",
-			"cd":0,
-			"classes":["physical", "melee", "instant"]
-		},
-		{
-			"name":"Double-Headed Wolf",
-			"description":"Kiba and Akamaru turn into giant beasts attacking all enemies dealing 15 damage each turn for 3 turns. The following 3 turns 'Garouga' is improved and costs 1 less random chakra.* During this time Kiba gains 15 points of damage reduction.",
-			"cost":"tb",
-			"cd":3,
-			"classes":["physical", "unique", "melee", "action", "instant"]
-		},
-		{
-			"name":"Dynamic Marking",
-			"description":"Akamaru sprays urine on one enemy who cannot reduce damage or become invulnerable for 3 turns. During this time, 'Double-Headed Wolf' and 'Garouga' will deal 5 additional damage to them. Dynamic Marking cannot be used on an enemy already being affected.",
-			"cost":"",
-			"cd":0,
-			"classes":["affliction", "ranged", "instant"]
-		},
-		{
-			"name":"Smoke Bomb",
-			"description":"This skill makes Inuzuka Kiba invulnerable for 1 turn.",
-			"cost":"r",
-			"cd":4,
-			"classes":["physical", "instant"]
-		}
+		[
+			{
+				"name":"Garouga",
+				"description":"This skill does 30 damage to one enemy. During 'Double-Headed Wolf' this skill is improved and costs 1 less random chakra.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Double-Headed Wolf",
+				"description":"Kiba and Akamaru turn into giant beasts attacking all enemies dealing 15 damage each turn for 3 turns. The following 3 turns 'Garouga' is improved and costs 1 less random chakra.* During this time Kiba gains 15 points of damage reduction.",
+				"cost":"tb",
+				"cd":3,
+				"classes":["physical", "unique", "melee", "action", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dynamic Marking",
+				"description":"Akamaru sprays urine on one enemy who cannot reduce damage or become invulnerable for 3 turns. During this time, 'Double-Headed Wolf' and 'Garouga' will deal 5 additional damage to them. Dynamic Marking cannot be used on an enemy already being affected.",
+				"cost":"",
+				"cd":0,
+				"classes":["affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Smoke Bomb",
+				"description":"This skill makes Inuzuka Kiba invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
 	]
 }}

@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"gaara",
+	"name":"Gaara",
+	"tags":[
+		"gaara", "of", "the", "desert"],
+	"description":"A Jinchuuriki from the Village of Sand, Gaara is an unstable ninja with the Shukaku, the one-tailed beast. With the Shukaku, and his own abilities, Gaara can manipulate the sand in his gourd to crush the enemy, or defend himself.",
+	"abilities": [
+		[
+			{
+				"name":"Sand Coffin",
+				"description":"Gaara surrounds one enemy with a pile of sand stunning their non-mental skills for 2 turns. For 2 turns, that enemy cannot reduce damage or become invulnerable. During this time, this skill will be replaced by 'Sand Burial'.",
+				"cost":"nr",
+				"cd":2,
+				"classes":["physical", "ranged", "control"]
+			},
+			{
+				"name":"Sand Burial",
+				"description":"Gaara crushes one enemy with sand. That enemy is killed. ",
+				"cost":"nn",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sand Clone",
+				"description":"Gaara creates a clone of sand that mimics him and provides defense. Until Gaara receives new harmful non-affliction damage, he will ignore all harmful effects except damage and chakra cost changes. This skill cannot be used while active.",
+				"cost":"",
+				"cd":2,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Armor Of Sand",
+				"description":"By covering himself with sand, Gaara permanently gains 40 points of destructible defense. This skill cannot stack and will re-apply itself.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Shield Of Sand",
+				"description":"This skill makes Gaara of the Desert invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "unique", "instant"]
+			}
+		]
+	]
+}}

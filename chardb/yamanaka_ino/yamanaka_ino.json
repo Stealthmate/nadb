@@ -5,33 +5,48 @@
 		"ino", "yamanaka"],
 	"description":"A Genin from Team 10, Ino is a member of the Yamanaka clan, and a very confident and vain girl. Ino is able to use a variety of abilities to take over and control her enemies, making it difficult to tell friend from foe.",
 	"abilities": [
-		{
-			"name":"Mind Body Disturbance",
-			"description":"Using this skill Ino stuns the non-mental skills of one enemy for 1 turn and does 30 piercing damage that ignores invulnerability to one random enemy. During this time the target is unable to reduce damage or become invulnerable.",
-			"cost":"gr",
-			"cd":0,
-			"classes":["mental", "ranged", "instant"]
-		},
-		{
-			"name":"Mind Body Switch",
-			"description":"Ino takes over the mind of an enemy. For 4 turns one enemy cannot reduce damage or become invulnerable. During this time, their skills are stunned, and this skill will be replaced by 'Art of the Valentine'.";
-			"cost":"gg",
-			"cd":3,
-			"classes":["mental", "ranged", "control"]
-		},
-		{
-			"name":"Chakra Hair Strand Trap",
-			"description":"Ino uses a strand of chakra endowed hair to create a trap. For 1 turn, if one enemy uses a new harmful skill, they will have the cooldowns of their skills increased by 1 for 2 turns. This skill is invisible.",
-			"cost":"r",
-			"cd":1,
-			"classes":["chakra", "ranged", "instant"]
-		},
-		{
-			"name":"Ino Block",
-			"description":"This skill makes Yamanaka Ino invulnerable for 1 turn.",
-			"cost":"r",
-			"cd":4,
-			"classes":["physical", "instant"]
-		}
+		[
+			{
+				"name":"Mind Body Disturbance",
+				"description":"Using this skill Ino stuns the non-mental skills of one enemy for 1 turn and does 30 piercing damage that ignores invulnerability to one random enemy. During this time the target is unable to reduce damage or become invulnerable.",
+				"cost":"gr",
+				"cd":0,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Mind Body Switch",
+				"description":"Ino takes over the mind of an enemy. For 4 turns one enemy cannot reduce damage or become invulnerable. During this time, their skills are stunned, and this skill will be replaced by 'Art of the Valentine'.",
+				"cost":"gg",
+				"cd":3,
+				"classes":["mental", "ranged", "control"]
+			},
+			{
+				"name":"Art Of The Valentine",
+				"description":"This skill does 25 damage to one enemy.",
+				"cost":"r",
+				"cd":0,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Chakra Hair Strand Trap",
+				"description":"Ino uses a strand of chakra endowed hair to create a trap. For 1 turn, if one enemy uses a new harmful skill, they will have the cooldowns of their skills increased by 1 for 2 turns. This skill is invisible.",
+				"cost":"r",
+				"cd":1,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Ino Block",
+				"description":"This skill makes Yamanaka Ino invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
 	]
 }}

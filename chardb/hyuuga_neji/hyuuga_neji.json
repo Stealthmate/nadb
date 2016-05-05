@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"hyuuga_neji",
+	"name":"Hyuuga Neji",
+	"tags":[
+		"hyuuga", "neji"],
+	"description":"A member of team Gai; Neji is the most talented member of the Hyuuga clan in both mind and body. Neji can use the most powerful techniques of his clan, shutting down an enemy's chakra or defending with an absolute defense.",
+	"abilities": [
+		[
+			{
+				"name":"Neji Gentle Fist",
+				"description":"Using the Hyuuga clan's special form of taijutsu, Neji deals 25 damage to one enemy for 2 turns. During this time, that enemy will deal 5 less damage with any non-affliction skill.",
+				"cost":"tr",
+				"cd":1,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Eight Trigrams Revolving Heaven",
+				"description":"Neji becomes invulnerable for 1 turn while dealing 15 damage to all enemies.",
+				"cost":"b",
+				"cd":1,
+				"classes":["chakra", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Eight Trigrams Sixty-Four Palms",
+				"description":"Neji closes all of one enemy's chakra nodes dealing 40 damage to one enemy and that enemy loses 1 random chakra.",
+				"cost":"tb",
+				"cd":1,
+				"classes":["physical", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Byakugan Insight",
+				"description":"This skill makes Hyuuga Neji invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "unique", "instant"]
+			}
+		]
+	]
+}}

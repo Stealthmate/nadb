@@ -5,33 +5,41 @@
 		"uchiha", "sasuke"],
 	"description":"A Genin from Team 7, Sasuke is the lone survivor of the Uchiha clan and has sworn vengeance against his brother. Using his sharingan, Sasuke is able to anticipate incoming attacks and is capable of advanced offensive moves.",
 	"abilities": [
-		{
-			"name":"Lion Combo",
-			"description":"Copying a taijutsu combo that Lee used on him, Sasuke deals 30 damage to one enemy. This skill will deal an additional 15 damage to an enemy affected by 'Sharingan'.",
-			"cost":"tr",
-			"cd":0,
-			"classes":["physical", "melee", "instant"]
-		},
-		{
-			"name":"Chidori",
-			"description":"Using a lightning element attack jutsu, Sasuke deals 30 piercing damage to one enemy. This skill will deal an additional 25 damage to an enemy affected by 'Sharingan'.",
-			"cost":"nr",
-			"cd":1,
-			"classes":["chakra", "melee", "instant"]
-		},
-		{
-			"name":"Sharingan",
-			"description":"Sasuke targets one enemy. For 4 turns, Sasuke will gain 15 points of damage reduction. During this time, that enemy will be unable to reduce damage or become invulnerable.* This will end if Sasuke dies.",
-			"cost":"r",
-			"cd":4,
-			"classes":["mental", "unique", "ranged", "instant"]
-		},
-		{
-			"name":"Swift Block",
-			"description":"This skill makes Uchiha Sasuke invulnerable for 1 turn.",
-			"cost":"r",
-			"cd":4,
-			"classes":["physical", "instant"]
-		}
+		[
+			{
+				"name":"Lion Combo",
+				"description":"Copying a taijutsu combo that Lee used on him, Sasuke deals 30 damage to one enemy. This skill will deal an additional 15 damage to an enemy affected by 'Sharingan'.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Chidori",
+				"description":"Using a lightning element attack jutsu, Sasuke deals 30 piercing damage to one enemy. This skill will deal an additional 25 damage to an enemy affected by 'Sharingan'.",
+				"cost":"nr",
+				"cd":1,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sharingan",
+				"description":"Sasuke targets one enemy. For 4 turns, Sasuke will gain 15 points of damage reduction. During this time, that enemy will be unable to reduce damage or become invulnerable.* This will end if Sasuke dies.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "unique", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Swift Block",
+				"description":"This skill makes Uchiha Sasuke invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
 	]
 }}

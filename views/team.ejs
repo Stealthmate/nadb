@@ -1,0 +1,26 @@
+<%for (var i = 0; i<=2; i++) {%>
+	<div class="member" id="m<%=i+1%>">
+		<div class="name"></div>
+		<img class="avatar"></img>
+		<div class="abilities">
+			<%for (var j = 0; j<=3; j++) {%>
+				<span class="ability" id="ab<%=j+1%>">
+				
+					<div class="alternate tooltipped" disabled>
+						<div class="tooltip" id="alternatetooltip">alternate</div>
+					</div>
+					
+					<table class="classes">
+					</table>
+					
+					<img class="icon"></img>
+					
+					<table class="cost" nocost="true">
+					</table>
+					
+				</span>
+			<%}%>
+		</div>
+	
+	</div>
+<%}%>

@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"haruno_sakura",
+	"name":"Haruno Sakura",
+	"tags":[
+		"haruno", "sakura"],
+	"description":"A Genin from Team 7, Sakura is very intelligent, but self-conscious about herself. Having just recently received training from Tsunade, Sakura is now able to deliver powerful punches and heal her own allies.",
+	"abilities": [
+		[
+			{
+				"name":"KO Punch",
+				"description":"Sakura punches one enemy with all her strength dealing 20 damage to them and stunning their physical or mental skills for 1 turn. During 'Inner Sakura', KO Punch deals 10 additional damage.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Mystical Palm Healing",
+				"description":"Using basic healing techniques Sakura heals herself or one ally for 25 health.",
+				"cost":"n",
+				"cd":0,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Inner Sakura",
+				"description":"Sakura's inner self surfaces and urges her on. For 4 turns, Sakura will gain 10 points of damage reduction and will ignore all non-damage effects other than chakra cost changes. During this time 'KO Punch' will deal 10 additional damage.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sakura Replacement Technique",
+				"description":"This skill makes Haruno Sakura invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

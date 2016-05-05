@@ -1,0 +1,53 @@
+.abilityclass {
+	box-sizing: border-box;
+	
+	height: 1.1vw;
+	width: 1.1vw;
+	
+	border-style: solid;
+	border-width: 1px;
+}
+
+.abilityclass#physical {
+	background: url('icon_physical.png');
+}
+
+.abilityclass#chakra {
+	background: url('icon_chakra.png');
+}
+
+.abilityclass#melee {
+	background: url('icon_melee.png');
+}
+
+.abilityclass#ranged {
+	background: url('icon_ranged.png');
+}
+
+.abilityclass#mental {
+	background: url('icon_mental.png');
+}
+
+.abilityclass#action {
+	background: url('icon_action.png');
+}
+
+.abilityclass#affliction {
+	background: url('icon_affliction.png');
+}
+
+.abilityclass#unique {
+	background: url('icon_unique.png');
+}
+
+.abilityclass#instant {
+	background: url('icon_instant.png');
+}
+
+.abilityclass#control {
+	background: url('icon_control.png');
+}
+
+.abilityclass {
+	background-size: 99% 99% !important;
+}

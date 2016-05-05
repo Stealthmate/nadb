@@ -1,0 +1,106 @@
+<html lang="en-US">
+
+	<head>
+
+		<meta charset="utf-8">
+		
+		</meta>
+	
+		<title>Shippuuden-Arena</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="resource/scripts/queryUpdate.js"> </script>
+		<script type="text/javascript" src="resource/scripts/characterinfo.js"> </script>
+		
+		<link rel="stylesheet" type="text/css" href="resource/styles/style_index.css">
+		<link rel="stylesheet" type="text/css" href="resource/styles/infopane1.css">
+		<link rel="stylesheet" type="text/css" href="resource/styles/descriptionpane.css">
+		<!--<link rel="stylesheet" type="text/css" href="resource/styles/ability.css">-->
+		
+	</head>
+
+	
+	<body onkeydown="onKeyDown();">
+		<div id="searchpane">
+			<form style="margin-bottom: 1px;">
+				<input 
+				id="searchbox" 
+				name="characterQuery" 
+				type="text" 
+				autocomplete="off"
+				placeholder="Character name"
+				oninput    = "updateSuggestions();"></input>
+			</form>
+			
+			<ol id="resultlist">
+			</ol>
+		</div>
+
+	<div id="infopane">
+	
+		<div id="teamspane">
+		
+			<div class="team" id="player">
+				<%- include("team"); %>
+				
+			</div>
+			
+			<div class="team" id="enemy" dir="rtl">
+				<%- include("team"); %>
+			</div>
+		
+		</div>
+		
+		<div id="descriptionpane"> 
+		
+			<div class="header">
+			
+				<img class="icon" src="resource/images/characters/uzumaki_naruto/avatar.jpg"></img>
+				
+				<div class="basicinfo">
+					
+					<div class="name">Name
+					
+					</div>
+					
+					<span class="label">
+						Cost:
+						<span class="nocost" nocost="false">
+							None
+						</span>
+					</span>
+					
+					<table class="cost">
+						<td class="abilitycost tooltipped" id="ninjutsu"><span class="tooltip">ninjutsu</span></td>
+						<td class="abilitycost tooltipped" id="ninjutsu"><span class="tooltip">ninjutsu</span></td>
+						<td class="abilitycost tooltipped" id="ninjutsu"><span class="tooltip">ninjutsu</span></td>
+					</table>
+					
+					<span class="label">
+						CD: <span class="cd">1</span>
+					</span>
+				</div>
+				
+				<table class="classes">
+					
+					<td class="abilityclass tooltipped" id="physical"><span class="tooltip">physical</span></td>
+					<td class="abilityclass tooltipped" id="ranged"><span class="tooltip">ranged</span></td>
+					<td class="abilityclass tooltipped" id="affliction"><span class="tooltip">affliction</span></td>
+					<td class="abilityclass tooltipped" id="unique"><span class="tooltip">unique</span></td>
+					<td class="abilityclass tooltipped" id="instant"><span class="tooltip">instant</span></td>
+					
+				</table>
+			
+			</div>
+			
+			<div class="description">
+			
+			</div>
+			
+		</div>
+	
+	</div>
+	
+	</body>
+</html>
