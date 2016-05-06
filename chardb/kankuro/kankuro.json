@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"kankuro",
+	"name":"Kankuro",
+	"tags":[
+		"kankuro"],
+	"description":"The brother of Gaara, and a master puppeeter, Kankuro is one of the three sand siblings. With his puppets, Kankuro is able to use the varied abilities hidden inside them to attack his enemies, or even protect himself.",
+	"abilities": [
+		[
+			{
+				"name":"Black Secret Machine One Shot",
+				"description":"Kankuro uses two of his puppets to trap and stab one enemy who takes 30 piercing damage.",
+				"cost":"rr",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Poison Bomb",
+				"description":"One of Kankuro's puppets creates a cloud of smoke that does 10 affliction damage to all enemies.",
+				"cost":"r",
+				"cd":1,
+				"classes":["affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Puppet Preparation",
+				"description":"Kankuro always enters fights prepared, constantly using his puppets as decoys and gaining 15 permanent destructible defense. For 4 turns, 'Black Secret Machine One Shot' and 'Poison Bomb' deals 5 additional damage. This skill stacks.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Puppet Replacement Technique",
+				"description":"This skill makes Kankuro invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"kinuta_dosu",
+	"name":"Kinuta Dosu",
+	"tags":[
+		"kinuta_dosu"],
+	"description":"One of the three sound genin, and possibly the strongest; Dosu is an intelligent and patient ninja that likes to act with logic. Using a powerful sound based arm, Dosu can disable his enemies by disrupting their hearing and throwing them off.",
+	"abilities": [
+		[
+			{
+				"name":"Resonating Echo Drill",
+				"description":"Dosu attacks with his drill, dealing 20 damage to one enemy, and that enemy will be unable to reduce damage or become invulnerable for 2 turns. The following turn, 'Sound Manipulation' will deal 10 additional damage to that enemy.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sound Manipulation",
+				"description":"Dosu uses his sound waves to deal 10 damage to one enemy. For the rest of the game, that enemy will receive 5 additional damage from non-affliction skills and will deal 5 less damage from non-affliction skills. This effect stacks.",
+				"cost":"g",
+				"cd":1,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Melody Arm Tuning",
+				"description":"Dosu fine-tunes his Melody Arm to produce debilitating sound vibrations. The following 4 turns, 'Resonating Echo Drill' will deal 20 additional damage and 'Sound Manipulation' will deal 10 additional damage.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Agile Leap",
+				"description":"This skill makes Kinuta Dosu invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

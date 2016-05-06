@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"temari",
+	"name":"Temari",
+	"tags":[
+		"temari", "kamatari"],
+	"description":"The elder sister of Gaara and Kankuro, Temari is a somewhat cruel and blunt ninja that fights using the wind at her side. With her fan, Temari can create powerful gusts of wind that she can manipulate at her desire.",
+	"abilities": [
+		[
+			{
+				"name":"Cutting Whirlwind",
+				"description":"Temari creates a razor sharp wind with her fan that hits one enemy for 20 damage. The following turn, Temari will become invulnerable to all harmful non-mental skills.",
+				"cost":"n",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Summoning: Quick Beheading Dance",
+				"description":"Temari creates a much more massive version of Cutting Whirlwind by summoning the wind weasel Kamatari which deals 35 damage to all enemies.",
+				"cost":"nrr",
+				"cd":2,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dust Wind",
+				"description":"Temari kicks up dust with her fan, making all her allies invulnerable for 1 turn. For 2 turns, all enemies will deal 15 less non-affliction damage.*",
+				"cost":"nn",
+				"cd":5,
+				"classes":["physical", "ranged", "affliction", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Backflip",
+				"description":"This skill makes Temari invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

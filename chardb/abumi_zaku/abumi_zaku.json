@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"abumi_zaku",
+	"name":"Abumi Zaku",
+	"tags":[
+		"abumi", "zaku"],
+	"description":"One of the three sound genin; Zaku is a willful individual who has a very strong desire to win and succeed. Using the implanted tubes in his arm, Zaku can create powerful waves of chakra, or alter the wind ever so gently to protect an ally.",
+	"abilities": [
+		[
+			{
+				"name":"Decapitating Airwaves",
+				"description":"Using his surgically altered arms Zaku fires a blast of supersonic air at one enemy who takes 25 damage. 'Extreme Decapitating Airwaves' may be used the following turn.",
+				"cost":"b",
+				"cd":0,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Wall Of Air",
+				"description":"Zaku alters his air wave to protect one ally for 1 turn. The first harmful non-mental skill used on this ally is countered. This skill is invisible.",
+				"cost":"r",
+				"cd":2,
+				"classes":["physical", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Extreme Decapitating Airwaves",
+				"description":"Zaku boosts his air waves to a frightening level and does 45 damage to all enemies. This skill requires 'Decapitating Airwaves' to be used in the previous turn.",
+				"cost":"brr",
+				"cd":0,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Airwave Deflection",
+				"description":"This skill makes Abumi Zaku invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

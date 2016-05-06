@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"tsuchi_kin",
+	"name":"Tsuchi Kin",
+	"tags":[
+		"tsuchi", "kin"],
+	"description":"One of the three sound genin; Kin is a confident ninja that likes to toy with her enemies before finishing them off. Using a set of needles and bells, Kin has a number of different effects she can create to attack her enemies.",
+	"abilities": [
+		[
+			{
+				"name":"Illusion Bell Needles",
+				"description":"One enemy receives 15 damage. If used on an enemy one turn after 'Unnerving Bells' that enemy will receive 25 additional damage. If used one turn after 'Needle and Bell Trap' Kin will become invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":0,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Needle and Bell Trap",
+				"description":"One enemy cannot reduce damage or become invulnerable for 2 turns. If used on an enemy one turn after 'Unnerving Bells' that enemy will also be stunned for one turn. If used on an enemy one turn after 'Illusion Bell Needles' that enemy will also receive 10 damage.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Unnerving Bells",
+				"description":"One enemy loses 1 chakra. If used on an enemy one turn after 'Needle and Bell Trap' that enemy will also take 15 more damage from physical damage for 1 turn. If used on an enemy one turn after 'Illusion Bell Needles' that enemy will also take 15 more damage from chakra damage for 1 turn.",
+				"cost":"g",
+				"cd":2,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sharp Analysis",
+				"description":"This skill makes Tsuchi Kin invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"young_kakashi",
+	"name":"Young Kakashi",
+	"tags":[
+		"young", "kakashi"],
+	"description":"A jounin at the age of 13 and the son of the legendary White Fang, Kakashi is a member of Team Minato. Using his early ninjutsu, and borrowed sharingan, Kakashi can fight any adult on an equal level.",
+	"abilities": [
+		[
+			{
+				"name":"White Fang Slash",
+				"description":"Using his sword, Young Kakashi deals 20 piercing damage to one enemy. For 1 turn, that enemy will deal 5 less non-affliction damage. The following turn, Young Kakashi will deal 5 additional damage with his skills.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Amateur Raikiri",
+				"description":"Using a weaker form of his signature jutsu, Young Kakashi deals 20 piercing damage to one enemy. For 1 turn, that enemy will deal 5 less non-affliction damage. The following turn, Young Kakashi will deal 5 additional damage with his skills.",
+				"cost":"n",
+				"cd":0,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Implanted Sharingan",
+				"description":"For 2 turns, if one enemy uses a skill that removes/steals chakra, Kakashi will gain 1 random chakra; if they use a skill that stuns, Kakashi's skills will stun for 1 turn; if they use a skill that damages, Kakashi will deal additional 10 damage for 1 turn. This skill is invisible. Ends when triggered.",
+				"cost":"",
+				"cd":1,
+				"classes":["mental", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sword Parry",
+				"description":"This skill makes Young Kakashi invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

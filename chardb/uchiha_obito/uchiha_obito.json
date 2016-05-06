@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"uchiha_obito",
+	"name":"Uchiha Obito",
+	"tags":[
+		"uchiha", "obito"],
+	"description":"A minor member of the Uchiha clan and a chuunin, Obito is a member of Team Minato. While Obito does not possess any singular powerful ability, he can use all of what he knows with his developing sharingan to put up a fight.",
+	"abilities": [
+		[
+			{
+				"name":"Piercing Stab",
+				"description":"Finding an opening in his enemy's defense, Obito quickly stabs them dealing 15 piercing damage to the enemy. During 'Obito Sharingan' this skill will deal an additional 10 damage.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Obito Great Fireball",
+				"description":"Obito breaths searing fire on one enemy dealing 15 affliction damage to them for 2 turns. During 'Obito Sharingan', this skill will deal an instant 30 affliction damage and have no cooldown.",
+				"cost":"n",
+				"cd":1,
+				"classes":["affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Obito Sharingan",
+				"description":"Obito targets one ally. For 4 turns, Obito will gain 15 points of damage reduction. If Obito dies, that ally will gain 5 points of damage reduction and will deal 5 additional non-affliction damage permanently.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Obito Flee",
+				"description":"This skill makes Uchiha Obito invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}
