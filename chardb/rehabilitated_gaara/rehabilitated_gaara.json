@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"rehabilitated_gaara",
+	"name":"Rehabilitated Gaara",
+	"tags":[
+		"rehabilitated", "gaara"],
+	"description":"After his fateful encounter with Naruto, Gaara has left behind his murderous ways, and has instead rehabilitated. Gaara has honed his abilities to shape and craft his sand, allowing him to create giant waves of sand or quicksand traps.",
+	"abilities": [
+		[
+			{
+				"name":"Sand Mastery",
+				"description":"Using sand to both defend and attack, Gaara deals 15 damage to one enemy for 3 turns. During this time, Gaara will gain 35 destructible defense.*",
+				"cost":"rr",
+				"cd":3,
+				"classes":["physical", "ranged", "action", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Prison Sand Burial",
+				"description":"Gaara traps the enemy team in a sinking pit of sand, increasing the cost of all their non-mental skills by 1 random for 1 turn. This skill will end if they use a new non-mental skill. Afterwards, this skill will be replaced by 'Desert Imperial Funeral' for 1 turn.",
+				"cost":"n",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			},
+			{
+				"name":"Desert Imperial Funeral",
+				"description":"Gaara crushes all enemies affected by 'Prison Sand Burial', destroying their destructible defense, and dealing 40 piercing damage to them.",
+				"cost":"bn",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Quicksand Waterfall Flow",
+				"description":"Gaara deals 15 damage to the enemy team for 4 turns. During this time, all destructible defense skills that the enemy team uses will grant 10 less destructible defense, and all destructible defense skills Gaara's team uses will grant 10 more destructible defense.*",
+				"cost":"nn",
+				"cd":4,
+				"classes":["physical", "ranged", "action", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Shield of Shukaku",
+				"description":"This skill makes Gaara Rehabilitated invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

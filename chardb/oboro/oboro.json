@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"oboro",
+	"name":"Oboro",
+	"tags":[
+		"oboro"],
+	"description":"A Rain Genin in the Chuunin exams, Oboro is vindictive ninja that specializes in genjutsu. Using the various illusions that Oboro creates, he is able to hide his true self while attacking from below.",
+	"abilities": [
+		[
+			{
+				"name":"Exploding Kunai",
+				"description":"Oboro throws a kunai with an exploding tag on it dealing 15 damage to all enemies. During 'Haze Clone' this skill is improved and will cost 1 less random chakra.",
+				"cost":"rr",
+				"cd":2,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Earth Swim",
+				"description":"Hiding in the ground, Oboro waits and then attacks one enemy from behind dealing 20 damage and stunning their physical and mental skills for 1 turn. During Haze Clones this skill is improved and targets all enemies and costs 1 random chakra less.",
+				"cost":"gr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Haze Clone",
+				"description":"The following 3 turns 'Exploding Kunai' will cost 1 less chakra and 'Earth Swim' will affect all enemies and will cost 1 less random chakra. During this time Oboro gains 30 points of destructible defense and is invulnerable to physical and mental skills.",
+				"cost":"gr",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Oboro Hiding Tactics",
+				"description":"This skill makes Oboro invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"shigure",
+	"name":"Shigure",
+	"tags":[
+		"shigure"],
+	"description":"A genin from the village of rain, Shigure is a strong, but arrogant ninja. Using a number of Umbrellas, Shigure is able to attack all enemies with sharp senbon needles, or focus everything to one enemy.",
+	"abilities": [
+		[
+			{
+				"name":"Umbrella Toss",
+				"description":"Shigure tosses his umbrellas into the air, gaining four Umbrella Counters. During this time, Shigure can use this skill again to remove all Umbrella Counters and gain 10 points of damage reduction for each Umbrella Counter for 1 turn.",
+				"cost":"",
+				"cd":0,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Senbon Shower",
+				"description":"Shigure unleashes needles over all enemies, dealing 15 damage to all enemies. This skill can't be countered or reflected. This skill takes up one Umbrella Counter.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Senbon Barrage",
+				"description":"Shigure  deals 15 damage to one enemy for each Umbrella Counter. This skill will cost 1 less random for each Umbrella Counter used, and will remove all Umbrella Counters when used. The cost and damage of this skill will reset when 'Umbrella Toss' is used.",
+				"cost":"rrrr",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Umbrella Block",
+				"description":"This skill makes Shigure invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

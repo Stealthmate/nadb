@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"hyuuga_hanabi",
+	"name":"Hyuuga Hanabi",
+	"tags":[
+		"hyuuga", "hanabi"],
+	"description":"The younger sister of Hinata, Hanabi is a Hyuuga clan member who trains endlessly to prove herself. Hanabi's skills surpass her elder sister's, and while lacking in strength, Hanabi makes up for it with her tenacity and speed.",
+	"abilities": [
+		[
+			{
+				"name":"Hanabi Gentle Fist",
+				"description":"Hanabi deals 15 damage to one enemy for 2 turns. The following 2 turns, each time that enemy uses a chakra removal, drain or gain skill, they will lose 1 random chakra.",
+				"cost":"t",
+				"cd":1,
+				"classes":["physical", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Hanabi Eight Trigrams Revolving Heaven",
+				"description":"Hanabi spins at one enemy, dealing 15 damage to them for 2 turns. The following 2 turns, each time that enemy uses a skill that stuns, they will be stunned for 1 turn.",
+				"cost":"t",
+				"cd":1,
+				"classes":["chakra", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Unyielding Tenacity",
+				"description":"Hanabi fights to the bitter end. For 2 turns, Hanabi will be unable to be killed and will ignore all stun effects. During this time 'Hanabi Gentle Fist' and 'Hanabi Eight Trigrams Revolving Heaven' will cost 1 random instead of 1 taijutsu and Hanabi will deal 5 more damage.",
+				"cost":"",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Hanabi Byakugan",
+				"description":"This skill makes Hyuuga Hanabi invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

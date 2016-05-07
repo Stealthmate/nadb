@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"drunken_lee",
+	"name":"Drunken Lee",
+	"tags":[
+		"drunken", "lee"],
+	"description":"Having accidentally drank sake, Lee's hidden Drunken Fist powers have awakened, completely changing his fighting style. While drunk, Lee attacks randomly, but is harder to stop the more he keeps fighting.",
+	"abilities": [
+		[
+			{
+				"name":"Unpredictable Assault",
+				"description":"Using his drunken master abilities, Lee punches one random enemy, dealing 20 damage to them. This skill can't be countered. Each time this skill is used, it will deal 5 more damage.",
+				"cost":"t",
+				"cd":,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Drunken Counter",
+				"description":"Lee targets himself or his ally. For 1 turn, the first new harmful physical skill used on the target will be countered and the countered enemy will have 'Unpredictable Assault' used on them.",
+				"cost":"r",
+				"cd":2,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Drunken Fist",
+				"description":"Lee gets in his Drunken Fist stance. For 3 turns, one enemy will receive 15 damage. The following 3 turns, Lee will ignore all harmful effects except damage and chakra cost changes used on him, and 'Unpredictable Assault' will become targetable while dealing 5 additional damage.",
+				"cost":"rr",
+				"cd":3,
+				"classes":["physical", "melee", "action", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Drunken Leap",
+				"description":"This skill will make Drunken Lee invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}
