@@ -7,7 +7,7 @@ var CHARDB = [];
 function loadData() {
 	
 	var fs = require('fs');
-	
+	var n_err = 0;
 	Logger.log("Reading character data...", Logger.LVL_INFO);
 	var char_folder_list = fs.readdirSync(CHARS_LOCATION);
 	for (var i=0;i<=char_folder_list.length-1; i++) {
@@ -21,8 +21,11 @@ function loadData() {
 			}
 		} catch (e) {
 			Logger.log("Could not read " + char_folder_list[i]+".json.", Logger.LVL_ERROR);
+			n_err++;
 		}
 	}
+	
+	Logger.log("Loaded character data. (" + n_err + " errors)");
 }
 
 function unloadData() {

@@ -30,6 +30,7 @@ body {
 }
 
 .searchresult {
+	box-sizing: border-box;
 	overflow: hidden;
 	display: table;
 	width: 100%;

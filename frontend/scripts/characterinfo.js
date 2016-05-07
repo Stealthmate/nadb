@@ -127,6 +127,21 @@ function markMember(avatar) {
 	mark(markedMember, true);
 }
 
+function clearMarkedMember() {
+	if(markedMember <= 0) return;
+	var dom_member = "#m"+markedMember+" ";
+	$(dom_member + ".name").text("");
+	$(dom_member + ".avatar").attr("src", "");
+	for(var i = 1;i<=4;i++) {
+		$(dom_member + "#ab" + i + " .icon").attr("src", "");
+		$(dom_member + "#ab" + i + " .alternate").attr("alternate", false);
+		$(dom_member + "#ab" + i + " .cost").empty();
+		$(dom_member + "#ab" + i + " .classes").empty();
+	}
+	
+	setAbilityDescription(null);
+}
+
 function setMarkedMember(charobj) {
 	if(markedMember < 0) {
 		for(var i=0;i<=5;i++) {

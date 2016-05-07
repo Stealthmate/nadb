@@ -1,6 +1,7 @@
 const KEY_UP = 38;
 const KEY_DOWN = 40;
 const KEY_ENTER = 13;
+const KEY_DELETE = 46;
 
 var shouldprocess = true;
 var charobjs = [];
@@ -78,12 +79,13 @@ function selectSuggestion(n) {
 
 function scrollBy(n) {
 	console.log(n);
-	$("#searchpane").scrollTop($("#searchpane").scrollTop() + ($(".searchresult").height()*n));
+	$("#searchpane").scrollTop($("#searchpane").scrollTop() + ($(".searchresult").outerHeight()*n));
 }
 
 function scrollIfNeeded() {
 	var view_h = $("#searchpane").height();
-	var li_h = $(".searchresult").height();
+	var li_h = $(".searchresult").outerHeight();
+	console.log(li_h);
 	var max_li = Math.floor(view_h/li_h) - 1;
 	
 	var current_top = Math.floor($("#searchpane").scrollTop()/li_h)+1;;
@@ -137,5 +139,9 @@ function onKeyDown() {
 	else if(key == KEY_ENTER) {
 		event.preventDefault();
 		confirmSelect();
+	}
+	
+	else if(key == KEY_DELETE) {
+		clearMarkedMember();
 	}
 }
