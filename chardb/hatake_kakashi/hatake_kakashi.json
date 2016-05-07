@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"hatake_kakashi",
+	"name":"Hatake Kakashi",
+	"tags":[
+		"hatake", "kakashi"],
+	"description":"The squad leader of Team 7, known as the Copy Ninja, Kakashi is a man who puts the life of his teammates above all else. Kakashi is able to copy the abilities of his enemies while using his own original technique, the Raikiri.",
+	"abilities": [
+		[
+			{
+				"name":"Sharingan Reflect",
+				"description":"This turn any new harmful skill that targets Kakashi, that is not unique, will instantly be reflected back upon the character who used it. This skill is invisible.",
+				"cost":"b",
+				"cd":2,
+				"classes":["chakra", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Summoning: Ninja Dogs",
+				"description":"Kakashi summons ninja dogs which bite an enemy. That enemy has their non-mental skills stunned for 1 turn. During this time 'Raikiri' will instantly kill that enemy.",
+				"cost":"nr",
+				"cd":2,
+				"classes":["physical", "ranged", "unique", "control"]
+			}
+		],
+		[
+			{
+				"name":"Raikiri",
+				"description":"An attack so strong it is said to cut lightning. This skill does 50 piercing damage to one enemy. If the enemy is affected by 'Summoning: Ninja Dogs' the enemy will be instantly killed.",
+				"cost":"tn",
+				"cd":1,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Clever Hiding",
+				"description":"This skill makes Hatake Kakashi invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

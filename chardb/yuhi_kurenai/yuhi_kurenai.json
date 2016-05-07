@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"yuhi_kurenai",
+	"name":"Yuhi Kurenai",
+	"tags":[
+		"yuhi", "kurenai"],
+	"description":"The squad leader of Team 8, Kurenai is a caring woman and a close companion to Asuma. Kurenai is a genjutsu master, being able to use a variety of illusions to disrupt and trap her enemies in nigh impossible to escape illusions.",
+	"abilities": [
+		[
+			{
+				"name":"Demonic Illusion: Entrap",
+				"description":"Kurenai hinders an enemy with her genjutsu, dealing 10 damage to them, making them unable to become invulnerable or reduce damage, reducing their non-affliction damage by 10, and increasing the cost of their skills by 1 random for 2 turns.",
+				"cost":"g",
+				"cd":2,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Illusionary Tree Meld",
+				"description":"Kurenai melds into an illusionary tree, gaining 10 destructible defense, and an additional 5 for each skill other than this skill Kurenai has used. The additional destructible defense will be reset when this skill is used.",
+				"cost":"r",
+				"cd":2,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Demonic Illusion: Tree Binding Death",
+				"description":"Kurenai imprisons an enemy in a powerful genjutsu, stunning them for 2 turns. The following 2 turns, this skill will be replaced by 'Tree Binding Death Attack'.",
+				"cost":"gg",
+				"cd":4,
+				"classes":["mental", "ranged", "instant"]
+			},
+			{
+				"name":"Tree Binding Death Attack",
+				"description":"Attacking through her genjutsu, Kurenai deals 30 piercing damage to one enemy affected by 'Demonic Illusion: Tree Binding Death'",
+				"cost":"r",
+				"cd":0,
+				"classes":["mental", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Vanishing Illusion",
+				"description":"This skill makes Yuhi Kurenai invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

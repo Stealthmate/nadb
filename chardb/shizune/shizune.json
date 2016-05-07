@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"shizune",
+	"name":"Shizune",
+	"tags":[
+		"shizune"],
+	"description":"The apprentice to Tsunade, and the niece of Dan, Shizune is a calm, practical but loyal ninja of Konoha's medical squad. Shizune is agile and quick, able to attack continually when not using her powerful medical jutsu to heal her allies.",
+	"abilities": [
+		[
+			{
+				"name":"Prepared Needle Shot",
+				"description":"Shizune shoots hidden needles at one enemy dealing 15 damage to them.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Poison Mist",
+				"description":"Shizune breathes a poison cloud on one enemy who takes 10 affliction damage for 3 turns. This skill may not be used on an enemy currently affected.",
+				"cost":"r",
+				"cd":1,
+				"classes":["affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Resuscitation Regeneration",
+				"description":"Using this advanced healing technique Shizune heals one ally for 35 health and removes all enemy afflictions from them.",
+				"cost":"rr",
+				"cd":1,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Shizune Dodge",
+				"description":"This skill makes Shizune invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

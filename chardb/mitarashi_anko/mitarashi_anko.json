@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"mitarashi_anko",
+	"name":"Mitarashi Anko",
+	"tags":[
+		"mitarashi", "anko"],
+	"description":"A former student of Orochimaru and bearer of the Cursed Seal, Anko is now a teacher at Konoha. Having learned from Orochimaru, Anko utilizes various types of poisons and forbidden techniques to dismantle her enemies.",
+	"abilities": [
+		[
+			{
+				"name":"Dual Pin",
+				"description":"Anko deals 5 damage to one enemy and for 1 turn, they will be unable to reduce damage or become invulnerable. The following turn, 'Dragon Fire' will be replaced by 'Twin Snakes Mutual Death'.",
+				"cost":"",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			},
+			{
+				"name":"Twin Snakes Mutual Death",
+				"description":"Anko delivers a large dose of poison to both herself and one enemy affected by 'Dual Pin', instantly killing both targets. This skill cannot be ignored.",
+				"cost":"nn",
+				"cd":2,
+				"classes":["affliction", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dragon Fire",
+				"description":"Anko scorches the battlefield with fire, dealing 10 affliction damage to all enemies for 2 turns. The following 2 turns, those enemies will also receive an additional 5 damage from all other damage that Anko deals.",
+				"cost":"n",
+				"cd":2,
+				"classes":["affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Hidden Shadow Snake Hands",
+				"description":"Anko releases a number of snakes that attack one enemy, dealing an initial 20 damage to them. The following 3 turns, that enemy will receive 5 affliction damage each turn.*",
+				"cost":"nr",
+				"cd":0,
+				"classes":["physical", "melee", "instant", "affliction"]
+			}
+		],
+		[
+			{
+				"name":"Quick Reflexes",
+				"description":"This skill makes Mitarashi Anko invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

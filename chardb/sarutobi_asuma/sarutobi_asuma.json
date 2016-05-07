@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"sarutobi_asuma",
+	"name":"Sarutobi Asuma",
+	"tags":[
+		"sarutobi", "asuma"],
+	"description":"The squad leader of Team 10, Asuma is the son of the 3rd Hokage; Asuma is a chronic smoker that fights to protect his allies. Asuma fights with a pair of trench knives, augmented by his chakra to a highly deadly degree.",
+	"abilities": [
+		[
+			{
+				"name":"Flying Swallow",
+				"description":"Asuma attacks all enemies, dealing 15 damage to them for 2 turns. The following 2 turns, Asuma's team will have 15 points of damage reduction. This skill will be replaced by 'Finishing Blow' and 'Sharpen Blades' will be replaced by 'Flying Kick'.* This skill cannot be countered or reflected.",
+				"cost":"tn",
+				"cd":2,
+				"classes":["physical", "melee", "action", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sharpen Blades",
+				"description":"Asuma sharpens his blades, increasing the duration of 'Flying Swallow' by 1 turn the next time it is used. This effect stacks and will end when 'Flying Swallow' is used.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Self-Sacrifice",
+				"description":"Asuma continually protects one ally. All harmful skills used on that ally will be reflected to Asuma. During this time, Asuma can use this skill again for no cost to cancel it.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Knife Block",
+				"description":"This skill makes Sarutobi Asuma invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

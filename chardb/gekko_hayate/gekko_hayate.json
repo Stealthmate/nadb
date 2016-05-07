@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"gekko_hayate",
+	"name":"Gekko Hayate",
+	"tags":[
+		"gekko", "hayate"],
+	"description":"A Jounin and exam proctor from Konoha; while sickly and afflicted with a chronic cough, he is calm and composed. Hayate is an expert sword user, and is well acquainted with using stealth to increase the deadliness of his attacks.",
+	"abilities": [
+		[
+			{
+				"name":"Crescent Moon Slash",
+				"description":"Hayate jumps on an enemy from above, dealing 15 damage to them. Hayate will deal 5 additional damage with his skills for the rest of the game.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dance Of The Crescent Moon",
+				"description":"Using both his sword and genjutsu together, Hayate will deal 30 damage to one enemy and the first harmful skill used against him on the following turn will be countered.",
+				"cost":"gr",
+				"cd":1,
+				"classes":["mental", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Meld Into Shadows",
+				"description":"Hayate gains 25 points of damage reduction for 1 turn. The following turn, he will gain 15 points of damage reduction. The turn after, he will gain 5 points of damage reduction. The following 3 turns, Hayate will deal 10 more damage with his skills.",
+				"cost":"g",
+				"cd":3,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Backflip Dodge",
+				"description":"This skill makes Hayate invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}
