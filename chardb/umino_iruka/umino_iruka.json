@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"umino_iruka",
+	"name":"Umino Iruka",
+	"tags":[
+		"umino", "iruka"],
+	"description":"An instructor for Konoha, Iruka is a caring man who has acted like something of a father and mentor to Naruto throughout his youth. Iruka fights with his allies in mind, preferring to protect them and help them as support.",
+	"abilities": [
+		[
+			{
+				"name":"Shuriken Throw",
+				"description":"Iruka throws a shuriken, dealing 20 damage to one enemy, and an additional 10 damage for each 25 health Iruka has lost.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Ally Shield",
+				"description":"Using himself as a shield, Iruka makes one ally invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sealed Bomb Square Release",
+				"description":"Iruka sets a trap. The following turn, if one enemy uses a new harmful skill, they will receive 40 damage that ignores invulnerability and for 1 turn, will receive an additional 25 damage from physical and chakra skills. This skill is invisible.",
+				"cost":"n",
+				"cd":2,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Iruka Parry",
+				"description":"This skill makes Umino Iruka invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

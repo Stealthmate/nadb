@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"tsurugi_misumi",
+	"name":"Tsurugi Misumi",
+	"tags":[
+		"tsurugi", "misumi"],
+	"description":"A sound village genin that infiltrated Konoha as a spy, Misumi likes taking the initiative when it comes to combat. Misumi can flex his muscles and bones, twisting them to wrap around his enemies, or even defend his allies.",
+	"abilities": [
+		[
+			{
+				"name":"Flxeible Twisting Joints",
+				"description":"Using his distractingly loose joints, Misumi targets an ally or an enemy. If used on an enemy he will deal 15 damage that ignores invulnerability to them. If used on an ally, that ally will gain 15 points of damage reduction for 1 turn.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Soft Physique Modification",
+				"description":"Misumi wraps around one enemy. For 2 turns all new harmful skills used on Misumi will be reflected to that enemy instead. During this time, that enemy will be unable to reduce damage or become invulnerable.",
+				"cost":"rr",
+				"cd":4,
+				"classes":["physical", "melee", "control"]
+			}
+		],
+		[
+			{
+				"name":"Tighten Joints",
+				"description":"Misumi tightens his joints gaining 15 destructible defense. If 'Soft Physique Modification' is active, the enemy that it is active on will also receive 20 damage and be stunned for 1 turn.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Misumi Block",
+				"description":"This skill makes Tsurugi Misumi invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

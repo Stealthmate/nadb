@@ -10,7 +10,7 @@
 				"name":"Unpredictable Assault",
 				"description":"Using his drunken master abilities, Lee punches one random enemy, dealing 20 damage to them. This skill can't be countered. Each time this skill is used, it will deal 5 more damage.",
 				"cost":"t",
-				"cd":,
+				"cd":0,
 				"classes":["physical", "melee", "instant"]
 			}
 		],

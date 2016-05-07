@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"sakon_and_ukon",
+	"name":"Sakon and Ukon",
+	"tags":[
+		"sakon", "ukon"],
+	"description":"A member of the Sound Five, Sakon, along with his brother Ukon, are nearly identical twins with a bloodline that let them live inside one another's body. Sakon and Ukon can double team an enemy, or invade another's body.",
+	"abilities": [
+		[
+			{
+				"name":"Gatling Punch",
+				"description":"Using one body Sakon and Ukon rapidly punch one enemy dealing 40 damage. During 'Parasite Demon Demolition', this skill will deal 20 damage.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Parasite Demon Demolition",
+				"description":"Sakon deals 20 affliction damage to one enemy. During this time, Sakon will have 15 points of damage reduction and 'Gatling Punch' will deal 20 less damage. This skill can't be used while active, will end if 'Rest' or 'Summoning: Rashoumon' is used, or the enemy dies.",
+				"cost":"bb",
+				"cd":0,
+				"classes":["affliction", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Rest",
+				"description":"Ukon rests within the body of Sakon. This heals Sakon for 30 health. If Sakon uses this skill during 'Parasite Demon Demolition' it will end.",
+				"cost":"rr",
+				"cd":2,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Summoning: Rashoumon",
+				"description":"This skill makes Sakon invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

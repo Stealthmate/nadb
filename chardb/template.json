@@ -38,7 +38,7 @@
 				"description":"",
 				"cost":"r",
 				"cd":4,
-				"classes":[]
+				"classes":[, "instant"]
 			}
 		]
 	]

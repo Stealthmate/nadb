@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"tayuya",
+	"name":"Tayuya",
+	"tags":[
+		"tayuya"],
+	"description":"A member of the Sound Five, Tayuya is the only female member of the team, and the most foul-mouthed one too. Tayuya uses her flute to both trap her enemies in genjutsu while controlling the beasts she summons.",
+	"abilities": [
+		[
+			{
+				"name":"Summoning: Doki",
+				"description":"Tayuya summons the Doki Demons. The Doki Demons will deal 15 damage to all enemies for 2 turns. The following 2 turns, Tayuya will have 10 points of damage reduction. During this time, 'Demonic Flute: Phantom Wave' can be used.",
+				"cost":"gr",
+				"cd":1,
+				"classes":["physical", "ranged", "unique", "action"]
+			}
+		],
+		[
+			{
+				"name":"Demonic Flute: Phantom Wave",
+				"description":"Illusionary ghosts come out of the Doki dealing 10 affliction damage to one enemy and removing one random chakra. Requires 'Summoning: Doki' to be active on Tayuya.",
+				"cost":"r",
+				"cd":0,
+				"classes":["affliction", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Demonic Flute",
+				"description":"Playing a genjutsu melody on her flute, Tayuya stuns all enemies' skills for 1 turn.",
+				"cost":"gr",
+				"cd":4,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Insight",
+				"description":"This skill makes Tayuya invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

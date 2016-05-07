@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"jiroubou",
+	"name":"Jiroubou",
+	"tags":[
+		"jiroubou"],
+	"description":"A member of the Sound Five, Jiroubou is the largest member of the team, and while he appears calm, is actually arrogant and easy to anger. Jiroubou uses his fists to attack his enemies or can manipulate the battleground around him.",
+	"abilities": [
+		[
+			{
+				"name":"Arhat Fist",
+				"description":"This skill does 30 damage to one enemy. The following turn 'Earth Mausoleum Dumpling' will deal an additional 5 damage.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Earth Mausoleum Dumpling",
+				"description":"This skill does 20 damage to all enemies. The following turn 'Arhat Fist' will deal 10 additional damage.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Earth Prison Of Magnificent Nothingness",
+				"description":"For 3 turns, Jiroubou and all allies gain 35 points of destructible defense. During this time one enemy has 1 random chakra stolen. This skill will end if Jiroubou's destructible defense is destroyed.",
+				"cost":"nnr",
+				"cd":6,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Terra Shield",
+				"description":"This skill makes Jiroubou invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"akadou_yoroi",
+	"name":"Akadou Yoroi",
+	"tags":[
+		"akadou", "yoroi"],
+	"description":"A sound village genin that infiltrated Konoha as a spy, Yoroi is a capable, but brash ninja who likes to toy with his enemies. Yoroi is capable of absorbing the strength of his enemies, and make it his own in more than one way.",
+	"abilities": [
+		[
+			{
+				"name":"Empty Drain",
+				"description":"Yoroi touches one enemy, stealing 20 health from them and lowering their non-affliction damage by 5 for 2 turns. The following 2 turns, Yoroi will deal 5 more damage with all his skills.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Draining Assault",
+				"description":"Yoroi charges at one enemy, attacking them with multiple energy drains, stealing 15 health from them each turn for 3 turns, lowering their non-affliction damage by 5 for 2 turns and increasing the damage Yoroi deals with all his skills by 5 for 2 turns.",
+				"cost":"trr",
+				"cd":3,
+				"classes":["chakra", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Chakra Focus",
+				"description":"Yoroi endows his attacks. For 2 turns, if 'Energy Drain' or 'Draining Assault' are used, they will also steal 1 chakra for their duration.",
+				"cost":"r",
+				"cd":3,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Chakra Block",
+				"description":"This skill makes Akadou Yoroi invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"kimimaro",
+	"name":"Kimimaro",
+	"tags":[
+		"kimimaro"],
+	"description":"A member of the Sound Five, Kimimaro was the leader, and the strongest of the team before his illness. Kimimaro's bloodline grants him unstoppable offensive power, however, his illness is slowly killing him, giving him precious little time.",
+	"abilities": [
+		[
+			{
+				"name":"Dance Of The Camelia",
+				"description":"Kimimaro uses his superior taijutsu and arm bones as a sword dealing 30 damage to one enemy. This skill cannot be countered or reflected. Afterwards, Kimimaro will receive 5 affliction damage.*",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "affliction", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dance Of The Clematis",
+				"description":"Kimimaro attacks one enemy with an extremely hard and sharp bone spear, dealing 40 damage to them and stunning them for 1 turn. This skill cannot be countered or reflected. Afterwards, Kimimaro will receive 10 affliction damage.",
+				"cost":"tb",
+				"cd":1,
+				"classes":["physical", "melee", "affliction", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dance Of The Seedling Fern",
+				"description":"Kimimaro creates a forest of sharp bones, dealing 30 damage to all enemies and reducing all enemy physical and chakra damage by 20 for 1 turn. This skill cannot be countered or reflected. Afterwards, Kimimaro will receive 15 affliction damage for 2 turns.*",
+				"cost":"brr",
+				"cd":2,
+				"classes":["physical", "affliction", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Bone Defense",
+				"description":"This skill makes Kimimaro invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "unique", "instant"]
+			}
+		]
+	]
+}}

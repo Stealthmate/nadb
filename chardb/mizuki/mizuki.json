@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"mizuki",
+	"name":"Mizuki",
+	"tags":[
+		"mizuki"],
+	"description":"An instructor for Konoha, Mizuki is a chuunin, and old friend of Iruka that over time grew jealous and petty. While Mizuki doesn't have any special abilities, he knows to instead be patient, and wait until the right time to strike.",
+	"abilities": [
+		[
+			{
+				"name":"Kunai Assault",
+				"description":"Mizuki throws a number of kunai at one enemy, dealing 15 damage to them for 2 turns.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "ranged", "action"]
+			}
+		],
+		[
+			{
+				"name":"Execution Shuriken",
+				"description":"Mizuki throws one of his giant shurikens at one enemy, dealing 10 damage to them, and an additional 10 damage for each 20 health they have lost. Mizuki only carries 2 of these giant shurikens at any time and can only use this skill twice in a game.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Genjutsu Ambush Tactics",
+				"description":"The following turn, Mizuki will become invulnerable, 'Kunai Assault' will deal 30 damage instantly and 'Execution Shuriken' will deal 30 additional damage. This skill is invisible the first turn, and will end if Mizuki successful receives new harmful damage.",
+				"cost":"g",
+				"cd":1,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Effortless Side-Step",
+				"description":"This skill makes Mizuki invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

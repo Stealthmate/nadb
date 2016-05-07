@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"kidoumaru",
+	"name":"Kidoumaru",
+	"tags":[
+		"kidoumaru"],
+	"description":"A member of the Sound Five, Kidoumaru resembles a spider in both appearance and fighting style. Kidoumaru is able to trap enemies in his web while assaulting them from afar with both spiders and powerful arrows.",
+	"abilities": [
+		[
+			{
+				"name":"Spider Bow: Fierce Rip",
+				"description":"Kidoumaru fires a special arrow made of enzymes from his mouth at one enemy dealing 50 piercing damage.",
+				"cost":"nb",
+				"cd":1,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Summoning: Kyodaigumo",
+				"description":"Kidoumaru summons Kyodaigumo who creates a massive amount of small spiders that do 10 damage each turn for 5 turns to all enemies. The following 5 turns, Kidoumaru gains 10 points of damage reduction and any new skill an enemy uses will have its cooldown increased by 1.",
+				"cost":"nb",
+				"cd":4,
+				"classes":["physical", "unique", "ranged", "action"]
+			}
+		],
+		[
+			{
+				"name":"Spiral Web",
+				"description":"Kidoumaru protects himself or an ally. The first harmful physical skill used on that character will be countered. This skill is invisible.",
+				"cost":"b",
+				"cd":2,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Golden Armor",
+				"description":"This skill makes Kidoumaru invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "unique", "instant"]
+			}
+		]
+	]
+}}
