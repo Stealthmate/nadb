@@ -1,4 +1,4 @@
-var INDEX = "index1.ejs";
+var INDEX = "index.ejs";
 const RES_ROOT = __dirname+"/";
 var express = require('express');
 var app = express();

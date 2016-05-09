@@ -1,4 +1,7 @@
-#character_pane {
+@import url('abilityclass.css');
+@import url('abilitycost.css');
+
+#infopane {
 	padding:5px;
 	background-clip: padding-box;
 	background-color:#F5F1DE;
@@ -6,28 +9,153 @@
 	float:left;
 	width: 80%;
 	height: 100%;
-	overflow: auto;
+	padding-top: 2vh;
+	
 }
 
-.characterinfo {
-	height: 20%;
+#teamspane {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
 }
 
-.characterinfo .name {
-	line-height: 8vh;
-	height: 8vmin;
+.team {
+	width: 37vmax;
+}
+
+.team#player {
+	float: left;
+}
+
+.team#enemy {
+	float: right;
+}
+
+.member {
+	width: 100%;
+	height: 11vw;
+	margin-right: 0px;
+}
+
+#player .member {
+	padding-left: 1vw;
+}
+#enemy .member {
+	padding-right: 1vw;
+}
+
+.member[marked="true"] {
+	background-color: #0BF;
+}
+
+.name {
+	font-size: 1.8vw;
+	height: 2.2vw;
+}
+
+.avatar {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 8vw;
+	height: 8vw;
+	border-style: solid;
+	border-width: 1px;
+}
+
+
+#enemy .avatar {
+	transform: scaleX(-1);
+}
+
+.abilities {
+	display: inline-block;
+	width: 25vw;
 }
 
 .ability {
-	height: 19.9%;
+	width: 6vw;
+	height: 8vw;
+	display: inline-block;
+	position: relative;
+	bottom: 2px;
 }
 
-.characterinfo, .ability {
+.icon {
 	box-sizing: border-box;
-	margin: 1px;
-	display: table;
-	width:40%;
+	width: 6vw;
+	height: 6vw;
 	border-style: solid;
 	border-width: 1px;
-	padding: 5px;
+}
+
+.icon[locked="true"] {
+	border-color: #0AF;
+	border-width: 10px;
+}
+
+.alternate {
+	box-sizing: border-box;
+	content: url("icon_alt.png");
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	background-size: 100% 100%;
+	width: 1.5vw;
+	height: 1.5vw;
+	z-index: 2;
+	position: absolute;
+	top: 1.35vw;
+}
+
+#player .alternate {
+	left: 4.45vw;
+}
+
+.alternate[alternate="false"] {
+	display:none;
+}
+
+.tooltip {
+	visibility: hidden;
+	width: 120px;
+    text-align: center;
+    border-radius: 6px;
+
+    position: fixed;
+	left: 57vw;
+	top: 5vh;
+    z-index: 5;
+	
+	text-transform: capitalize;
+}
+.tooltipped:hover  .tooltip {
+	visibility: visible;
+}
+
+#teamspane .cost {
+	background: white;
+	padding: 1px;
+	
+	position: absolute;
+	bottom: 0px;
+	
+	z-index: 1;
+	
+	border-style: solid;
+	border-width: 1px;
+	
+	display: inline-block;
+}
+
+#teamspane .cost[nocost="true"] {
+	display: none;
+}
+
+#teamspane .classes {
+	padding: 0px;
+	background: white;
+	background-clip: content-box;
+	margin-left: -1px;
+	
 }

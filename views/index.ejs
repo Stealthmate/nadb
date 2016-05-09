@@ -12,10 +12,11 @@
 		
 		<script type="text/javascript" src="resource/scripts/queryUpdate.js"> </script>
 		<script type="text/javascript" src="resource/scripts/characterinfo.js"> </script>
+		<script type="text/javascript" src="resource/scripts/ability.js"> </script>
 		
 		<link rel="stylesheet" type="text/css" href="resource/styles/style_index.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/infopane.css">
-		<link rel="stylesheet" type="text/css" href="resource/styles/ability.css">
+		<link rel="stylesheet" type="text/css" href="resource/styles/descriptionpane.css">
 		
 	</head>
 
@@ -35,70 +36,63 @@
 			<ol id="resultlist">
 			</ol>
 		</div>
+
+	<div id="infopane">
+	
+		<div id="teamspane">
 		
-		<div id="character_pane">
-		
-			<div class="characterinfo">
+			<div class="team" id="player">
+				<%- include("team"); %>
 				
-				<div class="header">
-					
-					<img class="icon" src=""></img>
-					
-					<div class="headertext">
-						<div class="name"></div>
-					
-				</div>
-					
-				</div>
-				
-				<div class="description"></div>
+			</div>
 			
+			<div class="team" id="enemy" dir="rtl">
+				<%- include("team"); %>
 			</div>
-			<% for(var i=1; i<=4; i++) { %>
-			<div class="ability" id="ab<%= i%>">
-				<div class="header">
-					<img class="icon" src=""></img>
-						
-					<div class="headertext">
-						<div class="name">
-							<!--<button onclick="switchAbility(<%= i-1%>);" class="alternate" type="button" disabled>Alt</button>-->
-							<span class="namse"></span>
-						</div>
-						
-						<span class="label">Cost:</span>
-						<table class="cost">
-							<tr>
-							</tr>
-						</table>
-						
-						<div class="cd"><span class="label">Cooldown: </span><span class="value"></span></div>
-						<br />
-					</div>
-						
-					<div class="classes">
-						<table>
-							<tr>
-								<img class="abilityclass" data-active="false" id="physical" src="resource/images/icon_physical.png"></img>
-								<img class="abilityclass" data-active="false" id="melee" src="resource/images/icon_melee.png"></img>
-								<img class="abilityclass" data-active="false" id="action" src="resource/images/icon_action.png"></img>
-								<img class="abilityclass" data-active="false" id="affliction" src="resource/images/icon_affliction.png"></img>
-								<img class="abilityclass" data-active="false" id="instant" src="resource/images/icon_instant.png"></img>
-							</tr>
-							<tr>
-								<img class="abilityclass" data-active="false" id="chakra" src="resource/images/icon_chakra.png"></img>
-								<img class="abilityclass" data-active="false" id="ranged" src="resource/images/icon_ranged.png"></img>
-								<img class="abilityclass" data-active="false" id="mental" src="resource/images/icon_mental.png"></img>
-								<img class="abilityclass" data-active="false" id="unique" src="resource/images/icon_unique.png"></img>
-								<img class="abilityclass" data-active="false" id="control" src="resource/images/icon_control.png"></img>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="description"></div>
-			</div>
-			<% } %>
 		
 		</div>
+		
+		<div id="descriptionpane"> 
+		
+			<div class="header">
+			
+				<img class="icon"></img>
+				
+				<div class="basicinfo">
+					
+					<div class="name">Ability</div>
+					<div class="description"></div>
+					
+					
+				</div>
+				
+			
+			</div>
+			
+			<div class="stats">
+			
+				<span class="label">
+					Cost:
+					<table class="cost" nocost="true">
+						<td class="abilitycost tooltipped" id="n"><span class="tooltip"></span></td>
+					</table>
+					<span class="nocost">
+						None
+					</span>
+				</span>
+				
+				
+				<span class="label">
+					Cooldown: <span class="cd"></span>
+				</span>
+				
+				<table class="classes">			
+				</table>
+			</div>
+			
+		</div>
+	
+	</div>
 	
 	</body>
 </html>
