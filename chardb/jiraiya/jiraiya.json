@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"jiraiya",
+	"name":"Jiraiya",
+	"tags":[
+		"jiraiya", "sannin", "ero"],
+	"description":"One of the three sannins, Jiraiya is a perverted frog hermit who travels the world in search of some sort of knowledge. Using numerous frog based summons, Jiraiya can greatly hinder his enemies all while setting them ablaze.",
+	"abilities": [
+		[
+			{
+				"name":"Great Spitting Fireball",
+				"description":"Jiraiya spits out a large amount of fire, dealing 20 damage to one enemy, and 10 to all others.",
+				"cost":"n",
+				"cd":0,
+				"classes":["affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Summoning: Toad Mouth Bind",
+				"description":"Jiraiya summons the stomach of a giant toad, placing all characters within it. For 2 turns, enemies will be unable to reduce damage or become invulnerable and during this time if Jiraiya or one of his allies is damaged with a new non-affliction skill, they will become invulnerable for 1 turn.",
+				"cost":"g",
+				"cd":3,
+				"classes":["chakra", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Major Summoning: Gamabunta",
+				"description":"Jiraiya summons the great toad Gamabunta, who deals 25 affliction damage to the enemy team. For the rest of the game, the enemy team will receive an additional 5 damage from affliction skills and this skill will be replaced by 'Toad Oil Flame Bullet'.",
+				"cost":"tbg",
+				"cd":0,
+				"classes":["affliction", "ranged", "unique", "instant"]
+			},
+			{
+				"name":"Toad Oil Flame Bullet",
+				"description":"Gamabunta spits even more oil at the enemy team, followed by Jiraiya spitting fire at them , dealing 15 damage to all enemies for 2 turns.",
+				"cost":"nr",
+				"cd":1,
+				"classes":["affliction", "ranged", "action"]
+			}
+		],
+		[
+			{
+				"name":"Spiked Budha",
+				"description":"This skill makes Jiraiya invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "unique", "instant"]
+			}
+		]
+	]
+}}

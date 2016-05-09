@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"baki",
+	"name":"Baki",
+	"tags":[
+		"baki"],
+	"description":"A Jounin of the Sand Village, and the leader of Gaara's team; Baki is cruel and ruthless, despite his normally calm nature. Baki fights using both taijutsu and ninjutsu together with top of the line Sand Village branded Flak Jackets.",
+	"abilities": [
+		[
+			{
+				"name":"Sudden Strike",
+				"description":"A simple, blindingly fast attack leaving an illusionary trail to throw off enemies. Baki does 20 piercing damage to one enemy.",
+				"cost":"g",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Wind Blade",
+				"description":"Baki conjures a maelstrom of blade-like wind and does 40 piercing damage to one enemy.",
+				"cost":"ng",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Flak Jacket",
+				"description":"Baki puts on a specialized flak jacket from the sand village on himself, or one ally granting that character 50 destructible defense for 4 turns and during this time, that character will ignore all non-damage harmful effects except chakra cost changes.",
+				"cost":"rr",
+				"cd":6,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Baki Teleportation",
+				"description":"This skill makes Baki invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

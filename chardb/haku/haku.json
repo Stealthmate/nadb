@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"haku",
+	"name":"Haku",
+	"tags":[
+		"haku"],
+	"description":"The sole survivor of the Yuki clan, and the subordinate of Zabuza; Haku, despite being young, holds enough potential strength to surpass almost any ninja. Using his ice based bloodline, and his intelligence, Haku can attack and defend nearly simultaneously.",
+	"abilities": [
+		[
+			{
+				"name":"Flying Water Needles Of Death",
+				"description":"Haku flings a number of water based needles dealing 30 damage to one enemy.",
+				"cost":"br",
+				"cd":0,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Acupuncture",
+				"description":"Haku targets one ally's or enemy's vital points. If used on an enemy, they will be stunned for 1 turn. If used on an ally, all stun effects on them will be removed and they will ignore all stun effects for 1 turn. This skill ignores invulnerability.",
+				"cost":"n",
+				"cd":1,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Demonic Mirroring Ice Crystals",
+				"description":"Haku creates numerous mirrors, and for 3 turns, Haku will become invulnerable. The following 3 turns 'Flying Water Needles of Death' will target all enemies and 'Acupuncture' will target all allies and enemies.",
+				"cost":"nb",
+				"cd":6,
+				"classes":["chakra", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Needle Parry",
+				"description":"This skill makes Haku invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

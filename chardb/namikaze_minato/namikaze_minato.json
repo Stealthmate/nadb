@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"namikaze_minato",
+	"name":"Namikaze Minato",
+	"tags":[
+		"namikaze", "minato", "yondaime", "hokage"],
+	"description":"A Jounin, and Squad Leader of Konoha, known as the Yellow Flash, Minato is the father of Naruto. Minato fights using space-time jutsu and a number of unique kunai to teleport around the battlefield.",
+	"abilities": [
+		[
+			{
+				"name":"Flying Thunder God",
+				"description":"Using his teleportation abilities, Minato either attacks one enemy, dealing 30 damage to them or defends an ally making them invulnerable for 1 turn. Minato will also become invulnerable for 1 turn. This skill ignores invulnerability.",
+				"cost":"gr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Wide Area Sensing",
+				"description":"Minato senses the area around the battlefield. For 2 turns, all enemies will be unable to become invulnerable or reduce damage. This skill ignores invulnerability. During this time, Minato will gain 1 random chakra each turn.",
+				"cost":"n",
+				"cd":3,
+				"classes":["chakra", "ranged", "control"]
+			}
+		],
+		[
+			{
+				"name":"Space Time Marking",
+				"description":"For 3 turns Minato will mark his target each time he uses 'Flying Thunder God' on them for 1 turn. If an ally is marked, if 'Flying Thunder God' is used, that ally will become invulnerable for 1 turn. if an enemy is marked, if 'Flying Thunder God' is used, that enemy will receive 30 damage.",
+				"cost":"ng",
+				"cd":6,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Flying Light",
+				"description":"This skill makes Namikaze Minato invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

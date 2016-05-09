@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"yondaime_minato",
+	"name":"Yondaime Minato",
+	"tags":[
+		"namikaze", "minato", "yondaime", "hokage"],
+	"description":"The fourth Hokage of the Hidden Leaf Village; considered to be one of the fastest ninja ever, Minato is a talented man, and the father of Uzumaki Naruto, and the one who sealed the Kyuubi inside of him. Having mastered the time-space skills, Minato is capable of merging them with powerful ninjutsu for powerful effects.",
+	"abilities": [
+		[
+			{
+				"name":"Hiraishin Rasengan",
+				"description":"Minato teleports behind an enemy, dealing 35 damage that ignores invulnerability to them. The following turn, this skill will cost only 1 Ninjutsu. This skill cannot be countered or reflected.",
+				"cost":"ng",
+				"cd":0,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Space-Time Barrier",
+				"description":"Using his space-time abilities, Minato targets one ally or himself. For 2 turns, the first new harmful skill used on that ally will be reflected onto the enemy team and this skill will end. This skill is invisible.",
+				"cost":"gg",
+				"cd":5,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Partial Dead Demon Consuming Seal",
+				"description":"Using a partial seal, Minato seals part of one enemy away, dealing 25 affliction damage to them, and permanently lowering their non-affliction damage by 5. Minato will also receive 15 affliction damage.",
+				"cost":"rr",
+				"cd":0,
+				"classes":["affliction", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Kunai Defense",
+				"description":"This skill makes Yondaime Minato invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

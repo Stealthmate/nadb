@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"et_senju_hashirama",
+	"name":"Edo Tensei Senju Hashirama",
+	"tags":[
+		"et", "edo", "tensei", "senju", "hashirama", "shodai", "hokage"],
+	"description":"The first Hokage, and founder of the Hidden Leaf Village; Hashirama, a member of the legendary Senju clan. Hashirama has the unique ability to give life to trees, creating them, and manipulating them to assault the enemy team while protecting his own.",
+	"abilities": [
+		[
+			{
+				"name":"Tree Wave Destruction",
+				"description":"Sending out his trees in all directions, Hashirama deals 10 damage to all enemies and his team will gain 5 points of destructible defense. During 'A World of Trees', this skill will have no cooldown.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Tree Strangulation",
+				"description":"Hashirama sends his trees out, capturing one enemy, dealing 25 damage to them and stunning their physical and chakra skills. During 'A World of Trees', this skill will stun all skills.",
+				"cost":"br",
+				"cd":0,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"A World Of Trees",
+				"description":"Hashirama creates a forest of trees, increasing the cost of all enemies' non-mental skills by 1 random and their cooldowns by 1 for 2 turns. The following two turns, this skill can be used again to grant Hashirama's team 30 points of destructible defense and remove all their cooldowns.",
+				"cost":"bb",
+				"cd":0,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Deflection",
+				"description":"This skill makes ET Senju Hashirama invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

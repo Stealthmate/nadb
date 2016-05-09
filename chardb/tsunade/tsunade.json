@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"tsunade",
+	"name":"Tsunade",
+	"tags":[
+		"tsunade", "godaime", "hokage", "sannin"],
+	"description":"One of the three sannins, Tsunade is a gambling, sake drinking loving woman with a tough exterior but soft interior. Tsunade is an expert at medical jutsu, using it to remove all her wounds, or delivering high impact kicks.",
+	"abilities": [
+		[
+			{
+				"name":"Heavenly Foot Of Pain",
+				"description":"With her insane strength, Tsunade performs an axe kick on one enemy dealing 30 damage while stunning their physical and mental skills for 1 turn.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Creation Rebirth",
+				"description":"Tsunade unleashes her stored chakra, setting her health to 100 and removing all harmful effects on her.",
+				"cost":"nn",
+				"cd":3,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Major Summoning: Katsuyu",
+				"description":"Summoning Katsuyu, Tsunade instantly heals herself and her allies for 40 health. For the rest of the game, Tsunade's team will heal 5 health each turn, and this skill will be replaced by 'Slug Division'. This skill will end when Tsunade dies.",
+				"cost":"nbg",
+				"cd":0,
+				"classes":["chakra", "unique", "instant"]
+			},
+			{
+				"name":"Slug Division",
+				"description":"Katsuyu splits into many smaller versions of herself, healing her team for 10 health and granting them 10 destructible defense.",
+				"cost":"n",
+				"cd":0,
+				"classes":["chakra", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Elbow Block",
+				"description":"This skill makes Tsunade invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

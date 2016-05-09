@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"uchiha_itachi",
+	"name":"Uchiha Itachi",
+	"tags":[
+		"uchiha", "itachi"],
+	"description":"The only other surviving Uchiha, Itachi is a master of doujutsu, an S-Rank missing nin, and a member of Akatsuki, having been partnered with Hoshigaki Kisame. Despite being powerful, Itachi is slowly going blind, making his abilities weaker, but when Itachi activates his Sharingan he becomes an unstoppable force of pure power.",
+	"abilities": [
+		[
+			{
+				"name":"Mangekyou Sharingan",
+				"description":"Itachi becomes invulnerable, enhancing 'Amaterasu' and 'Tsukuyomi', increasing their cooldowns by 2, and doubling their costs. During this time, Itachi will receive 15 affliction damage a turn, that cannot be ignored, and ignores healing effects. This skill can be used again for free to cancel it.",
+				"cost":"b",
+				"cd":0,
+				"classes":["mental", "unique", "affliction", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Amaterasu",
+				"description":"Itachi burns one enemy with his flames, dealing 15 affliction damage to them and each following turn, they will receive 5 affliction damage a turn. This skill does not stack. If used during 'Mangekyou Sharingan', this skill will target all enemies and deal double damage. This skill will end if Itachi dies.",
+				"cost":"n",
+				"cd":1,
+				"classes":["affliction", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Tsukuyomi",
+				"description":"Itachi mentally tortures one enemy for 3 days and nights in a matter of seconds, dealing 20 damage to them and stunning them for 1 turn. If used during 'Mangekyou Sharingan', this skill will last 3 turns.",
+				"cost":"g",
+				"cd":1,
+				"classes":["mental", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sharingan Insight",
+				"description":"This skill makes Uchiha Itachi invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "unique", "instant"]
+			}
+		]
+	]
+}}

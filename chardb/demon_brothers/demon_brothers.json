@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"demon_brothers",
+	"name":"Demon Brothers",
+	"tags":[
+		"demon", "brothers"],
+	"description":"A duo of Mist ninja who work for Zabuza, the Demon Brothers specialize in assassinating their targets with their shuriken chain. Using their weapons and teamwork, the Demon Brothers can gang up on one enemy, disable him, and then kill him.",
+	"abilities": [
+		[
+			{
+				"name":"Chain Wrap",
+				"description":"One of the Demon Brothers throws his chain around one enemy, stunning their non-mental skills for 1 turn. The following turn, 'Chain Shred' will be usable on that enemy and this skill will be replaced by 'Chain Shred'.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			},
+			{
+				"name":"Chain Shred",
+				"description":"The Demon Brothers unite, to shred one enemy affected by 'Chain Wrap', dealing 45 piercing damage to that enemy and re-applying the stunning and vulnerability effect of 'Chain Wrap' on them.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Bladed Gauntlet",
+				"description":"One Demon Brother attacks with his gauntlet, dealing 30 damage to one enemy. If this skill is used on an enemy affected by 'Chain Wrap', it will deal an additional 10 damage.",
+				"cost":"rr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Water Melding",
+				"description":"The Demon Brothers hide in water, gaining 20 points of destructible defense and 1 taijutsu chakra.",
+				"cost":"rr",
+				"cd":1,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Vanish",
+				"description":"This skill makes Demon Brothers invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

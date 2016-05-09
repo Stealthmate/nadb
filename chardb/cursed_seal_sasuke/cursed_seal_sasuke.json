@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"cursed_seal_sasuke",
+	"name":"Cursed Seal Sasuke",
+	"tags":[
+		"cursed", "seal", "uchiha", "sasuke"],
+	"description":"Having gotten used to the Cursed Seal, Sasuke is able to draw Orochimaru's vile chakra through it, becoming a twisted hideous version of himself, but also getting stronger and faster. With the Cursed Seal, Sasuke's powers have exponentially increased, allowing him to pierce or trap enemies with his dark chakra.",
+	"abilities": [
+		[
+			{
+				"name":"Corrupt Chidori",
+				"description":"Mixing a chidori with his corrupt chakra, Sasuke deals 45 piercing damage to one enemy and for 2 turns, will reduce their non-affliction damage by 20.",
+				"cost":"nn",
+				"cd":1,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dark Void",
+				"description":"Expunging the corrupt chakra, Sasuke engulfs one enemy, stunning them for 2 turns, and making them invulnerable to all skills. When this skill ends, that enemy will receive 55 damage. This skill will end if Sasuke dies.",
+				"cost":"nnr",
+				"cd":5,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Cursed Seal",
+				"description":"Sasuke taps into the power of Orochimaru's cursed seal, becoming invulnerable to all skills for 1 turn and taking 20 affliction damage. The following turn 'Corrupt Chidori' will cost 1 random chakra and 'Dark Void' will cost 2 random chakra.",
+				"cost":"b",
+				"cd":1,
+				"classes":["affliction", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sharingan Evasion",
+				"description":"This skill makes Cursed Seal Sasuke invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "unique", "instant"]
+			}
+		]
+	]
+}}

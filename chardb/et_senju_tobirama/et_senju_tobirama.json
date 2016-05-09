@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"et_senju_tobirama",
+	"name":"Edo Tensei Senju Tobirama",
+	"tags":[
+		"et", "edo", "tensei", "senju", "hashirama", "shodai", "hokage"],
+	"description":"The second Hokage of the Hidden Leaf Village; Tobirama, a member of the Senju clan, puts the well being of the village and people above all else. Tobirama is a master of many jutsu, using both ninjutsu and genjutsu to stop the enemies in different ways.",
+	"abilities": [
+		[
+			{
+				"name":"Water Assault",
+				"description":"Tobirama encases one enemy in water, making them ignore all helpful effects except chakra cost changes for 1 turn and dealing 15 damage to them.",
+				"cost":"n",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Water Colliding Wave",
+				"description":"Summoning a giant wave of water, Tobirama uses it to attack the enemy team for 3 turns, dealing 15 damage to them and stunning their affliction skills each turn. The following 3 turns, 'Water Assault' will deal an additional 15 damage*.",
+				"cost":"ng",
+				"cd":3,
+				"classes":["physical", "ranged", "action", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Bringer Of Darkness",
+				"description":"Tobirama plunges the battlefield into darkness, making his team invulnerable to all harmful physical and mental skills for 1 turn.",
+				"cost":"g",
+				"cd":3,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Water Encampment Well",
+				"description":"This skill makes ET Senju Tobirama invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

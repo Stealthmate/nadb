@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"hoshigaki_kisame",
+	"name":"Hoshigaki Kisame",
+	"tags":[
+		"hoshigaki", "kisame"],
+	"description":"Formerly one of the Seven Swordsmen of the Mist Village, Kisame is an S-Rank missing ninja that is now a member of Akatsuki, having been partnered with Uchiha Itachi. Using his powerful, and ominous sword, mixed with his powerful water based ninjutsu, Kisame can disable enemies in every manner of way.",
+	"abilities": [
+		[
+			{
+				"name":"Samehada Slash",
+				"description":"Using his sword, Samehada, Kisame slashes one enemy who takes 20 damage and stunning their chakra and mental skills for 1 turn.",
+				"cost":"t",
+				"cd":1,
+				"classes":["physical", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Samehada Shred",
+				"description":"Kisame unwraps Samehada and shreds one enemy. For 2 turns that enemy will receive 15 damage and will have one random chakra stolen.",
+				"cost":"tn",
+				"cd":2,
+				"classes":["physical", "melee", "unique", "action"]
+			}
+		],
+		[
+			{
+				"name":"Water Shark Projectile",
+				"description":"Using a stream of compressed water Kisame does 20 damage to one enemy and stuns their physical and affliction skills for 1 turn.",
+				"cost":"n",
+				"cd":1,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Samehada Scale Block",
+				"description":"This skill makes Hoshigaki Kisame invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

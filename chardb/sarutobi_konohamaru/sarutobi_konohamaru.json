@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"sarutobi_konohamaru",
+	"name":"Sarutobi Konohamaru",
+	"tags":[
+		"sarutobi", "konohamaru"],
+	"description":"The grandson of the 3rd Hokage, Hiruzen, Konohamaru has spent his youth working hard to accomplish his dream of one day following under his grandfather's steps. With his hard work, Konohamaru has learned actual abilities that flow around his agility and speed.",
+	"abilities": [
+		[
+			{
+				"name":"Konohamaru Rasengan",
+				"description":"Taking his time to prepare his rasengan, Konohamaru targets one enemy, and the following turn, that enemy will receive 25 damage. This skill will deal an additional 15 damage if that enemy used a new skill that turn. This skill is invisible.",
+				"cost":"r",
+				"cd":1,
+				"classes":["chakra", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Agile Backflip",
+				"description":"Konohamaru uses his agility to counter the next new non-mental skill used on him. Each time this skill is used, it will have its cost permanently increased by 1 random. This skill cannot be used while active. This skill is invisible.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Quick Recovery",
+				"description":"Konohamaru helps one ally back on their feet if they are knocked out. The following turn, the first time that ally's health reaches 0, they will have their health set to 15. This skill is invisible.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Stealth",
+				"description":"This skill makes Konohamaru invulnerable for 1 turn",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

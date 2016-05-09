@@ -1,0 +1,59 @@
+{"charinfo": {
+	"id":"shukaku_gaara",
+	"name":"Shukaku Gaara",
+	"tags":[
+		"shukaku", "gaara"],
+	"description":"Having lived inside him the whole time, Shukaku is one of the nine tailed beasts and is very eager to escape and cause chaos to the world. While Shukaku slowly takes over Gaara, his own power increases, allowing him to demolish his foes with powerful sand attacks.",
+	"abilities": [
+		[
+			{
+				"name":"Sand Claw",
+				"description":"Gaara attacks with a claw of concentrated sand, dealing 30 damage to one enemy and gaining 10 destructible defense.",
+				"cost":"br",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Constricting Sand Prison",
+				"description":"Gaara traps an enemy with sand, dealing 10 damage to them each turn. During this time, the first skill that enemy uses will be countered and this skill will end.",
+				"cost":"b",
+				"cd":2,
+				"classes":["physical", "melee", "instant"]
+			},
+			{
+				"name":"Drilling Air Bullet",
+				"description":"Sending forth a powerful ball of wind, Gaara deals 60 damage to one enemy.",
+				"cost":"bb",
+				"cd":1,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sand Transformation",
+				"description":"Each turn, for 5 turns, he will gain 10 destructible defense. When this skill ends, Gaara will transform into the Shukaku for 3 turns, reducing the cost of 'Sand Claw' by 1 random and replacing 'Constricting Sand Prison' and 'Sand Transformation'.",
+				"cost":"rr",
+				"cd":6,
+				"classes":["mental", "unique", "instant"]
+			},
+			{
+				"name":"True Awakening",
+				"description":"Gaara truly lets Shukaku awake from inside him, letting it take over. The following turn, 'Sand Claw' and 'Drilling Air Bullet' will deal double damage.",
+				"cost":"b",
+				"cd":0,
+				"classes":["mental", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Thick Sand Coat",
+				"description":"This skill makes Shukaku Gaara invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"sarutobi_hiruzen",
+	"name":"Sarutobi Hiruzen",
+	"tags":[
+		"sarutobi", "hiruzen", "sandaime", "hokage"],
+	"description":"The third and most recent Hokage of the Hidden Leaf Village to die; Hiruzen, known as the God of Shinobi was considered to be one of the strongest ninja to ever live in his prime. While powerful using just his normal jutsu, Hiruzen is able to pull out a trump card when desperation strikes.",
+	"abilities": [
+		[
+			{
+				"name":"Fire Dragon Flame Bullet",
+				"description":"Sarutobi Hiruzen deals 30 affliction damage to one enemy. The following turn, that enemy will receive an additional 10 affliction damage.",
+				"cost":"nr",
+				"cd":0,
+				"classes":["affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dead Demon Consuming Seal",
+				"description":"One enemy receives 40 affliction damage, is stunned and cannot reduce damage or become invulnerable each turn. Hiruzen himself receives 20 affliction damage and is stunned every turn. This skill cannot be removed or ignored and will end when Hiruzen dies.",
+				"cost":"rrr",
+				"cd":0,
+				"classes":["affliction", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Major Summoning: Enma",
+				"description":"Hiruzen and his team will become invulnerable for 1 turn. For the rest of the game, Enma will deal 5 damage to the enemy team and Hiruzen and his team will gain 5 points of damage reduction and this skill will be replaced by 'Adamantine Prison Wall'. This skill will end when Hiruzen dies.",
+				"cost":"tng",
+				"cd":0,
+				"classes":["physical", "melee", "unique", "instant"]
+			},
+			{
+				"name":"Adamantite Prison Wall",
+				"description":"Turning into a diamond hard prison, Enma protects Hiruzen and his team, granting them 20 points of unpiercable damage reduction and making them unable to be killed for 1 turn.",
+				"cost":"t",
+				"cd":1,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Earth Style Wall",
+				"description":"This skill makes Sarutobi Hiruzen invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"momochi_zabuza",
+	"name":"Momochi Zabuza",
+	"tags":[
+		"momochi", "zabuza", "seven", "swordsmen", "of", "the", "mist"],
+	"description":"Zabuza is a missing-nin from the Hidden Mist Village that specializes in silent assassination. Using the various ninjutsu abilities Zabuza has, he is able to attack his enemies all at once, or stealthily try to kill them.",
+	"abilities": [
+		[
+			{
+				"name":"Soundless Murder",
+				"description":"Using this advanced assasination, Zabuza deals 30 piercing damage to one enemy. During 'Hidden Mist', this skill will deal 45 piercing damage to one enemy that ignores invulnerability.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Water Dragon Missile",
+				"description":"Zabuza knocks all enemies down with a giant wave of water dealing 10 damage and stunning their physical and affliction skills for 1 turn.",
+				"cost":"n",
+				"cd":3,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Hidden Mist",
+				"description":"For 2 turns, all enemies will have their physical and mental skills cost 1 additional random chakra and Zabuza gains 5 points of damage reduction. The following 2 turns, 'Soundless Murder' will deal 45 piercing damage that ignores invulnerability. This skill ignores invulnerability.",
+				"cost":"g",
+				"cd":3,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Water Clone Zabuza",
+				"description":"This skill makes Momochi Zabuza invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

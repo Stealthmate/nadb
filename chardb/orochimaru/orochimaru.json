@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"orochimaru",
+	"name":"Orochimaru",
+	"tags":[
+		"orochimaru", "sannin"],
+	"description":"One of the three sannins, Orochimaru craves nothing more than to learn all the jutsu and abilities in the world. Orochimaru uses his snake summons and cursed seals to various effects, beating down his enemies regardless of their defenses.",
+	"abilities": [
+		[
+			{
+				"name":"Kusanagi",
+				"description":"Orochimaru strikes swiftly, destroying all destructible defense one enemy has, and dealing 25 piercing damage to them.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Cursed Seal Mark",
+				"description":"Orochimaru places a cursed seal on one ally or enemy, who takes 15 affliction damage and gains 1 chakra. This skills ignores invulnerability.",
+				"cost":"",
+				"cd":0,
+				"classes":["affliction", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Major Summoning: Manda",
+				"description":"Orochimaru summons Manda, who deals an initial 45 damage to one enemy. For the rest of the game, Orochimaru will gain 1 random chakra a turn and this skill will be replaced by 'Constrict and Bite'. This skill will end when Orochimaru dies.",
+				"cost":"tnb",
+				"cd":0,
+				"classes":["physical", "melee", "unique", "instant"]
+			},
+			{
+				"name":"Constrict And Bite",
+				"description":"Manda wraps around an enemy, stunning them for 1 turn. The following turn, Manda will eat them, dealing 25 damage to them.",
+				"cost":"rr",
+				"cd":1,
+				"classes":["physical", "melee", "unique", "control"]
+			}
+		],
+		[
+			{
+				"name":"Earth Clone Technique",
+				"description":"This skill makes Orochimaru invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

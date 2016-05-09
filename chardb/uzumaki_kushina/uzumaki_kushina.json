@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"uzumaki_kushina",
+	"name":"Uzumaki Kushina",
+	"tags":[
+		"uzumaki", "kushina", "habanero"],
+	"description":"The mother of Uzumaki Naruto, wife to Minato and once the jinchuuriki to the nine-tailed fox. Kushina specializes in unique sealing and barrier techniques that can hinder and disable even the strongest of enemies.",
+	"abilities": [
+		[
+			{
+				"name":"Four Symbols Seal",
+				"description":"Kushina destroys one enemy's destructible defense, dealing 15 piercing damage to them, stunning them for 1 turn, removing 1 chakra from them, and permanently lowering all non-affliction damage they deal by 5.",
+				"cost":"gr",
+				"cd":1,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Life Link",
+				"description":"For 4 turns if either Kushina or one enemy dies, the other will die as well; this effect ignores invulnerability. The following 4 turns, this skill will be replaced. This skill cannot be countered, reflected, removed, prevented and won't interact with other skills.",
+				"cost":"gr",
+				"cd":5,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Adamantine Sealing Chains",
+				"description":"Kushina uses an immensely powerful seal, surrounding one enemy with chains, first removing all helpful skills on them and then stunning them and making them invulnerable to all further skills for 2 turns. This skill ignores invulnerability and cannot be countered or reflected.",
+				"cost":"bg",
+				"cd":4,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Adamantine Covering Chain",
+				"description":"This skill will make Uzumaki Kushina invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

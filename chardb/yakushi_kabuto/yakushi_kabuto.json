@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"yakushi_kabuto",
+	"name":"Yakushi Kabuto",
+	"tags":[
+		"yakushi", "kabuto"],
+	"description":"Kabuto is the close assistant and confidant to Orochimaru; calm, logical and highly intelligent, Kabuto is a mystery to many. Kabuto knows how to disrupt an enemy's body while regenerating his own.",
+	"abilities": [
+		[
+			{
+				"name":"Chakra Scalpel",
+				"description":"Kabuto slices an enemy with chakra scalpels, dealing 20 piercing damage to them. For 1 turn, that enemy's skills will cost an additional random chakra and they will receive an additional 5 damage from physical and chakra damaging skills.",
+				"cost":"n",
+				"cd":0,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Yin Healing Wound Destruction",
+				"description":"When Kabuto uses this skill he removes all enemy affliction skills from himself, and afterwards, he will heal 15 health for 5 turns.",
+				"cost":"n",
+				"cd":5,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Temple Of Nirvana",
+				"description":"Kabuto creates a large scale genjutsu. The following turn any enemy that doesn't use a new skill will be stunned for 1 turn and the following turn physical and chakra skills will deal an additional 10 damage to that enemy. This skill is invisible.",
+				"cost":"g",
+				"cd":2,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Dead Soul Technique",
+				"description":"This skill makes Yakushi Kabuto invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

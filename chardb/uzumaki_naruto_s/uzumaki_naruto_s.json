@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"uzumaki_naruto_s",
+	"name":"Uzumaki Naruto (Shippuuden)",
+	"tags":[
+		"uzumaki", "naruto", "shippuuden"],
+	"description":"Having trained with Jiraiya for almost three years, Naruto has grown, both mentally and physically. With his training behind him, Naruto is able to utilize his clones even more, granting him strong defense while augmenting his already powerful rasengan.",
+	"abilities": [
+		[
+			{
+				"name":"Oodama Rasengan",
+				"description":"Using shadow clones to greatly enhance the size and strength of his rasengan, Naruto deals 40 damage to one enemy. This skill ignores invulnerability.",
+				"cost":"tn",
+				"cd":1,
+				"classes":["chakra", "melee", "instant"]
+			},
+			{
+				"name":"Rasen Shuriken",
+				"description":"Using his recently created clones, Naruto hurls an even more powerful Rasengan at one enemy, dealing 50 piercing damage to them. This skill will deal an additional 25 damage to any enemy countered by 'Mass Shadow Clones'. This skill ignores invulnerability.",
+				"cost":"tn",
+				"cd":1,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Mass Shadow Clones",
+				"description":"Naruto creates a giant amount of clones. The following turn, Naruto will counter the first new harmful skill used on him and 'Oodama Rasengan' will be replaced by 'Rasenshuriken'. This skill is invisible.",
+				"cost":"r",
+				"cd":2,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Chakra Boost",
+				"description":"Naruto cycles his chakra to give him a surge of power, removing all harmful skills on him and gaining 1 taijutsu and ninjutsu chakra. The following turn, Naruto will also gain 10 points of damage reduction.",
+				"cost":"rr",
+				"cd":3,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Shadow Clone Save",
+				"description":"This skill makes Uzumaki Naruto (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}
