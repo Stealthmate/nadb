@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"hatake_kakashi_s",
+	"name":"Hatake Kakashi (S)",
+	"tags":[
+		"hatake", "kakashi", "shippuuden"],
+	"description":"Kakashi has not let the years pass by idle, and has trained as hard as any other, improving his sharingan and his own unique jutsu. While Kakashi's raikiri is still a potent finisher, he is now also able to rely on his kamui, aiming it at his enemies or even rescuing his allies.",
+	"abilities": [
+		[
+			{
+				"name":"Lightning Beast Fang",
+				"description":"Kakashi forms his raikiri into a lightning dog, controlling it and dealing 25 piercing damage to one enemy. If this skill successfully dealt damage to the enemy, they will be stunned for 1 turn. The following turn, this skill will be replaced by 'Finishing Raikiri'.",
+				"cost":"nr",
+				"cd":0,
+				"classes":["chakra", "ranged", "instant"]
+			},
+			{
+				"name":"Finishing Raikiri",
+				"description":"Kakashi moves to finish off an enemy, dealing 35 piercing damage to one enemy. This skill will deal an additional 10 damage to that enemy if they are fully stunned or if 'Lightning Beast Fang' was used on them the previous turn.",
+				"cost":"nr",
+				"cd":0,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Kakashi Kamui",
+				"description":"If used on an enemy, they will receive 40 piercing damage and for 1 turn their cooldowns will increase by 1 and the cost of their skills increased by 1 random. If used on an ally, all harmful effects on them will be removed and they will become invulnerable for 1 turn. This skill ignores invulnerability.",
+				"cost":"bg",
+				"cd":1,
+				"classes":["chakra", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Team Tactics",
+				"description":"For 3 turns, Kakashi's allies will have the cooldown of their skills reduced by 1 for 3 turns. The following 3 turns, the first new harmful non-unique skill used by one enemy will be copied and will replace this skill for 1 turn.*",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant", "action"]
+			}
+		],
+		[
+			{
+				"name":"Shadow Clone Stand-in",
+				"description":"This skill makes Hatake Kakashi (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

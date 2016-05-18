@@ -10,16 +10,7 @@
 				"name":"",
 				"description":"",
 				"cost":"",
-				"cd":,
-				"classes":[]
-			}
-		],
-		[
-			{
-				"name":"e",
-				"description":"",
-				"cost":"",
-				"cd":,
+				"cd":0,
 				"classes":[]
 			}
 		],
@@ -28,7 +19,16 @@
 				"name":"",
 				"description":"",
 				"cost":"",
-				"cd":,
+				"cd":2,
+				"classes":[]
+			}
+		],
+		[
+			{
+				"name":"",
+				"description":"",
+				"cost":"",
+				"cd":2,
 				"classes":[]
 			}
 		],

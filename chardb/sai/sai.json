@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"sai",
+	"name":"Sai",
+	"tags":[
+		"sai", "shippuuden"],
+	"description":"A current member of the Elite ANBU Root, Sai is a quiet, but expressive individual with a mysterious past. Sai uses a set of brushes with a special ink to give life to his art, from tigers to lions to bears, that allow him to compete with his enemies.",
+	"abilities": [
+		[
+			{
+				"name":"Super Beast Imitating Drawing: Lions",
+				"description":"Sai creates a number of ink lions to attack one enemy dealing 30 damage to them, and for 1 turn, Sai will gain 20 destructible defense.",
+				"cost":"gr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Super Beast Imitating Drawing: Snake",
+				"description":"Sai creates a snake made of ink to trap one enemy, stunning their physical and chakra skills for 1 turn. During this time, that enemy will be unable to reduce damage or become invulnerable. This skill ignores invulnerability. During 'Adaptive Painting', this skill will be replaced.",
+				"cost":"g",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			},
+			{
+				"name":"Super Beast Imitating Drawing: Bird",
+				"description":"Sai summons a giant ink bird that crashes to one enemy, dealing 25 damage to them and stunning their physical and chakra skills for 1 turn.",
+				"cost":"g",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Adaptive Painting",
+				"description":"For 3 turns, any ally that is stunned will become invulnerable for 1 turn; any ally that has chakra removed/stolen will gain 1 random chakra; any ally that receives successful new non-affliction damage by an enemy will increase Sai's damage by 10 for 1 turn.",
+				"cost":"rr",
+				"cd":3,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Ink Clone",
+				"description":"This skill makes Sai invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["chakra", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"izumo_and_kotetsu",
+	"name":"Izumo and Kotetsu",
+	"tags":[
+		"izumo", "kotetsu", "and"],
+	"description":"A pair of Konoha chuunin assigned to hunt down members of Akatsuki, Izumo and Kotetsu are close friends, and great teammates. While individually not as strong as many others, Izumo and Kotetsu have a single advantage few others have: there are two of them.",
+	"abilities": [
+		[
+			{
+				"name":"Mace Crush",
+				"description":"Kotetsu slams an enemy with his mace, dealing 30 damage to them. This skill will deal an additional 10 damage to an enemy who had a skill class stunned by 'Starch Syrup Capturing Field'.",
+				"cost":"rr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Starch Syrup Capturing Field",
+				"description":"Izumo spits out a field of sticky syrup making it harder for the enemy team to move around. For 2 turns, any enemy that uses a new non-mental skill will have that specific class of skill stunned for 1 turn.",
+				"cost":"n",
+				"cd":2,
+				"classes":["affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Devastate",
+				"description":"Izumo moves to stab one enemy from the left. The following 3 turns, if 'Annihilate' has been used on that character, that enemy will instead receive 65 damage.",
+				"cost":"t",
+				"cd":2,
+				"classes":["physical", "melee", "instant"]
+			},
+			{
+				"name":"Annihilate",
+				"description":"Kotetsu moves to stab one enemy from the right. The following 3 turns if 'Devastate' has been used on that character, that enemy will instead receive 65 damage.",
+				"cost":"t",
+				"cd":2,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Tag Team",
+				"description":"Izumo tags out, swapping his health with Kotetsu's. If Izumo or Kotetsu is killed during this time, the other will permanently take over. During this time 'Devastate' will be replaced by 'Annihilate' and this skill can be used again to swap health again. This skill cannot be ignored or removed.",
+				"cost":"r",
+				"cd":0,
+				"classes":["unique", "instant"]
+			}
+		]
+	]
+}}

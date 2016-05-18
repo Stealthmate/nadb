@@ -1,0 +1,73 @@
+{"charinfo": {
+	"id":"tenten_s",
+	"name":"Tenten (S)",
+	"tags":[
+		"tenten", "(S)"],
+	"description":"Now a chuunin, Tenten has added a myriad of powerful and potent weapons in her arsenal, even procuring the legendary fan of the sage of the six paths. Having an arsenal of weapons at her side, Tenten can choose to fight at different levels, upgrading her weapons until she finds something suitable for her battle.",
+	"abilities": [
+		[
+			{
+				"name":"Kunai Grenade",
+				"description":"Tenten throws an explosive filled with kunai at one enemy dealing 20 damage to them and 10 damage to all other enemies.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "ranged", "instant"]
+			},
+			{
+				"name":"Heavenly Chain Disaster",
+				"description":"Using an even more powerful version of twin rising dragons, Tenten deals 25 damage to all enemies.",
+				"cost":"tr",
+				"cd":3,
+				"classes":["physical", "ranged", "instant"]
+			},
+			{
+				"name":"Bashousen: Coil Of Fire",
+				"description":"Using one of the tools of the sage of the six paths, Tenten blasts the enemy with a sea of fire, dealing 10 physical and 10 affliction damage to them and the following 3 turns they will receive 5 affliction damage.",
+				"cost":"tn",
+				"cd":2,
+				"classes":["physical", "affliction", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Chain Spin",
+				"description":"Tenten spins her chain around wildly making her team invulnerable to all physical skills for 1 turn.",
+				"cost":"r",
+				"cd":3,
+				"classes":["physical", "instant"]
+			},
+			{
+				"name":"Iron Protection Wall",
+				"description":"Tenten covers her team with a hard protective iron shell, granting them 20 destructible defense. This effect stacks.",
+				"cost":"nr",
+				"cd":3,
+				"classes":["physical", "instant"]
+			},
+			{
+				"name":"Bashousen: Coil Of Wind",
+				"description":"Using the Bashounen to throw a gust of wind, the following turn all non-mental skills used on Tenten or her team will be reflected back to the enemy. This skill is invisible",
+				"cost":"tn",
+				"cd":3,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Weapon Upgrade",
+				"description":"Tenten gains 5 destructible defense. The first time this skill is used, it will replace 'Kunai Grenade' and 'Chain Spin'. The second time it is used they will be replaced again. The third time this skill is used, it will reset and her skills will revert back to the original ones.",
+				"cost":"",
+				"cd":0,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Leaping Dodge",
+				"description":"This skill makes Tenten (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

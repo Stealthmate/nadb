@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"yamanaka_inoichi",
+	"name":"Yamanaka Inoichi",
+	"tags":[
+		"yamanaka", "inoichi"],
+	"description":"A Konoha jounin, a member of the Yamanaka clan, and the father of Ino, Inoichi is a very calm, analytical man who can solve nearly any dilemma. While fighting, Inoichi much prefers targeting an enemy's mind, tearing it apart while remaining unscratched himself.",
+	"abilities": [
+		[
+			{
+				"name":"Psycho Mind Transmission",
+				"description":"Inoichi forcibly enters one enemy's mind, dealing 20 damage to them for 2 turns. The following 2 turns that enemy will be unable to use any counter or reflect skills. This skill cannot be countered or reflected.",
+				"cost":"n",
+				"cd":1,
+				"classes":["mental", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Sensing Water Sphere",
+				"description":"Inoichi begins gather data of the battlefield. Each time any enemy uses a new harmful skill, this skill will gain a stack and Inoichi will heal 10 health. During this time, Inoichi can use this skill again for 1 random to instead gain 1 random chakra for each stack on it and this skill will end.",
+				"cost":"n",
+				"cd":0,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Mental Invasion",
+				"description":"Inoichi exposes one enemy's mind. For 4 turns, all invulnerability skills that enemy uses will last 1 less turn. The following 4 turns each time a new harmful mental skill is used on that enemy, the user of that skill will become invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Mobile Barrier",
+				"description":"This skill makes Yamanaka Inoichi invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

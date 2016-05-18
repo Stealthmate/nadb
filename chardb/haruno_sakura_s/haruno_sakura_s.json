@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"haruno_sakura_s",
+	"name":"Haruno Sakura (S)",
+	"tags":[
+		"haruno", "sakura", "shippuuden"],
+	"description":"With her extensive training under Tsunade for the last two and a half years, Sakura has gained a greater understanding of healing and the human body. While Sakura's physical strength and healing prowess have both increased, her greatest ability is a powerful chakra storing seal taught to her by Tsunade.",
+	"abilities": [
+		[
+			{
+				"name":"Chakra Enhanced Punch",
+				"description":"Enhancing her attack with finely controlled chakra, Sakura does 25 damage to one enemy. While 'Strength of a Hundred Seal' is active, this skill will deal 35 damage to one enemy, and 10 to all others.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Superior Healing",
+				"description":"With her superior healing skills, Sakura heals half of one ally's missing health, rounded down, and removes all enemy affliction effects from them. While 'Strength of a Hundred Seal' is active, this skill will cost 1 random and have no cooldown.",
+				"cost":"n",
+				"cd":1,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sakura: Strength Of A Hundered Seal",
+				"description":"Sakura gains 3 Seals. During this time, each time Sakura uses a skill other than her invulnerability, she will use up 1 Seal. While 'Strength of a Hundred Seal' is active, Sakura can use this skill again for no cost to restore 25 health and remove all harmful effects on her.",
+				"cost":"r",
+				"cd":0,
+				"classes":["chakra", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Insightful Dodge",
+				"description":"This skill makes Haruno Sakura (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

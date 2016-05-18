@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"yamato",
+	"name":"Yamato",
+	"tags":[
+		"yamato"],
+	"description":"A member of the secretive ANBU organization and a man who was once injected with the cells of Hashirama, the 1st Hokage. Due to the cells that live inside of him, Yamato is capable of small scale wood element abilities, from trapping enemies to protecting his comrades.",
+	"abilities": [
+		[
+			{
+				"name":"Bliss-Bringing Hands",
+				"description":"Yamato uses an ancient technique that seals one enemy's power, dealing 30 damage to them and for 1 turn will ignore all effects that improve their skills.",
+				"cost":"br",
+				"cd":0,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Wood Clone",
+				"description":"Yamato protects one ally or himself with a clone of wood for 1 turn, countering the first non-mental harmful skill used against them, dealing 20 damage to the enemy and granting that ally 20 destructible defense. This skill is invisible.",
+				"cost":"b",
+				"cd":2,
+				"classes":["physical", "melee", "instant", "unique"]
+			}
+		],
+		[
+			{
+				"name":"Four-Pillar Prison",
+				"description":"Yamato creates a barrier of wood around one enemy or ally. If used on an enemy, that enemy will have their non-mental skills stunned for 2 turns. If used on an ally, that ally will gain 40 destructible defense. This skill ignores invulnerability.",
+				"cost":"bn",
+				"cd":4,
+				"classes":["chakra", "ranged", "instant", "unique"]
+			}
+		],
+		[
+			{
+				"name":"Wood Locking Wall",
+				"description":"This skill makes Yamato (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

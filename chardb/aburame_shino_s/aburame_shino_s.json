@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"aburame_shino_s",
+	"name":"Aburame Shino (S)",
+	"tags":[
+		"aburame", "shino", "shippuuden"],
+	"description":"Still as mysterious and secretive as ever, Shino has improved greatly over the years, learning and practicing with his loyal bugs. With his new found mastery, Shino can disable enemies even harder while slowly waiting for his bugs to erupt from their bodies and destroy them.",
+	"abilities": [
+		[
+			{
+				"name":"Insect Swarm",
+				"description":"Shino sends out wave of his insect army at one enemy, dealing 15 affliction damage to them for 3 turns. The following 3 turns, that enemy will be invulnerable to all friendly skills and during this time this skill will be replaced by 'Insect Consumption'.",
+				"cost":"br",
+				"cd":2,
+				"classes":["affliction", "ranged", "unique", "action"]
+			},
+			{
+				"name":"Insect Consumption",
+				"description":"Shino commands his insects to drain the chakra of one enemy affected by 'Insect Swarm', stealing 1 random chakra from them and increasing the damage that enemy receives from 'Insect Swarm' by 5 that turn.",
+				"cost":"b",
+				"cd":0,
+				"classes":["affliction", "ranged", "unique", "action"]
+			}
+		],
+		[
+			{
+				"name":"Insect Barricade",
+				"description":"The following turn, the first new harmful skill used on himself or one ally will be countered, 'Parasitic Giant Beetle Infestation' will be placed on the countered enemy and then activated. If this skill does not counter an enemy, Shino will gain 1 Bloodline chakra. This skill is invisible.",
+				"cost":"b",
+				"cd":2,
+				"classes":["affliction", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Parasitic Giant Beetle Infestation",
+				"description":"Shino infects one enemy with a small bug. 3 turns after this skill has been used, the bug bursts out, dealing 25 damage to them and activating all other copies of this skill on that enemy. This skill is invisible.",
+				"cost":"b",
+				"cd":0,
+				"classes":["affliction", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Insect Cocoon",
+				"description":"This skill makes Shino(s) invulnerable for one turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "unique", "instant"]
+			}
+		]
+	]
+}}

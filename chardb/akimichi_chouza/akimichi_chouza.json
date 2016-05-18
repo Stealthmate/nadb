@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"akimichi_chouza",
+	"name":"Akimichi Chouza",
+	"tags":[
+		"akimichi", "chouza"],
+	"description":"A Konoha jounin, a member of the Akimichi clan, and the father of Chouji, Chouza is a brave, wise man that instills great confidence in his allies. In a fight, Chouza uses his size to become a nuisance to his enemies while granting safety to his team.",
+	"abilities": [
+		[
+			{
+				"name":"Chain Bind",
+				"description":"Chouza slows down an enemy, dealing 5 damage to them and lowering all physical and chakra damage they deal by 10 for 1 turn. Chouza's team will also gain 5 destructible defense.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Chouza Meat Tank",
+				"description":"Chouza begins rolling for 3 turns, dealing 15 damage to one enemy and granting his team 10 destructible defense for 1 turn each turn. During this time, the damage lowering effect of 'Chain Bind' will last 1 additional turn on that enemy.",
+				"cost":"br",
+				"cd":3,
+				"classes":["physical", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Partial-Size Smash",
+				"description":"If used on an enemy, for 1 turn, the next non-mental harmful skill they use will be countered. If used on an ally, for 1 turn, the next non-mental harmful skill used on them will be countered. The countered enemy will receive 10 damage. This skill is invisible and ignores invulnerability.",
+				"cost":"b",
+				"cd":2,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Chouza Block",
+				"description":"This skill makes Akimichi Chouza invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

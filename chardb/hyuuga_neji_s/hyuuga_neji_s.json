@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"hyuuga_neji_s",
+	"name":"Hyuuga Neji (S)",
+	"tags":[
+		"hyuuga", "neji", "shippuuden"],
+	"description":"The only of the original genins to become a Jounin, Neji has only increased his already powerful set of abilities and skills during the near three years of time. While still being able to rely on his pressure point attacks, Neji is now also able to unleash giant waves of chakra for brutish damage as well.",
+	"abilities": [
+		[
+			{
+				"name":"Eight Trigrams Vacuum Palm",
+				"description":"Neji sends a blast of chakra filled air at one enemy's vital points, dealing 20 damage to them and removing 1 random chakra from them.",
+				"cost":"tr",
+				"cd":0,
+				"classes":["physical", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Eight Trigrams Mountain Crusher",
+				"description":"Forgoing preciseness, Neji unleashes a giant wave of chakra at one enemy, destroying any destructible defense they have and dealing 45 damage to them.",
+				"cost":"tb",
+				"cd":1,
+				"classes":["chakra", "ranged", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Neji: Eight Trigrams Field",
+				"description":"Neji traps the enemy team in his range of divination. For 2 turns, all enemies will be unable to reduce damage or become invulnerable*. The following turn, any enemy that uses a new harmful skill on Neji will be countered and this skill will be replaced by 'Pressure Point Strike'. This skill is invisible.",
+				"cost":"b",
+				"cd":2,
+				"classes":["physical", "mental", "melee", "unique", "instant"]
+			},
+			{
+				"name":"Pressure Point Strike",
+				"description":"Neji attacks one enemy that is affected by 'Byakugan - Eight Trigrams Field' or this skill, dealing 5 damage and removing 1 random chakra from them. The following turn this skill will deal 5 additional damage and will remain replaced. This effect stacks and is cumulative until Neji stops using this skill.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Byakugan Defense",
+				"description":"This skill makes Hyuuga Neji (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["melee", "unique", "instant"]
+			}
+		]
+	]
+}}

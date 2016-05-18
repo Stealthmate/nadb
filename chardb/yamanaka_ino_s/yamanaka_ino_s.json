@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"yamanaka_ino_s",
+	"name":"Yamanaka Ino (S)",
+	"tags":[
+		"yamanaka", "ino", "shippuuden"],
+	"description":"Not one to be left behind, Ino has trained non-stop to improve her abilities and teamwork. With her improved techniques, Ino can not only control her enemies, but her allies too all while seeing everything on the battlefield.",
+	"abilities": [
+		[
+			{
+				"name":"Mind Body Switch Interference",
+				"description":"Ino prepares to interfere with one enemy for 1 turn. The following turn, that enemy will receive 15 damage and if that enemy uses a new harmful skill, they will be countered and this skill will be replaced by that skill for 1 turn. This skill is invisible and can copy all skills.",
+				"cost":"g",
+				"cd":1,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Proxy Surveillance",
+				"description":"For 3 turns all damage reduction and destructible defense effects all enemies use will be reduced by 15 and Ino will know when and where any skill is used. Negative damage reduction or destructible defense increases damage dealt. This skill can't be countered, reflected and is invisible.",
+				"cost":"r",
+				"cd":3,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Mind Clone Switch",
+				"description":"Ino enters the mind of both of her allies, making their bodies fight on regardless of their state. For 2 turns, both of Ino's allies will ignore all harmful effects other than damage and chakra cost changes. This skill is invisible and will end if Ino dies.",
+				"cost":"g",
+				"cd":2,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Hide",
+				"description":"This skill makes Yamanaka Ino(s) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

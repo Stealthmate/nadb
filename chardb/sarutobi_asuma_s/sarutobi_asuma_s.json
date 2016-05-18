@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"sarutobi_asuma_s",
+	"name":"Sarutobi Asuma (S)",
+	"tags":[
+		"sarutobi", "asuma", "shippuuden"],
+	"description":"Somehow continuing to avoid lung cancer, Asuma has remained the leader of Team 10 through the years. With the secret techniques of the fire temple, Asuma is able to attack and defend while waiting for the opportune moment to slice some heads off.",
+	"abilities": [
+		[
+			{
+				"name":"Thousand-Armed Murder",
+				"description":"Asuma gains 40 destructible defense and instantly deals 25 damage to one enemy. During this time, he can use this skill again for 1 random to deal 20 damage to one enemy. When this skill ends, Asuma will be unable to use this skill for 1 turn.",
+				"cost":"br",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Ash Pile Burning",
+				"description":"Asuma breaths out a cloud of combustible ash to all enemies each turn, increasing the cooldowns of their skills by 1 turn. During this time, this skill will be replaced by 'Ash Pile Burning - Ignite'.",
+				"cost":"gr",
+				"cd":0,
+				"classes":["affliction", "ranged", "action"]
+			},
+			{
+				"name":"Ash Pile Burning - Ignite",
+				"description":"Asuma lights up the ash on the battlefield, dealing 10 damage to all enemies for each stack of 'Ash Pile Burning' on them. This skill will end 'Ash Pile Burning' and it cannot be countered or reflected and ignores invulnerability.",
+				"cost":"b",
+				"cd":0,
+				"classes":["affliction", "ranged", "action"]
+			}
+		],
+		[
+			{
+				"name":"Decapitatie",
+				"description":"Showing no mercy, Asuma targets one enemy, and if that enemy's health is 25 or less, he will instantly kill that enemy. This skill ignores invulnerability and cannot be countered or reflected.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Evasion",
+				"description":"This skill makes Sarutobi Asuma (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"inuzuka_tsume",
+	"name":"Inuzuka Tsume",
+	"tags":[
+		"inuzuka", "tsume"],
+	"description":"A Konoha jounin, a member of the Inuzuka clan, and the mother of Kiba, Tsume, much like her son, is a wild and impatient woman with an often odd sense of humor. Like other members of her clan, Tsume fights one with her companion, Kuromaru, while allowing her wild instincts to take over.",
+	"abilities": [
+		[
+			{
+				"name":"Summon Kuromaru",
+				"description":"Tsume calls Kuromaru to aid her. The following 4 turns, she will gain 10 points of damage reduction. During this time, this skill will be replaced by 'Fierce Bite' and any enemy that uses a new harmful non-affliction skill on Tsume will receive 10 damage.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "melee", "unique", "instant"]
+			},
+			{
+				"name":"Fierce Bite",
+				"description":"Kuromaru jumps on one enemy, dealing 25 damage to them that ignores invlunerability. If that enemy dies that turn, then for 2 turns, Tsume will have her damage increased by 10, will ignore all stun effects and will be unable to be killed.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Passing Fang",
+				"description":"Tsume spins, dealing 15 piercing damage to one enemy for 2 turns. All stun skills that enemy uses will also be decreased by 2 turns. If 'Summon Kuromaru' is active, this skill will deal 5 additional damage.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Flashbang",
+				"description":"Tsume covers herself and her allies, making them invulnerable to all non-affliction skills for 1 turn. Tsume only carries 3 of these grenades with her at all times, so this skill can only be used three times in a game.",
+				"cost":"r",
+				"cd":1,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Man-Beast Defense",
+				"description":"This skill makes Inuzuka Tsume invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

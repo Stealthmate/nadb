@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"hyuuga_hinata_s",
+	"name":"Hyuuga Hinata (S)",
+	"tags":[
+		"hyuuga", "hinata", "shippuuden"],
+	"description":"With the Chuunin Exam behind her, and with Naruto's words deep in her heart, Hinata has grown and become stronger and a woman. With her mastery of the Hyuuga clan tactics, Hinata can give life to powerful chakra lions while hindering her enemies' chakra paths.",
+	"abilities": [
+		[
+			{
+				"name":"Pressure Point Closure",
+				"description":"Hinata closes an enemy's pressure point dealing 10 damage to one enemy, increasing the cost of their skills by 1 random and removing all stacks of 'Hinata - Eight Trigrams Field' from them. During 'Hinata - Eight Trigrams Field' this skill will deal an additional 10 damage.",
+				"cost":"r",
+				"cd":0,
+				"classes":["physical", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Gentle Step Twin Lion Fists",
+				"description":"Hinata creates 2 lions. The next 2 times any enemy uses a new harmful skill, a chakra lion will attack, dealing 30 damage to them and removing 1 random chakra from them. During 'Hinata - Eight Trigrams Field' this skill will create 3 lions. This skill cannot be used while active and will end if Hinata is killed.",
+				"cost":"bn",
+				"cd":0,
+				"classes":["chakra", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Hinata: Eight Trigrams Field",
+				"description":"For 4 turns, if an enemy uses a new harmful skill, the chakra cost increase of 'Pressure-Point Closure' will last 1 additional turn and the following 4 turns 'Pressure Point Closure' and 'Gentle Step Twin Lion Fists' will be enhanced.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "melee", "unique", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Byakugan Sight",
+				"description":"This skill makes Hyuuga Hinata(s) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "unique", "instant"]
+			}
+		]
+	]
+}}

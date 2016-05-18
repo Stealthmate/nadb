@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"nara_shikaku",
+	"name":"Nara Shikaku",
+	"tags":[
+		"nara", "shikaku"],
+	"description":"The father of Nara Shikamaru, and the head of the Nara clan, Shikaku is a cool-headed Jounin of Konoha who will go to any lengths to protect his friends and family. In battle, Shikaku is merciless, combining his impressive shadow imitation skills with his unparalleled intellect to grab victory for his team.",
+	"abilities": [
+		[
+			{
+				"name":"Master Shadow Imitation",
+				"description":"Shikaku grabs an enemy with his shadow, forcing his body to do as he pleases. That enemy will receive 20 damage and then will have their non-mental skills stunned for 2 turns. The following turn, this skill will be replaced by 'Shadow Dispersion'.",
+				"cost":"gr",
+				"cd":1,
+				"classes":["chakra", "ranged", "control"]
+			}
+		],
+		[
+			{
+				"name":"Black Spider Lily",
+				"description":"Shikaku extends his shadows out to his enemies. For 3 turns, Shikaku's skills will deal an additional 10 damage to them, and each time they use a new stun skill, then for 3 turns the next time Shikaku stuns that enemy, they will be stunned for 1 additional turn.",
+				"cost":"g",
+				"cd":3,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Problem Analysis",
+				"description":"Shikaku targets himself or one ally for 1 turn, and the first new harmful non-affliction damage skill that is used on them will deal no damage and that ally will gain destructible defense equal to the original damage of that skill. This skill is invisible.",
+				"cost":"r",
+				"cd":3,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Human Barricade",
+				"description":"This skill makes Nara Shikaku invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

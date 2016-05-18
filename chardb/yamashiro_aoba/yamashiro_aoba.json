@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"yamashiro_aoba",
+	"name":"Yamashiro Aoba",
+	"tags":[
+		"yamashiro", "aoba"],
+	"description":"A Konoha jounin assigned to hunt down members of Akatsuki, Aoba while reserved in public, is more than willing to boast and brag in private. While a man of many talents, Aoba specializes in genjutsu that takes on the form of crows, being able to use them for all manner of purposes.",
+	"abilities": [
+		[
+			{
+				"name":"Scattering Thousand Crows Technique",
+				"description":"Aoba summons a massive amount of crows, dealing 5 damage to all enemies for 4 turns. The following 4 turns, Aoba and his team will have 5 points of damage reduction. This skill can stack.",
+				"cost":"g",
+				"cd":0,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Revenge Of The Murder",
+				"description":"For 3 turns, if one ally is killed, they will have their health set to 5, will have all their skills replaced by 'Convergence of a Murder' and will ignore all further skills. At the end of their next turn, that ally will die; this effect cannot be stopped, ignored or removed. This skill is invisible.",
+				"cost":"r",
+				"cd":3,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Convergence Of A Murder",
+				"description":"Aoba commands his crows to pick off one enemy, dealing 45 damage to them. This skill will deal an additional 5 damage for each active 'Scattering Thousand Crows Technique' on the target.",
+				"cost":"gg",
+				"cd":1,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Crow Shield",
+				"description":"This skill makes Yamashiro Aoba invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["mental", "instant"]
+			}
+		]
+	]
+}}

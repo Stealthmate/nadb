@@ -1,0 +1,60 @@
+{"charinfo": {
+	"id":"inuzuka_kiba_s",
+	"name":"Inuzuka Kiba (S)",
+	"tags":[
+		"inuzuka", "kiba", "kuchakis", "zubakis", "shippuuden"],
+	"description":"Over the last several years. Kiba, and his dog, Akamaru have grown considerably, not wanting to be left last in their group. Having improved their team work, and provided they are given enough time, Kiba and Akamaru can become unstoppable rampaging beasts.",
+	"abilities": [
+		[
+			{
+				"name":"Man-Beast Clone",
+				"description":"Akamaru turns into a clone of Kiba, giving him 15 points of damage reduction and making him ignore all stuns for 4 turns. The following 4 turns, this skill will be replaced by 'Three-Headed Wolf'.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "unique", "instant"]
+			},
+			{
+				"name":"Three-Headed Wolf",
+				"description":"Kiba merges into a three-headed wolf, ending 'Man-Beast Clone', gaining 30 points of damage reduction and ignoring all non-damage effects other than chakra cost changes for 3 turns. The following 3 turns, this skill will be replaced by 'Tail Chasing Rotating Fang'.",
+				"cost":"bb",
+				"cd":5,
+				"classes":["physical", "melee", "instant"]
+			},
+			{
+				"name":"Tail Chasing Rotating Fang",
+				"description":"In his new form, Kiba and Akamaru spin rapidly, dealing 40 damage to all enemies and stunning them for 1 turn.",
+				"cost":"tbr",
+				"cd":3,
+				"classes":["physical", "melee", "instant"]
+			}
+			
+		],
+		[
+			{
+				"name":"Rotating Fang",
+				"description":"Kiba spins, dealing 30 damage to one enemy. During 'Man-Beast Clone' this skill will also deal 20 damage to one other random enemy. During 'Three-Headed Wolf' this skill will also deal 20 damage to all other enemies.",
+				"cost":"tb",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Fang Over Fang",
+				"description":"Kiba deals 40 damage to one enemy and will lower their non-affliction damage by 10 permanently.* During 'Man-Beast Clone' this skill will deal an additional 10 damage. During 'Three-Headed Wolf' this skill will deal an additional 20 damage.",
+				"cost":"tb",
+				"cd":1,
+				"classes":["physical", "melee", "affliction", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Hide In The Shade",
+				"description":"This skill makes Inuzuka Kiba(S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

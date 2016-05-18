@@ -1,0 +1,59 @@
+{"charinfo": {
+	"id":"maito_gai_s",
+	"name":"Maito Gai (S)",
+	"tags":[
+		"maito", "gai", "shippuuden"],
+	"description":"Still the leader of Team Gai, Gai is not one to let himself fall behind in terms of training and strength. Gai no longer feels the need to go straight into the highest level of gates that he can, instead taking his time, until the time requires the green beast of Konoha to go all out.",
+	"abilities": [
+		[
+			{
+				"name":"Nunchaku Taijutsu",
+				"description":"Using his weapon expertise, Gai deals 10 damage to one enemy for 3 turns. During this time, if an enemy uses a new harmful physical skill on Gai, he will deal 10 damage to them.",
+				"cost":"t",
+				"cd":2,
+				"classes":["physical", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Fiery Kick",
+				"description":"Gai slams his leg onto one enemy, dealing 35 damage to one enemy and reducing all non-affliction damage they deal by 20 for 1 turn.",
+				"cost":"tb",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			},
+			{
+				"name":"Morning Peacock",
+				"description":"With unparalleled speed and power, Gai deals 60 damage to one enemy and will stun them for 1 turn.",
+				"cost":"tb",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			},
+			{
+				"name":"Daytime Tiger",
+				"description":"Using one single punch, Gai deals 300 damage to one enemy.",
+				"cost":"tb",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Single Gat Release",
+				"description":"Gai receives 5 affliction damage*, but permanently gains 5 damage reduction and increases the initial damage of 'Nunchaku Taijutsu' and 'Fiery Kick' by 5. At 6 gates, 'Fiery Kick will be replaced by 'Morning Peacock' and at 7 gates, be replaced by 'Daytime Tiger'. This skill can be used 7 times.",
+				"cost":"",
+				"cd":0,
+				"classes":["mental", "affliction", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Muscle Block",
+				"description":"This skill makes Maito Gai (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

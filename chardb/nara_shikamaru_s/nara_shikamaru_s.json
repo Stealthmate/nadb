@@ -1,0 +1,59 @@
+{"charinfo": {
+	"id":"nara_shikamaru_s",
+	"name":"Nara Shikamaru (S)",
+	"tags":[
+		"nara", "shikamaru", "shippuuden"],
+	"description":"Once known to be one of the laziest ninja, Shikamaru has worked tireless to become not only stronger, but a leader too. More than ever before, Shikamaru excels at coming up with long winded and convoluted plans meant to defeat any enemies in his path.",
+	"abilities": [
+		[
+			{
+				"name":"Shadow Sewing",
+				"description":"Shikamaru sends several tendrils of shadow to one enemy, dealing 35 damage to them and stunning their non-mental skills for 1 turn. Afterwards, this skill will be replaced by 'Shadow Sewing - Hold' for 1 turn.",
+				"cost":"gr",
+				"cd":1,
+				"classes":["chakra", "ranged", "instant"]
+			},
+			{
+				"name":"Shadow Sewing - Hold",
+				"description":"Shikamaru continues to hold his technique, stunning the non-mental skills of one enemy affected by 'Shadow Sewing' or this skill for 1 turn and dealing 20 damage to them. Afterwards, this skill will remain replaced.",
+				"cost":"g",
+				"cd":0,
+				"classes":["chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Long-Range Tactics",
+				"description":"Shikamaru goes long. For 4 turns, each time Shikamaru uses a new harmful skill, he will become invulnerable for 1 turn. If Shikamaru receives new non-affliction damage, this skill will be ignored for 1 turn. The following 4 turns, this skill will be replaced by 'Final Explosion'.",
+				"cost":"t",
+				"cd":5,
+				"classes":["physical", "instant"]
+			},
+			{
+				"name":"Final Explosion",
+				"description":"Using his shadow technique, his analysis and his range, Shikamaru traps one enemy in a pit, and blows them up. One enemy affected by 'Shadow Sewing' or 'Shadow Sewing - Hold' and 'Expert Analysis' while Shikamaru is invlunerable through 'Long-Range Tactics' will receive 100 damage.",
+				"cost":"rr",
+				"cd":3,
+				"classes":["physical", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Expert Analysis",
+				"description":"By carefully analyzing one enemy, Shikamaru figures out their weakness. For 3 turns, any time that enemy uses a new skill that enemy will be unable to become invulnerable or reduce damage and all helpful counter and reflect skills on them will be ignored for 1 turn. This skill is invisible.",
+				"cost":"r",
+				"cd":2,
+				"classes":["mental", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Panicked Dodge",
+				"description":"This skill makes Nara Shikamaru (S) invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

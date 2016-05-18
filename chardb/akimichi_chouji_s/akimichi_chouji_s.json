@@ -1,0 +1,52 @@
+{"charinfo": {
+	"id":"akimichi_chouji_s",
+	"name":"Akimichi Chouji (S)",
+	"tags":[
+		"akimichi", "chouji", "shippuuden"],
+	"description":"After nearly three years, Chouji has developed in both strength and size, mastering the Akimichi clan techniques. No longer does Chouji need the Akimichi pills to tap into his true strength, instead, he merely needs to control his chakra and become a force to reckon with.",
+	"abilities": [
+		[
+			{
+				"name":"Butterfly Bullet Bombing",
+				"description":"Chouji slams his fist into an enemy's face, first ignoring all harmful effects other than chakra cost changes for 1 turn and then dealing 30 damage to one enemy. This skill cannot be countered or reflected and Chouji's skills will cost 2 additional random afterwards.",
+				"cost":"trr",
+				"cd":0,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Human Bullet Tank",
+				"description":"Chouji rolls over one enemy for 2 turns, dealing 15 damage to them. During this time, Chouji will counter all new physical and chakra skills used on him.* This skill will increase the cost of Chouji's skills by 1 random each turn.",
+				"cost":"brr",
+				"cd":3,
+				"classes":["physical", "melee", "action"]
+			}
+		],
+		[
+			{
+				"name":"Butterfly Control",
+				"description":"Using his new found control, Chouji taps into even more power. This skill will be replaced by 'Super-Slap'. Each turn, the existing cost of Chouji's skills will be decreased by 1 random.",
+				"cost":"",
+				"cd":0,
+				"classes":["chakra", "instant"]
+			},
+			{
+				"name":"Super Slap",
+				"description":"Chouji slaps an enemy down with a fistful of chakra, removing all harmful afflictions on him and then dealing 30 damage to one enemy. This skill cannot be countered or reflected and Chouji's skills will cost 2 additional random chakra afterwards.",
+				"cost":"nr",
+				"cd":0,
+				"classes":["chakra", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Butterfly Block",
+				"description":"This skill makes Chouji invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}
