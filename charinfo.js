@@ -77,7 +77,18 @@ function getCharacterById(id) {
 	
 	Logger.log("Could not find character by id: " + id, Logger.LVL_ERROR);
 }
+function intersect_all(lists)
+{
+    if (lists.length == 0) return [];
+    else if (lists.length == 1) return lists[0];
 
+    var partialInt = lists[0];
+    for (var i = 1; i < lists.length; i++)
+    {
+        partialInt = intersection(partialInt, lists[i]);
+    }
+    return partialInt;
+}
 function getInfo(req, res) {
 	
 	var query = req.url.substr(req.url.indexOf("searchquery")+12).toLowerCase().replace(/\++/g, "+").replace(/^\+/g, "");
@@ -88,7 +99,7 @@ function getInfo(req, res) {
 	}
 	
 	var response_list = [];
-	if(query === "all") {
+	if(query == "all") {
 		for(var i=0; i<=CHARDB.length-1; i++) response_list.push(CHARDB[i].charinfo);
 		res.send(response_list);
 		return;
@@ -100,22 +111,20 @@ function getInfo(req, res) {
 	
 	var matches = [];
 	for(tag in taglist) {
+		matches.push([]);
 		for(tagname in TAG_INDEX) {
 			if(tagname.indexOf(taglist[tag]) == 0) {
-				console.log("Found " + taglist[tag] + " in " + tagname + " " + matches.length)
-				console.log(TAG_INDEX);
-				if(matches.length == 0) matches = TAG_INDEX[tagname].slice();
+				console.log("match tag "+ tagname + " " + taglist[tag]);
+				if(matches[0].length == 0) matches[0] = TAG_INDEX[tagname].slice();
 				else {
-					for(matchtag in TAG_INDEX[tagname]) {
-						if(!contains(matches, TAG_INDEX[tagname][matchtag])) matches.splice(matchtag, 1);
-					}
+					matches[0] = matches[0].concat(TAG_INDEX[tagname].slice());
 				}
 			}		
 		}
 	}
-	
-	Logger.log("Returning characters: ", Logger.LVL_VERBOSE);
-	Logger.log(matches, Logger.LVL_VERBOSE)
+	matches = intersect_all(matches);
+	//Logger.log("Returning characters: ", Logger.LVL_VERBOSE);
+	//Logger.log(matches, Logger.LVL_VERBOSE)
 	
 	for(match in matches) {
 		response_list.push(getCharacterById(matches[match]));

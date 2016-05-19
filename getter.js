@@ -8,14 +8,37 @@ var options = {
 
 var matcher = /class="description".*/g;
 
+var fs = require('fs');
+var request = require('request');
+var offset = 0;
+var download = function (uri, filename, callback) {
+	setTimeout(function (){
+			request.get(uri, function (err, res, body) {
+			if(err) {
+				console.log(err);
+				return;
+			}
+			//console.log('content-type:', res.headers['content-type']);
+			//console.log('content-length:', res.headers['content-length']);
+			console.log("Downloading " + uri);
+			request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+		})
+	}, offset*100);
+	offset +=1;
+};
 function forchar(err, window) {
-
+	
 	var obj = {
 		"charinfo" : {}
 
 	};
-
+	try {
 	var name = window.$(".description h2").text();
+	} catch (e) {
+		console.log(e);
+		return;
+	}
+	console.log("Parsing " + name);
 	var desc = window.$(".description .skilldescr").text();
 	obj.charinfo.id = name.toLowerCase().replace(/ /g, "_").replace("(", "").replace(")", "");
 	obj.charinfo.name = name;
@@ -29,7 +52,9 @@ function forchar(err, window) {
 		];
 		ability[0].name = window.$(this).find("h2").text();
 		ability[0].description = window.$(this).find(".skilldescr").text().replace(/[\n\t]/g, "");
-
+		download(window.$(this).find(".skilldescr img").attr("src"), "testfolder/" + obj.charinfo.id + "/ab" + (index + 1) + ".jpg", function () {
+			console.log('done');
+		});
 		var coststring = "";
 		var costs = window.$(this).find(".fright img").each(function (index1) {
 				if (window.$(this).attr("src").indexOf("energy_0") >= 0)
@@ -61,7 +86,6 @@ function forchar(err, window) {
 	})
 
 	//console.log(obj.charinfo.abilities)
-	var fs = require('fs');
 
 	var mkdirSync = function (path) {
 		try {
@@ -72,13 +96,19 @@ function forchar(err, window) {
 		}
 	}
 	mkdirSync("testfolder/" + obj.charinfo.id);
-	fs.writeFile("testfolder/" + obj.charinfo.id + "/" + obj.charinfo.id + ".json", JSON.stringify(obj), function (err) {
-		if (err) {
-			return console.log(err);
-		}
 
-		//console.log("The file was saved!");
+
+	download(window.$(".description .skilldescr img").attr("src"), "testfolder/" + obj.charinfo.id + "/avatar.jpg", function () {
+		console.log('done');
 	});
+
+	/*fs.writeFile("testfolder/" + obj.charinfo.id + "/" + obj.charinfo.id + ".json", JSON.stringify(obj), function (err) {
+	if (err) {
+	return console.log(err);
+	}
+
+	//console.log("The file was saved!");
+	});*/
 }
 
 jsdom = require('jsdom');
@@ -104,7 +134,8 @@ jsdom.env(
 	"http://www.naruto-arena.com/characters-and-skills/",
 	["http://code.jquery.com/jquery.js"],
 	parse);
-
+	
+	
 /*var req = http.request(options, function (res) {
 console.log('STATUS: ' + res.statusCode);
 //console.log('HEADERS: ' + JSON.stringify(res.headers));

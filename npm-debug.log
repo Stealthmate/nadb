@@ -1,0 +1,1698 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Paths\\NodeJS\\node.exe',
+1 verbose cli   'C:\\Paths\\NodeJS\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'sleep' ]
+2 info using npm@3.8.6
+3 info using node@v6.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData sleep
+8 silly fetchNamedPackageData sleep
+9 silly mapToRegistry name sleep
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'sleep',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'sleep',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/sleep
+14 verbose request uri https://registry.npmjs.org/sleep
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:50:34
+17 verbose request id d6c3bb45dc3af857
+18 http request GET https://registry.npmjs.org/sleep
+19 http 200 https://registry.npmjs.org/sleep
+20 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"7UE5RZDFRU0AIY0S9UE8EIEX1"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '2743',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Thu, 19 May 2016 08:51:10 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '280',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-fra1244-FRA',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1463647870.530318,VS0,VE0',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 silly get     etag: '"7UE5RZDFRU0AIY0S9UE8EIEX1"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '2743',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Thu, 19 May 2016 08:51:10 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '280',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-fra1244-FRA',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1463647870.530318,VS0,VE0',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving sleep to C:\Users\Stealthmate\AppData\Roaming\npm-cache\registry.npmjs.org\sleep\.cache.json
+23 verbose correctMkdir C:\Users\Stealthmate\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule sleep@3.0.1 checking installable status
+37 silly cache add args [ 'sleep', null ]
+38 verbose cache add spec sleep
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'sleep',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'sleep',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed sleep@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for sleep
+42 info addNameTag [ 'sleep', 'latest' ]
+43 silly mapToRegistry name sleep
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'sleep',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   name: 'sleep',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri https://registry.npmjs.org/sleep
+48 verbose addNameTag registry:https://registry.npmjs.org/sleep not in flight; fetching
+49 verbose get https://registry.npmjs.org/sleep not expired, no request
+50 silly addNameTag next cb for sleep with tag latest
+51 silly addNamed sleep@3.0.1
+52 verbose addNamed "3.0.1" is a plain semver version for sleep
+53 silly mapToRegistry name sleep
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'sleep',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   name: 'sleep',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/sleep
+58 verbose addRemoteTarball https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz',
+59 verbose addRemoteTarball   'be4d17c579360e07e04ed8172ba2b10a69054df3' ]
+60 info retry fetch attempt 1 at 11:50:34
+61 info attempt registry request try #1 at 11:50:34
+62 http fetch GET https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz
+63 http fetch 200 https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz
+64 silly fetchAndShaCheck shasum be4d17c579360e07e04ed8172ba2b10a69054df3
+65 verbose addTmpTarball C:\Users\STEALT~1\AppData\Local\Temp\npm-14732-d12abe3f\registry.npmjs.org\sleep\-\sleep-3.0.1.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for sleep@3.0.1
+67 verbose correctMkdir C:\Users\Stealthmate\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+68 silly cache afterAdd sleep@3.0.1
+69 verbose afterAdd C:\Users\Stealthmate\AppData\Roaming\npm-cache\sleep\3.0.1\package\package.json not in flight; writing
+70 verbose correctMkdir C:\Users\Stealthmate\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+71 verbose afterAdd C:\Users\Stealthmate\AppData\Roaming\npm-cache\sleep\3.0.1\package\package.json written
+72 silly fetchNamedPackageData nan
+73 silly mapToRegistry name nan
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry data Result {
+76 silly mapToRegistry   raw: 'nan',
+76 silly mapToRegistry   scope: null,
+76 silly mapToRegistry   name: 'nan',
+76 silly mapToRegistry   rawSpec: '',
+76 silly mapToRegistry   spec: 'latest',
+76 silly mapToRegistry   type: 'tag' }
+77 silly mapToRegistry uri https://registry.npmjs.org/nan
+78 verbose request uri https://registry.npmjs.org/nan
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 11:50:34
+81 http request GET https://registry.npmjs.org/nan
+82 http 200 https://registry.npmjs.org/nan
+83 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+83 verbose headers   etag: '"DKC1YJIJGP1AZK26YNWQ05M27"',
+83 verbose headers   'content-type': 'application/json',
+83 verbose headers   'content-encoding': 'gzip',
+83 verbose headers   'cache-control': 'max-age=300',
+83 verbose headers   'content-length': '16617',
+83 verbose headers   'accept-ranges': 'bytes',
+83 verbose headers   date: 'Thu, 19 May 2016 08:51:10 GMT',
+83 verbose headers   via: '1.1 varnish',
+83 verbose headers   age: '49',
+83 verbose headers   connection: 'keep-alive',
+83 verbose headers   'x-served-by': 'cache-fra1244-FRA',
+83 verbose headers   'x-cache': 'HIT',
+83 verbose headers   'x-cache-hits': '2',
+83 verbose headers   'x-timer': 'S1463647870.760387,VS0,VE0',
+83 verbose headers   vary: 'Accept-Encoding' }
+84 silly get cb [ 200,
+84 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+84 silly get     etag: '"DKC1YJIJGP1AZK26YNWQ05M27"',
+84 silly get     'content-type': 'application/json',
+84 silly get     'content-encoding': 'gzip',
+84 silly get     'cache-control': 'max-age=300',
+84 silly get     'content-length': '16617',
+84 silly get     'accept-ranges': 'bytes',
+84 silly get     date: 'Thu, 19 May 2016 08:51:10 GMT',
+84 silly get     via: '1.1 varnish',
+84 silly get     age: '49',
+84 silly get     connection: 'keep-alive',
+84 silly get     'x-served-by': 'cache-fra1244-FRA',
+84 silly get     'x-cache': 'HIT',
+84 silly get     'x-cache-hits': '2',
+84 silly get     'x-timer': 'S1463647870.760387,VS0,VE0',
+84 silly get     vary: 'Accept-Encoding' } ]
+85 verbose get saving nan to C:\Users\Stealthmate\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+86 verbose correctMkdir C:\Users\Stealthmate\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+87 silly resolveWithNewModule nan@2.3.3 checking installable status
+88 silly cache add args [ 'nan@>=2.0.0', null ]
+89 verbose cache add spec nan@>=2.0.0
+90 silly cache add parsed spec Result {
+90 silly cache add   raw: 'nan@>=2.0.0',
+90 silly cache add   scope: null,
+90 silly cache add   name: 'nan',
+90 silly cache add   rawSpec: '>=2.0.0',
+90 silly cache add   spec: '>=2.0.0',
+90 silly cache add   type: 'range' }
+91 silly addNamed nan@>=2.0.0
+92 verbose addNamed ">=2.0.0" is a valid semver range for nan
+93 silly addNameRange { name: 'nan', range: '>=2.0.0', hasData: false }
+94 silly mapToRegistry name nan
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry data Result {
+97 silly mapToRegistry   raw: 'nan',
+97 silly mapToRegistry   scope: null,
+97 silly mapToRegistry   name: 'nan',
+97 silly mapToRegistry   rawSpec: '',
+97 silly mapToRegistry   spec: 'latest',
+97 silly mapToRegistry   type: 'tag' }
+98 silly mapToRegistry uri https://registry.npmjs.org/nan
+99 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+100 verbose get https://registry.npmjs.org/nan not expired, no request
+101 silly addNameRange number 2 { name: 'nan', range: '>=2.0.0', hasData: true }
+102 silly addNameRange versions [ 'nan',
+102 silly addNameRange   [ '0.3.0-wip',
+102 silly addNameRange     '0.3.0-wip2',
+102 silly addNameRange     '0.3.0',
+102 silly addNameRange     '0.3.1',
+102 silly addNameRange     '0.3.2',
+102 silly addNameRange     '0.4.0',
+102 silly addNameRange     '0.4.1',
+102 silly addNameRange     '0.4.2',
+102 silly addNameRange     '0.4.3',
+102 silly addNameRange     '0.4.4',
+102 silly addNameRange     '0.5.0',
+102 silly addNameRange     '0.5.1',
+102 silly addNameRange     '0.5.2',
+102 silly addNameRange     '0.6.0',
+102 silly addNameRange     '0.7.0',
+102 silly addNameRange     '0.7.1',
+102 silly addNameRange     '0.8.0',
+102 silly addNameRange     '1.0.0',
+102 silly addNameRange     '1.1.0',
+102 silly addNameRange     '1.1.1',
+102 silly addNameRange     '1.1.2',
+102 silly addNameRange     '1.2.0',
+102 silly addNameRange     '1.3.0',
+102 silly addNameRange     '1.4.0',
+102 silly addNameRange     '1.4.1',
+102 silly addNameRange     '1.5.0',
+102 silly addNameRange     '1.4.2',
+102 silly addNameRange     '1.4.3',
+102 silly addNameRange     '1.5.1',
+102 silly addNameRange     '1.5.2',
+102 silly addNameRange     '1.6.0',
+102 silly addNameRange     '1.5.3',
+102 silly addNameRange     '1.6.1',
+102 silly addNameRange     '1.6.2',
+102 silly addNameRange     '1.7.0',
+102 silly addNameRange     '1.8.0',
+102 silly addNameRange     '1.8.1',
+102 silly addNameRange     '1.8.2',
+102 silly addNameRange     '1.8.3',
+102 silly addNameRange     '1.8.4',
+102 silly addNameRange     '1.9.0',
+102 silly addNameRange     '2.0.0',
+102 silly addNameRange     '2.0.1',
+102 silly addNameRange     '2.0.2',
+102 silly addNameRange     '2.0.3',
+102 silly addNameRange     '2.0.4',
+102 silly addNameRange     '2.0.5',
+102 silly addNameRange     '2.0.6',
+102 silly addNameRange     '2.0.7',
+102 silly addNameRange     '2.0.8',
+102 silly addNameRange     '2.0.9',
+102 silly addNameRange     '2.1.0',
+102 silly addNameRange     '2.2.0',
+102 silly addNameRange     '2.2.1',
+102 silly addNameRange     '2.3.0',
+102 silly addNameRange     '2.3.1',
+102 silly addNameRange     '2.3.2',
+102 silly addNameRange     '2.3.3' ] ]
+103 silly addNamed nan@2.3.3
+104 verbose addNamed "2.3.3" is a plain semver version for nan
+105 silly mapToRegistry name nan
+106 silly mapToRegistry using default registry
+107 silly mapToRegistry registry https://registry.npmjs.org/
+108 silly mapToRegistry data Result {
+108 silly mapToRegistry   raw: 'nan',
+108 silly mapToRegistry   scope: null,
+108 silly mapToRegistry   name: 'nan',
+108 silly mapToRegistry   rawSpec: '',
+108 silly mapToRegistry   spec: 'latest',
+108 silly mapToRegistry   type: 'tag' }
+109 silly mapToRegistry uri https://registry.npmjs.org/nan
+110 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-2.3.3.tgz not in flight; adding
+111 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-2.3.3.tgz',
+111 verbose addRemoteTarball   '64dd83c9704a83648b6c72b401f6384bd94ef16f' ]
+112 info retry fetch attempt 1 at 11:50:34
+113 info attempt registry request try #1 at 11:50:34
+114 http fetch GET https://registry.npmjs.org/nan/-/nan-2.3.3.tgz
+115 http fetch 200 https://registry.npmjs.org/nan/-/nan-2.3.3.tgz
+116 silly fetchAndShaCheck shasum 64dd83c9704a83648b6c72b401f6384bd94ef16f
+117 verbose addTmpTarball C:\Users\STEALT~1\AppData\Local\Temp\npm-14732-d12abe3f\registry.npmjs.org\nan\-\nan-2.3.3.tgz not in flight; adding
+118 verbose addTmpTarball already have metadata; skipping unpack for nan@2.3.3
+119 verbose correctMkdir C:\Users\Stealthmate\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+120 silly cache afterAdd nan@2.3.3
+121 verbose afterAdd C:\Users\Stealthmate\AppData\Roaming\npm-cache\nan\2.3.3\package\package.json not in flight; writing
+122 verbose correctMkdir C:\Users\Stealthmate\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+123 verbose afterAdd C:\Users\Stealthmate\AppData\Roaming\npm-cache\nan\2.3.3\package\package.json written
+124 silly loadAllDepsIntoIdealTree Finishing
+125 silly idealTree:prePrune nadb@1.0.0
+125 silly idealTree:prePrune +-- abab@1.0.3
+125 silly idealTree:prePrune +-- accepts@1.2.13
+125 silly idealTree:prePrune +-- acorn-globals@1.0.9
+125 silly idealTree:prePrune +-- acorn@2.7.0
+125 silly idealTree:prePrune +-- amdefine@1.0.0
+125 silly idealTree:prePrune +-- ansi-regex@2.0.0
+125 silly idealTree:prePrune +-- ansi-styles@2.2.1
+125 silly idealTree:prePrune +-- array-equal@1.0.0
+125 silly idealTree:prePrune +-- array-flatten@1.1.1
+125 silly idealTree:prePrune +-- asn1@0.2.3
+125 silly idealTree:prePrune +-- assert-plus@0.2.0
+125 silly idealTree:prePrune +-- async@2.0.0-rc.5
+125 silly idealTree:prePrune +-- aws-sign2@0.6.0
+125 silly idealTree:prePrune +-- aws4@1.4.1
+125 silly idealTree:prePrune +-- bl@1.1.2
+125 silly idealTree:prePrune | `-- readable-stream@2.0.6
+125 silly idealTree:prePrune +-- boom@2.10.1
+125 silly idealTree:prePrune +-- buffer-shims@1.0.0
+125 silly idealTree:prePrune +-- caseless@0.11.0
+125 silly idealTree:prePrune +-- chalk@1.1.3
+125 silly idealTree:prePrune +-- combined-stream@1.0.5
+125 silly idealTree:prePrune +-- commander@2.9.0
+125 silly idealTree:prePrune +-- content-disposition@0.5.1
+125 silly idealTree:prePrune +-- content-type@1.0.1
+125 silly idealTree:prePrune +-- cookie-signature@1.0.6
+125 silly idealTree:prePrune +-- cookie@0.1.5
+125 silly idealTree:prePrune +-- core-util-is@1.0.2
+125 silly idealTree:prePrune +-- cryptiles@2.0.5
+125 silly idealTree:prePrune +-- cssom@0.3.1
+125 silly idealTree:prePrune +-- cssstyle@0.2.34
+125 silly idealTree:prePrune +-- dashdash@1.13.1
+125 silly idealTree:prePrune | `-- assert-plus@1.0.0
+125 silly idealTree:prePrune +-- debug@2.2.0
+125 silly idealTree:prePrune +-- deep-is@0.1.3
+125 silly idealTree:prePrune +-- delayed-stream@1.0.0
+125 silly idealTree:prePrune +-- depd@1.1.0
+125 silly idealTree:prePrune +-- destroy@1.0.4
+125 silly idealTree:prePrune +-- dom-serializer@0.1.0
+125 silly idealTree:prePrune | `-- domelementtype@1.1.3
+125 silly idealTree:prePrune +-- domelementtype@1.3.0
+125 silly idealTree:prePrune +-- domhandler@2.3.0
+125 silly idealTree:prePrune +-- domutils@1.5.1
+125 silly idealTree:prePrune +-- ecc-jsbn@0.1.1
+125 silly idealTree:prePrune +-- ee-first@1.1.1
+125 silly idealTree:prePrune +-- ejs@2.4.1
+125 silly idealTree:prePrune +-- entities@1.1.1
+125 silly idealTree:prePrune +-- escape-html@1.0.3
+125 silly idealTree:prePrune +-- escape-string-regexp@1.0.5
+125 silly idealTree:prePrune +-- escodegen@1.8.0
+125 silly idealTree:prePrune +-- esprima@2.7.2
+125 silly idealTree:prePrune +-- estraverse@1.9.3
+125 silly idealTree:prePrune +-- esutils@2.0.2
+125 silly idealTree:prePrune +-- etag@1.7.0
+125 silly idealTree:prePrune +-- express@4.13.4
+125 silly idealTree:prePrune +-- extend@3.0.0
+125 silly idealTree:prePrune +-- extsprintf@1.0.2
+125 silly idealTree:prePrune +-- fast-levenshtein@1.1.3
+125 silly idealTree:prePrune +-- finalhandler@0.4.1
+125 silly idealTree:prePrune +-- forever-agent@0.6.1
+125 silly idealTree:prePrune +-- form-data@1.0.0-rc4
+125 silly idealTree:prePrune | `-- async@1.5.2
+125 silly idealTree:prePrune +-- forwarded@0.1.0
+125 silly idealTree:prePrune +-- fresh@0.3.0
+125 silly idealTree:prePrune +-- generate-function@2.0.0
+125 silly idealTree:prePrune +-- generate-object-property@1.2.0
+125 silly idealTree:prePrune +-- getpass@0.1.6
+125 silly idealTree:prePrune | `-- assert-plus@1.0.0
+125 silly idealTree:prePrune +-- graceful-readlink@1.0.1
+125 silly idealTree:prePrune +-- har-validator@2.0.6
+125 silly idealTree:prePrune +-- has-ansi@2.0.0
+125 silly idealTree:prePrune +-- hawk@3.1.3
+125 silly idealTree:prePrune +-- hoek@2.16.3
+125 silly idealTree:prePrune +-- htmlparser2@3.9.0
+125 silly idealTree:prePrune +-- http-errors@1.3.1
+125 silly idealTree:prePrune +-- http-signature@1.1.1
+125 silly idealTree:prePrune +-- iconv-lite@0.4.13
+125 silly idealTree:prePrune +-- inherits@2.0.1
+125 silly idealTree:prePrune +-- ipaddr.js@1.0.5
+125 silly idealTree:prePrune +-- is-my-json-valid@2.13.1
+125 silly idealTree:prePrune +-- is-property@1.0.2
+125 silly idealTree:prePrune +-- is-typedarray@1.0.0
+125 silly idealTree:prePrune +-- isarray@1.0.0
+125 silly idealTree:prePrune +-- isstream@0.1.2
+125 silly idealTree:prePrune +-- jodid25519@1.0.2
+125 silly idealTree:prePrune +-- jsbn@0.1.0
+125 silly idealTree:prePrune +-- jsdom@9.1.0
+125 silly idealTree:prePrune +-- json-schema@0.2.2
+125 silly idealTree:prePrune +-- json-stringify-safe@5.0.1
+125 silly idealTree:prePrune +-- jsonpointer@2.0.0
+125 silly idealTree:prePrune +-- jsprim@1.2.2
+125 silly idealTree:prePrune +-- levn@0.3.0
+125 silly idealTree:prePrune +-- lodash@4.12.0
+125 silly idealTree:prePrune +-- media-typer@0.3.0
+125 silly idealTree:prePrune +-- merge-descriptors@1.0.1
+125 silly idealTree:prePrune +-- methods@1.1.2
+125 silly idealTree:prePrune +-- mime-db@1.22.0
+125 silly idealTree:prePrune +-- mime-types@2.1.10
+125 silly idealTree:prePrune +-- mime@1.3.4
+125 silly idealTree:prePrune +-- ms@0.7.1
+125 silly idealTree:prePrune +-- nan@2.3.3
+125 silly idealTree:prePrune +-- negotiator@0.5.3
+125 silly idealTree:prePrune +-- node-uuid@1.4.7
+125 silly idealTree:prePrune +-- nwmatcher@1.3.7
+125 silly idealTree:prePrune +-- oauth-sign@0.8.2
+125 silly idealTree:prePrune +-- on-finished@2.3.0
+125 silly idealTree:prePrune +-- optionator@0.8.1
+125 silly idealTree:prePrune +-- parse5@1.5.1
+125 silly idealTree:prePrune +-- parseurl@1.3.1
+125 silly idealTree:prePrune +-- path-to-regexp@0.1.7
+125 silly idealTree:prePrune +-- pinkie-promise@2.0.1
+125 silly idealTree:prePrune +-- pinkie@2.0.4
+125 silly idealTree:prePrune +-- prelude-ls@1.1.2
+125 silly idealTree:prePrune +-- process-nextick-args@1.0.7
+125 silly idealTree:prePrune +-- proxy-addr@1.0.10
+125 silly idealTree:prePrune +-- qs@4.0.0
+125 silly idealTree:prePrune +-- range-parser@1.0.3
+125 silly idealTree:prePrune +-- readable-stream@2.1.3
+125 silly idealTree:prePrune +-- request@2.72.0
+125 silly idealTree:prePrune | `-- qs@6.1.0
+125 silly idealTree:prePrune +-- sax@1.2.1
+125 silly idealTree:prePrune +-- send@0.13.1
+125 silly idealTree:prePrune +-- serve-static@1.10.2
+125 silly idealTree:prePrune +-- sleep@3.0.1
+125 silly idealTree:prePrune +-- sntp@1.0.9
+125 silly idealTree:prePrune +-- source-map@0.2.0
+125 silly idealTree:prePrune +-- sshpk@1.8.3
+125 silly idealTree:prePrune | `-- assert-plus@1.0.0
+125 silly idealTree:prePrune +-- statuses@1.2.1
+125 silly idealTree:prePrune +-- string_decoder@0.10.31
+125 silly idealTree:prePrune +-- stringstream@0.0.5
+125 silly idealTree:prePrune +-- strip-ansi@3.0.1
+125 silly idealTree:prePrune +-- supports-color@2.0.0
+125 silly idealTree:prePrune +-- symbol-tree@3.1.4
+125 silly idealTree:prePrune +-- tough-cookie@2.2.2
+125 silly idealTree:prePrune +-- tr46@0.0.3
+125 silly idealTree:prePrune +-- tunnel-agent@0.4.3
+125 silly idealTree:prePrune +-- tweetnacl@0.13.3
+125 silly idealTree:prePrune +-- type-check@0.3.2
+125 silly idealTree:prePrune +-- type-is@1.6.12
+125 silly idealTree:prePrune +-- underscore@1.8.3
+125 silly idealTree:prePrune +-- unpipe@1.0.0
+125 silly idealTree:prePrune +-- util-deprecate@1.0.2
+125 silly idealTree:prePrune +-- utils-merge@1.0.0
+125 silly idealTree:prePrune +-- vary@1.0.1
+125 silly idealTree:prePrune +-- verror@1.3.6
+125 silly idealTree:prePrune +-- webidl-conversions@3.0.1
+125 silly idealTree:prePrune +-- whatwg-url@2.0.1
+125 silly idealTree:prePrune +-- wordwrap@1.0.0
+125 silly idealTree:prePrune +-- xml-name-validator@2.0.1
+125 silly idealTree:prePrune `-- xtend@4.0.1
+126 silly loadIdealTree Finishing
+127 silly currentTree nadb@1.0.0
+127 silly currentTree +-- abab@1.0.3
+127 silly currentTree +-- accepts@1.2.13
+127 silly currentTree +-- acorn-globals@1.0.9
+127 silly currentTree +-- acorn@2.7.0
+127 silly currentTree +-- amdefine@1.0.0
+127 silly currentTree +-- ansi-regex@2.0.0
+127 silly currentTree +-- ansi-styles@2.2.1
+127 silly currentTree +-- array-equal@1.0.0
+127 silly currentTree +-- array-flatten@1.1.1
+127 silly currentTree +-- asn1@0.2.3
+127 silly currentTree +-- assert-plus@0.2.0
+127 silly currentTree +-- async@2.0.0-rc.5
+127 silly currentTree +-- aws-sign2@0.6.0
+127 silly currentTree +-- aws4@1.4.1
+127 silly currentTree +-- bl@1.1.2
+127 silly currentTree | `-- readable-stream@2.0.6
+127 silly currentTree +-- boom@2.10.1
+127 silly currentTree +-- buffer-shims@1.0.0
+127 silly currentTree +-- caseless@0.11.0
+127 silly currentTree +-- chalk@1.1.3
+127 silly currentTree +-- combined-stream@1.0.5
+127 silly currentTree +-- commander@2.9.0
+127 silly currentTree +-- content-disposition@0.5.1
+127 silly currentTree +-- content-type@1.0.1
+127 silly currentTree +-- cookie-signature@1.0.6
+127 silly currentTree +-- cookie@0.1.5
+127 silly currentTree +-- core-util-is@1.0.2
+127 silly currentTree +-- cryptiles@2.0.5
+127 silly currentTree +-- cssom@0.3.1
+127 silly currentTree +-- cssstyle@0.2.34
+127 silly currentTree +-- dashdash@1.13.1
+127 silly currentTree | `-- assert-plus@1.0.0
+127 silly currentTree +-- debug@2.2.0
+127 silly currentTree +-- deep-is@0.1.3
+127 silly currentTree +-- delayed-stream@1.0.0
+127 silly currentTree +-- depd@1.1.0
+127 silly currentTree +-- destroy@1.0.4
+127 silly currentTree +-- dom-serializer@0.1.0
+127 silly currentTree | `-- domelementtype@1.1.3
+127 silly currentTree +-- domelementtype@1.3.0
+127 silly currentTree +-- domhandler@2.3.0
+127 silly currentTree +-- domutils@1.5.1
+127 silly currentTree +-- ecc-jsbn@0.1.1
+127 silly currentTree +-- ee-first@1.1.1
+127 silly currentTree +-- ejs@2.4.1
+127 silly currentTree +-- entities@1.1.1
+127 silly currentTree +-- escape-html@1.0.3
+127 silly currentTree +-- escape-string-regexp@1.0.5
+127 silly currentTree +-- escodegen@1.8.0
+127 silly currentTree +-- esprima@2.7.2
+127 silly currentTree +-- estraverse@1.9.3
+127 silly currentTree +-- esutils@2.0.2
+127 silly currentTree +-- etag@1.7.0
+127 silly currentTree +-- express@4.13.4
+127 silly currentTree +-- extend@3.0.0
+127 silly currentTree +-- extsprintf@1.0.2
+127 silly currentTree +-- fast-levenshtein@1.1.3
+127 silly currentTree +-- finalhandler@0.4.1
+127 silly currentTree +-- forever-agent@0.6.1
+127 silly currentTree +-- form-data@1.0.0-rc4
+127 silly currentTree | `-- async@1.5.2
+127 silly currentTree +-- forwarded@0.1.0
+127 silly currentTree +-- fresh@0.3.0
+127 silly currentTree +-- generate-function@2.0.0
+127 silly currentTree +-- generate-object-property@1.2.0
+127 silly currentTree +-- getpass@0.1.6
+127 silly currentTree | `-- assert-plus@1.0.0
+127 silly currentTree +-- graceful-readlink@1.0.1
+127 silly currentTree +-- har-validator@2.0.6
+127 silly currentTree +-- has-ansi@2.0.0
+127 silly currentTree +-- hawk@3.1.3
+127 silly currentTree +-- hoek@2.16.3
+127 silly currentTree +-- htmlparser2@3.9.0
+127 silly currentTree +-- http-errors@1.3.1
+127 silly currentTree +-- http-signature@1.1.1
+127 silly currentTree +-- iconv-lite@0.4.13
+127 silly currentTree +-- inherits@2.0.1
+127 silly currentTree +-- ipaddr.js@1.0.5
+127 silly currentTree +-- is-my-json-valid@2.13.1
+127 silly currentTree +-- is-property@1.0.2
+127 silly currentTree +-- is-typedarray@1.0.0
+127 silly currentTree +-- isarray@1.0.0
+127 silly currentTree +-- isstream@0.1.2
+127 silly currentTree +-- jodid25519@1.0.2
+127 silly currentTree +-- jsbn@0.1.0
+127 silly currentTree +-- jsdom@9.1.0
+127 silly currentTree +-- json-schema@0.2.2
+127 silly currentTree +-- json-stringify-safe@5.0.1
+127 silly currentTree +-- jsonpointer@2.0.0
+127 silly currentTree +-- jsprim@1.2.2
+127 silly currentTree +-- levn@0.3.0
+127 silly currentTree +-- lodash@4.12.0
+127 silly currentTree +-- media-typer@0.3.0
+127 silly currentTree +-- merge-descriptors@1.0.1
+127 silly currentTree +-- methods@1.1.2
+127 silly currentTree +-- mime-db@1.22.0
+127 silly currentTree +-- mime-types@2.1.10
+127 silly currentTree +-- mime@1.3.4
+127 silly currentTree +-- ms@0.7.1
+127 silly currentTree +-- negotiator@0.5.3
+127 silly currentTree +-- node-uuid@1.4.7
+127 silly currentTree +-- nwmatcher@1.3.7
+127 silly currentTree +-- oauth-sign@0.8.2
+127 silly currentTree +-- on-finished@2.3.0
+127 silly currentTree +-- optionator@0.8.1
+127 silly currentTree +-- parse5@1.5.1
+127 silly currentTree +-- parseurl@1.3.1
+127 silly currentTree +-- path-to-regexp@0.1.7
+127 silly currentTree +-- pinkie-promise@2.0.1
+127 silly currentTree +-- pinkie@2.0.4
+127 silly currentTree +-- prelude-ls@1.1.2
+127 silly currentTree +-- process-nextick-args@1.0.7
+127 silly currentTree +-- proxy-addr@1.0.10
+127 silly currentTree +-- qs@4.0.0
+127 silly currentTree +-- range-parser@1.0.3
+127 silly currentTree +-- readable-stream@2.1.3
+127 silly currentTree +-- request@2.72.0
+127 silly currentTree | `-- qs@6.1.0
+127 silly currentTree +-- sax@1.2.1
+127 silly currentTree +-- send@0.13.1
+127 silly currentTree +-- serve-static@1.10.2
+127 silly currentTree +-- sntp@1.0.9
+127 silly currentTree +-- source-map@0.2.0
+127 silly currentTree +-- sshpk@1.8.3
+127 silly currentTree | `-- assert-plus@1.0.0
+127 silly currentTree +-- statuses@1.2.1
+127 silly currentTree +-- string_decoder@0.10.31
+127 silly currentTree +-- stringstream@0.0.5
+127 silly currentTree +-- strip-ansi@3.0.1
+127 silly currentTree +-- supports-color@2.0.0
+127 silly currentTree +-- symbol-tree@3.1.4
+127 silly currentTree +-- tough-cookie@2.2.2
+127 silly currentTree +-- tr46@0.0.3
+127 silly currentTree +-- tunnel-agent@0.4.3
+127 silly currentTree +-- tweetnacl@0.13.3
+127 silly currentTree +-- type-check@0.3.2
+127 silly currentTree +-- type-is@1.6.12
+127 silly currentTree +-- underscore@1.8.3
+127 silly currentTree +-- unpipe@1.0.0
+127 silly currentTree +-- util-deprecate@1.0.2
+127 silly currentTree +-- utils-merge@1.0.0
+127 silly currentTree +-- vary@1.0.1
+127 silly currentTree +-- verror@1.3.6
+127 silly currentTree +-- webidl-conversions@3.0.1
+127 silly currentTree +-- whatwg-url@2.0.1
+127 silly currentTree +-- wordwrap@1.0.0
+127 silly currentTree +-- xml-name-validator@2.0.1
+127 silly currentTree `-- xtend@4.0.1
+128 silly idealTree nadb@1.0.0
+128 silly idealTree +-- abab@1.0.3
+128 silly idealTree +-- accepts@1.2.13
+128 silly idealTree +-- acorn-globals@1.0.9
+128 silly idealTree +-- acorn@2.7.0
+128 silly idealTree +-- amdefine@1.0.0
+128 silly idealTree +-- ansi-regex@2.0.0
+128 silly idealTree +-- ansi-styles@2.2.1
+128 silly idealTree +-- array-equal@1.0.0
+128 silly idealTree +-- array-flatten@1.1.1
+128 silly idealTree +-- asn1@0.2.3
+128 silly idealTree +-- assert-plus@0.2.0
+128 silly idealTree +-- async@2.0.0-rc.5
+128 silly idealTree +-- aws-sign2@0.6.0
+128 silly idealTree +-- aws4@1.4.1
+128 silly idealTree +-- bl@1.1.2
+128 silly idealTree | `-- readable-stream@2.0.6
+128 silly idealTree +-- boom@2.10.1
+128 silly idealTree +-- buffer-shims@1.0.0
+128 silly idealTree +-- caseless@0.11.0
+128 silly idealTree +-- chalk@1.1.3
+128 silly idealTree +-- combined-stream@1.0.5
+128 silly idealTree +-- commander@2.9.0
+128 silly idealTree +-- content-disposition@0.5.1
+128 silly idealTree +-- content-type@1.0.1
+128 silly idealTree +-- cookie-signature@1.0.6
+128 silly idealTree +-- cookie@0.1.5
+128 silly idealTree +-- core-util-is@1.0.2
+128 silly idealTree +-- cryptiles@2.0.5
+128 silly idealTree +-- cssom@0.3.1
+128 silly idealTree +-- cssstyle@0.2.34
+128 silly idealTree +-- dashdash@1.13.1
+128 silly idealTree | `-- assert-plus@1.0.0
+128 silly idealTree +-- debug@2.2.0
+128 silly idealTree +-- deep-is@0.1.3
+128 silly idealTree +-- delayed-stream@1.0.0
+128 silly idealTree +-- depd@1.1.0
+128 silly idealTree +-- destroy@1.0.4
+128 silly idealTree +-- dom-serializer@0.1.0
+128 silly idealTree | `-- domelementtype@1.1.3
+128 silly idealTree +-- domelementtype@1.3.0
+128 silly idealTree +-- domhandler@2.3.0
+128 silly idealTree +-- domutils@1.5.1
+128 silly idealTree +-- ecc-jsbn@0.1.1
+128 silly idealTree +-- ee-first@1.1.1
+128 silly idealTree +-- ejs@2.4.1
+128 silly idealTree +-- entities@1.1.1
+128 silly idealTree +-- escape-html@1.0.3
+128 silly idealTree +-- escape-string-regexp@1.0.5
+128 silly idealTree +-- escodegen@1.8.0
+128 silly idealTree +-- esprima@2.7.2
+128 silly idealTree +-- estraverse@1.9.3
+128 silly idealTree +-- esutils@2.0.2
+128 silly idealTree +-- etag@1.7.0
+128 silly idealTree +-- express@4.13.4
+128 silly idealTree +-- extend@3.0.0
+128 silly idealTree +-- extsprintf@1.0.2
+128 silly idealTree +-- fast-levenshtein@1.1.3
+128 silly idealTree +-- finalhandler@0.4.1
+128 silly idealTree +-- forever-agent@0.6.1
+128 silly idealTree +-- form-data@1.0.0-rc4
+128 silly idealTree | `-- async@1.5.2
+128 silly idealTree +-- forwarded@0.1.0
+128 silly idealTree +-- fresh@0.3.0
+128 silly idealTree +-- generate-function@2.0.0
+128 silly idealTree +-- generate-object-property@1.2.0
+128 silly idealTree +-- getpass@0.1.6
+128 silly idealTree | `-- assert-plus@1.0.0
+128 silly idealTree +-- graceful-readlink@1.0.1
+128 silly idealTree +-- har-validator@2.0.6
+128 silly idealTree +-- has-ansi@2.0.0
+128 silly idealTree +-- hawk@3.1.3
+128 silly idealTree +-- hoek@2.16.3
+128 silly idealTree +-- htmlparser2@3.9.0
+128 silly idealTree +-- http-errors@1.3.1
+128 silly idealTree +-- http-signature@1.1.1
+128 silly idealTree +-- iconv-lite@0.4.13
+128 silly idealTree +-- inherits@2.0.1
+128 silly idealTree +-- ipaddr.js@1.0.5
+128 silly idealTree +-- is-my-json-valid@2.13.1
+128 silly idealTree +-- is-property@1.0.2
+128 silly idealTree +-- is-typedarray@1.0.0
+128 silly idealTree +-- isarray@1.0.0
+128 silly idealTree +-- isstream@0.1.2
+128 silly idealTree +-- jodid25519@1.0.2
+128 silly idealTree +-- jsbn@0.1.0
+128 silly idealTree +-- jsdom@9.1.0
+128 silly idealTree +-- json-schema@0.2.2
+128 silly idealTree +-- json-stringify-safe@5.0.1
+128 silly idealTree +-- jsonpointer@2.0.0
+128 silly idealTree +-- jsprim@1.2.2
+128 silly idealTree +-- levn@0.3.0
+128 silly idealTree +-- lodash@4.12.0
+128 silly idealTree +-- media-typer@0.3.0
+128 silly idealTree +-- merge-descriptors@1.0.1
+128 silly idealTree +-- methods@1.1.2
+128 silly idealTree +-- mime-db@1.22.0
+128 silly idealTree +-- mime-types@2.1.10
+128 silly idealTree +-- mime@1.3.4
+128 silly idealTree +-- ms@0.7.1
+128 silly idealTree +-- nan@2.3.3
+128 silly idealTree +-- negotiator@0.5.3
+128 silly idealTree +-- node-uuid@1.4.7
+128 silly idealTree +-- nwmatcher@1.3.7
+128 silly idealTree +-- oauth-sign@0.8.2
+128 silly idealTree +-- on-finished@2.3.0
+128 silly idealTree +-- optionator@0.8.1
+128 silly idealTree +-- parse5@1.5.1
+128 silly idealTree +-- parseurl@1.3.1
+128 silly idealTree +-- path-to-regexp@0.1.7
+128 silly idealTree +-- pinkie-promise@2.0.1
+128 silly idealTree +-- pinkie@2.0.4
+128 silly idealTree +-- prelude-ls@1.1.2
+128 silly idealTree +-- process-nextick-args@1.0.7
+128 silly idealTree +-- proxy-addr@1.0.10
+128 silly idealTree +-- qs@4.0.0
+128 silly idealTree +-- range-parser@1.0.3
+128 silly idealTree +-- readable-stream@2.1.3
+128 silly idealTree +-- request@2.72.0
+128 silly idealTree | `-- qs@6.1.0
+128 silly idealTree +-- sax@1.2.1
+128 silly idealTree +-- send@0.13.1
+128 silly idealTree +-- serve-static@1.10.2
+128 silly idealTree +-- sleep@3.0.1
+128 silly idealTree +-- sntp@1.0.9
+128 silly idealTree +-- source-map@0.2.0
+128 silly idealTree +-- sshpk@1.8.3
+128 silly idealTree | `-- assert-plus@1.0.0
+128 silly idealTree +-- statuses@1.2.1
+128 silly idealTree +-- string_decoder@0.10.31
+128 silly idealTree +-- stringstream@0.0.5
+128 silly idealTree +-- strip-ansi@3.0.1
+128 silly idealTree +-- supports-color@2.0.0
+128 silly idealTree +-- symbol-tree@3.1.4
+128 silly idealTree +-- tough-cookie@2.2.2
+128 silly idealTree +-- tr46@0.0.3
+128 silly idealTree +-- tunnel-agent@0.4.3
+128 silly idealTree +-- tweetnacl@0.13.3
+128 silly idealTree +-- type-check@0.3.2
+128 silly idealTree +-- type-is@1.6.12
+128 silly idealTree +-- underscore@1.8.3
+128 silly idealTree +-- unpipe@1.0.0
+128 silly idealTree +-- util-deprecate@1.0.2
+128 silly idealTree +-- utils-merge@1.0.0
+128 silly idealTree +-- vary@1.0.1
+128 silly idealTree +-- verror@1.3.6
+128 silly idealTree +-- webidl-conversions@3.0.1
+128 silly idealTree +-- whatwg-url@2.0.1
+128 silly idealTree +-- wordwrap@1.0.0
+128 silly idealTree +-- xml-name-validator@2.0.1
+128 silly idealTree `-- xtend@4.0.1
+129 silly generateActionsToTake Starting
+130 silly install generateActionsToTake
+131 silly generateActionsToTake Finishing
+132 silly diffTrees action count 7
+133 silly diffTrees add nan@2.3.3
+134 silly diffTrees update async@2.0.0-rc.5
+135 silly diffTrees update express@4.13.4
+136 silly diffTrees update htmlparser2@3.9.0
+137 silly diffTrees update jsdom@9.1.0
+138 silly diffTrees add sleep@3.0.1
+139 silly diffTrees update underscore@1.8.3
+140 silly decomposeActions action count 56
+141 silly decomposeActions fetch nan@2.3.3
+142 silly decomposeActions extract nan@2.3.3
+143 silly decomposeActions test nan@2.3.3
+144 silly decomposeActions preinstall nan@2.3.3
+145 silly decomposeActions build nan@2.3.3
+146 silly decomposeActions install nan@2.3.3
+147 silly decomposeActions postinstall nan@2.3.3
+148 silly decomposeActions finalize nan@2.3.3
+149 silly decomposeActions fetch async@2.0.0-rc.5
+150 silly decomposeActions extract async@2.0.0-rc.5
+151 silly decomposeActions test async@2.0.0-rc.5
+152 silly decomposeActions preinstall async@2.0.0-rc.5
+153 silly decomposeActions build async@2.0.0-rc.5
+154 silly decomposeActions install async@2.0.0-rc.5
+155 silly decomposeActions postinstall async@2.0.0-rc.5
+156 silly decomposeActions finalize async@2.0.0-rc.5
+157 silly decomposeActions fetch express@4.13.4
+158 silly decomposeActions extract express@4.13.4
+159 silly decomposeActions test express@4.13.4
+160 silly decomposeActions preinstall express@4.13.4
+161 silly decomposeActions build express@4.13.4
+162 silly decomposeActions install express@4.13.4
+163 silly decomposeActions postinstall express@4.13.4
+164 silly decomposeActions finalize express@4.13.4
+165 silly decomposeActions fetch htmlparser2@3.9.0
+166 silly decomposeActions extract htmlparser2@3.9.0
+167 silly decomposeActions test htmlparser2@3.9.0
+168 silly decomposeActions preinstall htmlparser2@3.9.0
+169 silly decomposeActions build htmlparser2@3.9.0
+170 silly decomposeActions install htmlparser2@3.9.0
+171 silly decomposeActions postinstall htmlparser2@3.9.0
+172 silly decomposeActions finalize htmlparser2@3.9.0
+173 silly decomposeActions fetch jsdom@9.1.0
+174 silly decomposeActions extract jsdom@9.1.0
+175 silly decomposeActions test jsdom@9.1.0
+176 silly decomposeActions preinstall jsdom@9.1.0
+177 silly decomposeActions build jsdom@9.1.0
+178 silly decomposeActions install jsdom@9.1.0
+179 silly decomposeActions postinstall jsdom@9.1.0
+180 silly decomposeActions finalize jsdom@9.1.0
+181 silly decomposeActions fetch sleep@3.0.1
+182 silly decomposeActions extract sleep@3.0.1
+183 silly decomposeActions test sleep@3.0.1
+184 silly decomposeActions preinstall sleep@3.0.1
+185 silly decomposeActions build sleep@3.0.1
+186 silly decomposeActions install sleep@3.0.1
+187 silly decomposeActions postinstall sleep@3.0.1
+188 silly decomposeActions finalize sleep@3.0.1
+189 silly decomposeActions fetch underscore@1.8.3
+190 silly decomposeActions extract underscore@1.8.3
+191 silly decomposeActions test underscore@1.8.3
+192 silly decomposeActions preinstall underscore@1.8.3
+193 silly decomposeActions build underscore@1.8.3
+194 silly decomposeActions install underscore@1.8.3
+195 silly decomposeActions postinstall underscore@1.8.3
+196 silly decomposeActions finalize underscore@1.8.3
+197 silly executeActions Starting
+198 silly install executeActions
+199 silly doSerial global-install 0
+200 silly doParallel fetch 7
+201 verbose correctMkdir C:\Users\Stealthmate\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+202 verbose lock using C:\Users\Stealthmate\AppData\Roaming\npm-cache\_locks\staging-2fda25e5da6a5f8d.lock for D:\Programming\Naruto-Arena\node_modules\.staging
+203 silly doParallel extract 7
+204 silly extract nan@2.3.3
+205 silly extract async@2.0.0-rc.5
+206 silly extract express@4.13.4
+207 silly extract htmlparser2@3.9.0
+208 silly extract jsdom@9.1.0
+209 silly extract sleep@3.0.1
+210 silly extract underscore@1.8.3
+211 verbose unbuild node_modules\.staging\express-8fc221ea
+212 verbose unbuild node_modules\.staging\async-b0cabe04
+213 verbose unbuild node_modules\.staging\htmlparser2-26edb714
+214 verbose unbuild node_modules\.staging\nan-cef00e0b
+215 verbose unbuild node_modules\.staging\jsdom-88533c0b
+216 verbose unbuild node_modules\.staging\sleep-69d36a94
+217 verbose unbuild node_modules\.staging\underscore-db6bfe75
+218 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea is being purged from base D:\Programming\Naruto-Arena
+219 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea
+220 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04 is being purged from base D:\Programming\Naruto-Arena
+221 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04
+222 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714 is being purged from base D:\Programming\Naruto-Arena
+223 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714
+224 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b is being purged from base D:\Programming\Naruto-Arena
+225 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b
+226 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b is being purged from base D:\Programming\Naruto-Arena
+227 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b
+228 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94 is being purged from base D:\Programming\Naruto-Arena
+229 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94
+230 verbose tar unpack C:\Users\Stealthmate\AppData\Roaming\npm-cache\express\4.13.4\package.tgz
+231 verbose tar unpacking to D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea
+232 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea is being purged
+233 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea
+234 verbose tar unpack C:\Users\Stealthmate\AppData\Roaming\npm-cache\async\2.0.0-rc.5\package.tgz
+235 verbose tar unpacking to D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04
+236 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04 is being purged
+237 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04
+238 verbose tar unpack C:\Users\Stealthmate\AppData\Roaming\npm-cache\htmlparser2\3.9.0\package.tgz
+239 verbose tar unpacking to D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714
+240 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714 is being purged
+241 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714
+242 verbose tar unpack C:\Users\Stealthmate\AppData\Roaming\npm-cache\nan\2.3.3\package.tgz
+243 verbose tar unpacking to D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b
+244 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b is being purged
+245 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b
+246 verbose tar unpack C:\Users\Stealthmate\AppData\Roaming\npm-cache\jsdom\9.1.0\package.tgz
+247 verbose tar unpacking to D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b
+248 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b is being purged
+249 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b
+250 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\underscore-db6bfe75 is being purged from base D:\Programming\Naruto-Arena
+251 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\underscore-db6bfe75
+252 verbose tar unpack C:\Users\Stealthmate\AppData\Roaming\npm-cache\sleep\3.0.1\package.tgz
+253 verbose tar unpacking to D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94
+254 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94 is being purged
+255 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94
+256 silly gunzTarPerm modes [ '777', '666' ]
+257 silly gunzTarPerm modes [ '777', '666' ]
+258 silly gunzTarPerm modes [ '777', '666' ]
+259 silly gunzTarPerm modes [ '777', '666' ]
+260 silly gunzTarPerm modes [ '777', '666' ]
+261 verbose tar unpack C:\Users\Stealthmate\AppData\Roaming\npm-cache\underscore\1.8.3\package.tgz
+262 verbose tar unpacking to D:\Programming\Naruto-Arena\node_modules\.staging\underscore-db6bfe75
+263 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\underscore-db6bfe75 is being purged
+264 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\underscore-db6bfe75
+265 silly gunzTarPerm modes [ '777', '666' ]
+266 silly gunzTarPerm modes [ '777', '666' ]
+267 silly gunzTarPerm extractEntry package.json
+268 silly gunzTarPerm extractEntry package.json
+269 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+270 silly gunzTarPerm extractEntry package.json
+271 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+272 silly gunzTarPerm extractEntry package.json
+273 silly gunzTarPerm extractEntry package.json
+274 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+275 silly gunzTarPerm extractEntry package.json
+276 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+277 silly gunzTarPerm extractEntry package.json
+278 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+279 silly gunzTarPerm extractEntry LICENSE
+280 silly gunzTarPerm extractEntry index.js
+281 silly gunzTarPerm extractEntry README.md
+282 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+283 silly gunzTarPerm extractEntry README.md
+284 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+285 silly gunzTarPerm extractEntry LICENSE
+286 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+287 silly gunzTarPerm extractEntry Changelog.md
+288 silly gunzTarPerm extractEntry LICENSE.txt
+289 silly gunzTarPerm extractEntry README.md
+290 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+291 silly gunzTarPerm extractEntry LICENSE
+292 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+293 silly gunzTarPerm extractEntry include_dirs.js
+294 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+295 silly gunzTarPerm extractEntry .npmignore
+296 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+297 silly gunzTarPerm extractEntry README.md
+298 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+299 silly gunzTarPerm extractEntry README.md
+300 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+301 silly gunzTarPerm extractEntry LICENSE
+302 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+303 silly gunzTarPerm extractEntry eachOfLimit.js
+304 silly gunzTarPerm modified mode [ 'eachOfLimit.js', 436, 438 ]
+305 silly gunzTarPerm extractEntry filter.js
+306 silly gunzTarPerm modified mode [ 'filter.js', 436, 438 ]
+307 silly gunzTarPerm extractEntry filterLimit.js
+308 silly gunzTarPerm modified mode [ 'filterLimit.js', 436, 438 ]
+309 silly gunzTarPerm extractEntry History.md
+310 silly gunzTarPerm extractEntry Readme.md
+311 silly gunzTarPerm extractEntry lib/application.js
+312 silly gunzTarPerm extractEntry lib/express.js
+313 silly gunzTarPerm extractEntry lib/request.js
+314 silly gunzTarPerm extractEntry lib/response.js
+315 silly gunzTarPerm extractEntry lib/utils.js
+316 silly gunzTarPerm extractEntry lib/view.js
+317 silly gunzTarPerm extractEntry lib/middleware/init.js
+318 silly gunzTarPerm extractEntry lib/middleware/query.js
+319 silly gunzTarPerm extractEntry lib/router/index.js
+320 silly gunzTarPerm extractEntry lib/router/layer.js
+321 silly gunzTarPerm extractEntry lib/router/route.js
+322 silly gunzTarPerm extractEntry lib/CollectingHandler.js
+323 silly gunzTarPerm modified mode [ 'lib/CollectingHandler.js', 420, 438 ]
+324 silly gunzTarPerm extractEntry lib/FeedHandler.js
+325 silly gunzTarPerm modified mode [ 'lib/FeedHandler.js', 420, 438 ]
+326 silly gunzTarPerm extractEntry lib/jsdom.js
+327 silly gunzTarPerm extractEntry lib/jsdom/named-properties-tracker.js
+328 silly gunzTarPerm extractEntry lib/jsdom/utils.js
+329 silly gunzTarPerm extractEntry eachOf.js
+330 silly gunzTarPerm modified mode [ 'eachOf.js', 436, 438 ]
+331 silly gunzTarPerm extractEntry index.js
+332 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+333 silly gunzTarPerm extractEntry test.js
+334 silly gunzTarPerm modified mode [ 'test.js', 436, 438 ]
+335 silly gunzTarPerm extractEntry lib/jsdom/virtual-console.js
+336 silly gunzTarPerm extractEntry everySeries.js
+337 silly gunzTarPerm modified mode [ 'everySeries.js', 436, 438 ]
+338 silly gunzTarPerm extractEntry lib/jsdom/vm-shim.js
+339 silly gunzTarPerm extractEntry underscore.js
+340 silly gunzTarPerm modified mode [ 'underscore.js', 420, 438 ]
+341 silly gunzTarPerm extractEntry underscore-min.js
+342 silly gunzTarPerm modified mode [ 'underscore-min.js', 420, 438 ]
+343 silly gunzTarPerm extractEntry underscore-min.map
+344 silly gunzTarPerm modified mode [ 'underscore-min.map', 420, 438 ]
+345 silly gunzTarPerm extractEntry nan_converters.h
+346 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+347 silly gunzTarPerm extractEntry LICENSE.md
+348 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+349 silly gunzTarPerm extractEntry doc/node_misc.md
+350 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+351 silly gunzTarPerm extractEntry transform.js
+352 silly gunzTarPerm modified mode [ 'transform.js', 436, 438 ]
+353 silly gunzTarPerm extractEntry lib/jsdom/browser/Window.js
+354 silly gunzTarPerm extractEntry doc/asyncworker.md
+355 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+356 silly gunzTarPerm extractEntry iterator.js
+357 silly gunzTarPerm modified mode [ 'iterator.js', 436, 438 ]
+358 silly gunzTarPerm extractEntry lib/jsdom/browser/default-stylesheet.js
+359 silly gunzTarPerm extractEntry lib/Parser.js
+360 silly gunzTarPerm modified mode [ 'lib/Parser.js', 420, 438 ]
+361 silly gunzTarPerm extractEntry lib/ProxyHandler.js
+362 silly gunzTarPerm modified mode [ 'lib/ProxyHandler.js', 420, 438 ]
+363 silly gunzTarPerm extractEntry lib/Stream.js
+364 silly gunzTarPerm modified mode [ 'lib/Stream.js', 420, 438 ]
+365 silly gunzTarPerm extractEntry lib/Tokenizer.js
+366 silly gunzTarPerm modified mode [ 'lib/Tokenizer.js', 420, 438 ]
+367 silly gunzTarPerm extractEntry lib/WritableStream.js
+368 silly gunzTarPerm modified mode [ 'lib/WritableStream.js', 420, 438 ]
+369 silly gunzTarPerm extractEntry lib/index.js
+370 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+371 silly gunzTarPerm extractEntry LICENSE.txt
+372 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 438 ]
+373 silly gunzTarPerm extractEntry binding.gyp
+374 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 438 ]
+375 silly gunzTarPerm extractEntry doc/callback.md
+376 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+377 silly gunzTarPerm extractEntry doc/converters.md
+378 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+379 silly gunzTarPerm extractEntry sleep.cc
+380 silly gunzTarPerm modified mode [ 'sleep.cc', 436, 438 ]
+381 silly gunzTarPerm extractEntry lib/jsdom/browser/documentAdapter.js
+382 silly gunzTarPerm extractEntry lib/jsdom/browser/documentfeatures.js
+383 silly gunzTarPerm extractEntry doc/errors.md
+384 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+385 silly gunzTarPerm extractEntry doc/maybe_types.md
+386 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+387 silly gunzTarPerm extractEntry log.js
+388 silly gunzTarPerm modified mode [ 'log.js', 436, 438 ]
+389 silly gunzTarPerm extractEntry map.js
+390 silly gunzTarPerm modified mode [ 'map.js', 436, 438 ]
+391 silly gunzTarPerm extractEntry lib/jsdom/browser/domtohtml.js
+392 silly gunzTarPerm extractEntry lib/jsdom/browser/htmltodom.js
+393 silly gunzTarPerm extractEntry doc/methods.md
+394 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+395 silly gunzTarPerm extractEntry doc/new.md
+396 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+397 silly gunzTarPerm extractEntry doc/buffers.md
+398 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+399 silly gunzTarPerm extractEntry doc/object_wrappers.md
+400 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+401 silly gunzTarPerm extractEntry everyLimit.js
+402 silly gunzTarPerm modified mode [ 'everyLimit.js', 436, 438 ]
+403 silly gunzTarPerm extractEntry mapLimit.js
+404 silly gunzTarPerm modified mode [ 'mapLimit.js', 436, 438 ]
+405 silly gunzTarPerm extractEntry lib/jsdom/browser/not-implemented.js
+406 silly gunzTarPerm extractEntry lib/jsdom/browser/resource-loader.js
+407 silly gunzTarPerm extractEntry every.js
+408 silly gunzTarPerm modified mode [ 'every.js', 436, 438 ]
+409 silly gunzTarPerm extractEntry mapSeries.js
+410 silly gunzTarPerm modified mode [ 'mapSeries.js', 436, 438 ]
+411 silly gunzTarPerm extractEntry doc/persistent.md
+412 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+413 silly gunzTarPerm extractEntry doc/scopes.md
+414 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+415 silly gunzTarPerm extractEntry lib/jsdom/level2/style.js
+416 silly gunzTarPerm extractEntry lib/jsdom/level3/xpath.js
+417 silly gunzTarPerm extractEntry ensureAsync.js
+418 silly gunzTarPerm modified mode [ 'ensureAsync.js', 436, 438 ]
+419 silly gunzTarPerm extractEntry memoize.js
+420 silly gunzTarPerm modified mode [ 'memoize.js', 436, 438 ]
+421 silly gunzTarPerm extractEntry doc/script.md
+422 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+423 silly gunzTarPerm extractEntry doc/string_bytes.md
+424 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+425 silly gunzTarPerm extractEntry lib/jsdom/living/xmlhttprequest.js
+426 silly gunzTarPerm extractEntry eachSeries.js
+427 silly gunzTarPerm modified mode [ 'eachSeries.js', 436, 438 ]
+428 silly gunzTarPerm extractEntry nextTick.js
+429 silly gunzTarPerm modified mode [ 'nextTick.js', 436, 438 ]
+430 silly gunzTarPerm extractEntry doc/v8_internals.md
+431 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+432 silly gunzTarPerm extractEntry doc/v8_misc.md
+433 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+434 silly gunzTarPerm extractEntry lib/jsdom/living/form-data.js
+435 silly gunzTarPerm extractEntry lib/jsdom/living/html-collection.js
+436 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94\node_modules is being purged
+437 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94\node_modules
+438 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\underscore-db6bfe75\node_modules is being purged
+439 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\underscore-db6bfe75\node_modules
+440 silly gunzTarPerm extractEntry eachOfSeries.js
+441 silly gunzTarPerm modified mode [ 'eachOfSeries.js', 436, 438 ]
+442 silly gunzTarPerm extractEntry eachLimit.js
+443 silly gunzTarPerm modified mode [ 'eachLimit.js', 436, 438 ]
+444 silly gunzTarPerm extractEntry nan.h
+445 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+446 silly gunzTarPerm extractEntry lib/jsdom/living/index.js
+447 silly gunzTarPerm extractEntry lib/jsdom/living/named-properties-window.js
+448 silly gunzTarPerm extractEntry forever.js
+449 silly gunzTarPerm modified mode [ 'forever.js', 436, 438 ]
+450 silly gunzTarPerm extractEntry parallel.js
+451 silly gunzTarPerm modified mode [ 'parallel.js', 436, 438 ]
+452 silly gunzTarPerm extractEntry nan_callbacks.h
+453 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+454 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+455 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+456 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+457 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+458 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+459 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+460 silly gunzTarPerm extractEntry each.js
+461 silly gunzTarPerm modified mode [ 'each.js', 436, 438 ]
+462 silly gunzTarPerm extractEntry parallelLimit.js
+463 silly gunzTarPerm modified mode [ 'parallelLimit.js', 436, 438 ]
+464 silly gunzTarPerm extractEntry lib/jsdom/living/form-data-symbols.js
+465 silly gunzTarPerm extractEntry lib/jsdom/living/node-document-position.js
+466 silly gunzTarPerm extractEntry lib/jsdom/living/node-filter.js
+467 silly gunzTarPerm extractEntry lib/jsdom/living/node-iterator.js
+468 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+469 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+470 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+471 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+472 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+473 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+474 silly gunzTarPerm extractEntry during.js
+475 silly gunzTarPerm modified mode [ 'during.js', 436, 438 ]
+476 silly gunzTarPerm extractEntry priorityQueue.js
+477 silly gunzTarPerm modified mode [ 'priorityQueue.js', 436, 438 ]
+478 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+479 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+480 silly gunzTarPerm extractEntry lib/jsdom/living/node-list.js
+481 silly gunzTarPerm extractEntry lib/jsdom/living/node-type.js
+482 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714\node_modules is being purged
+483 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714\node_modules
+484 silly gunzTarPerm extractEntry doWhilst.js
+485 silly gunzTarPerm modified mode [ 'doWhilst.js', 436, 438 ]
+486 silly gunzTarPerm extractEntry queue.js
+487 silly gunzTarPerm modified mode [ 'queue.js', 436, 438 ]
+488 silly gunzTarPerm extractEntry lib/jsdom/living/filelist.js
+489 silly gunzTarPerm extractEntry lib/jsdom/living/node.js
+490 silly gunzTarPerm extractEntry doUntil.js
+491 silly gunzTarPerm modified mode [ 'doUntil.js', 436, 438 ]
+492 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+493 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+494 silly gunzTarPerm extractEntry nan_new.h
+495 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+496 silly gunzTarPerm extractEntry lib/jsdom/living/filelist-symbols.js
+497 silly gunzTarPerm extractEntry lib/jsdom/living/post-message.js
+498 silly gunzTarPerm extractEntry race.js
+499 silly gunzTarPerm modified mode [ 'race.js', 436, 438 ]
+500 silly gunzTarPerm extractEntry doDuring.js
+501 silly gunzTarPerm modified mode [ 'doDuring.js', 436, 438 ]
+502 silly gunzTarPerm extractEntry nan_object_wrap.h
+503 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+504 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+505 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+506 silly gunzTarPerm extractEntry lib/jsdom/living/file.js
+507 silly gunzTarPerm extractEntry lib/jsdom/living/register-elements.js
+508 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+509 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+510 silly gunzTarPerm extractEntry nan_string_bytes.h
+511 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+512 silly gunzTarPerm extractEntry reduce.js
+513 silly gunzTarPerm modified mode [ 'reduce.js', 436, 438 ]
+514 silly gunzTarPerm extractEntry unmemoize.js
+515 silly gunzTarPerm modified mode [ 'unmemoize.js', 436, 438 ]
+516 silly gunzTarPerm extractEntry reduceRight.js
+517 silly gunzTarPerm modified mode [ 'reduceRight.js', 436, 438 ]
+518 silly gunzTarPerm extractEntry dir.js
+519 silly gunzTarPerm modified mode [ 'dir.js', 436, 438 ]
+520 silly gunzTarPerm extractEntry lib/jsdom/living/file-symbols.js
+521 silly gunzTarPerm extractEntry lib/jsdom/living/xhr-sync-worker.js
+522 silly gunzTarPerm extractEntry lib/jsdom/living/file-reader.js
+523 silly gunzTarPerm extractEntry lib/jsdom/living/xhr-utils.js
+524 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+525 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+526 silly gunzTarPerm extractEntry nan_weak.h
+527 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+528 silly gunzTarPerm extractEntry reflect.js
+529 silly gunzTarPerm modified mode [ 'reflect.js', 436, 438 ]
+530 silly gunzTarPerm extractEntry detectSeries.js
+531 silly gunzTarPerm modified mode [ 'detectSeries.js', 436, 438 ]
+532 silly gunzTarPerm extractEntry reflectAll.js
+533 silly gunzTarPerm modified mode [ 'reflectAll.js', 436, 438 ]
+534 silly gunzTarPerm extractEntry detectLimit.js
+535 silly gunzTarPerm modified mode [ 'detectLimit.js', 436, 438 ]
+536 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea\node_modules is being purged
+537 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea\node_modules
+538 silly gunzTarPerm extractEntry CHANGELOG.md
+539 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+540 silly gunzTarPerm extractEntry tools/package.json
+541 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+542 silly gunzTarPerm extractEntry lib/jsdom/living/dom-token-list.js
+543 silly gunzTarPerm extractEntry lib/jsdom/living/xmlhttprequest-event-target.js
+544 silly gunzTarPerm extractEntry reject.js
+545 silly gunzTarPerm modified mode [ 'reject.js', 436, 438 ]
+546 silly gunzTarPerm extractEntry detect.js
+547 silly gunzTarPerm modified mode [ 'detect.js', 436, 438 ]
+548 silly gunzTarPerm extractEntry tools/README.md
+549 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+550 silly gunzTarPerm extractEntry tools/1to2.js
+551 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+552 silly gunzTarPerm extractEntry rejectLimit.js
+553 silly gunzTarPerm modified mode [ 'rejectLimit.js', 436, 438 ]
+554 silly gunzTarPerm extractEntry constant.js
+555 silly gunzTarPerm modified mode [ 'constant.js', 436, 438 ]
+556 silly gunzTarPerm extractEntry lib/jsdom/living/blob.js
+557 silly gunzTarPerm extractEntry lib/jsdom/living/xmlhttprequest-symbols.js
+558 silly gunzTarPerm extractEntry lib/jsdom/living/blob-symbols.js
+559 silly gunzTarPerm extractEntry lib/jsdom/living/xmlhttprequest-upload.js
+560 silly gunzTarPerm extractEntry lib/jsdom/living/attributes.js
+561 silly gunzTarPerm extractEntry rejectSeries.js
+562 silly gunzTarPerm modified mode [ 'rejectSeries.js', 436, 438 ]
+563 silly gunzTarPerm extractEntry concatSeries.js
+564 silly gunzTarPerm modified mode [ 'concatSeries.js', 436, 438 ]
+565 silly gunzTarPerm extractEntry lib/jsdom/living/traversal/TreeWalker-impl.js
+566 silly gunzTarPerm extractEntry lib/jsdom/living/window/History-impl.js
+567 silly gunzTarPerm extractEntry retry.js
+568 silly gunzTarPerm modified mode [ 'retry.js', 436, 438 ]
+569 silly gunzTarPerm extractEntry concat.js
+570 silly gunzTarPerm modified mode [ 'concat.js', 436, 438 ]
+571 silly gunzTarPerm extractEntry retryable.js
+572 silly gunzTarPerm modified mode [ 'retryable.js', 436, 438 ]
+573 silly gunzTarPerm extractEntry compose.js
+574 silly gunzTarPerm modified mode [ 'compose.js', 436, 438 ]
+575 silly gunzTarPerm extractEntry seq.js
+576 silly gunzTarPerm modified mode [ 'seq.js', 436, 438 ]
+577 silly gunzTarPerm extractEntry until.js
+578 silly gunzTarPerm modified mode [ 'until.js', 436, 438 ]
+579 silly gunzTarPerm extractEntry lib/jsdom/living/window/Location-impl.js
+580 silly gunzTarPerm extractEntry lib/jsdom/living/window/navigation.js
+581 silly gunzTarPerm extractEntry lib/jsdom/living/window/History.idl
+582 silly gunzTarPerm extractEntry lib/jsdom/living/events/CustomEvent-impl.js
+583 silly gunzTarPerm extractEntry series.js
+584 silly gunzTarPerm modified mode [ 'series.js', 436, 438 ]
+585 silly gunzTarPerm extractEntry cargo.js
+586 silly gunzTarPerm modified mode [ 'cargo.js', 436, 438 ]
+587 silly gunzTarPerm extractEntry setImmediate.js
+588 silly gunzTarPerm modified mode [ 'setImmediate.js', 436, 438 ]
+589 silly gunzTarPerm extractEntry waterfall.js
+590 silly gunzTarPerm modified mode [ 'waterfall.js', 436, 438 ]
+591 silly gunzTarPerm extractEntry some.js
+592 silly gunzTarPerm modified mode [ 'some.js', 436, 438 ]
+593 silly gunzTarPerm extractEntry autoInject.js
+594 silly gunzTarPerm modified mode [ 'autoInject.js', 436, 438 ]
+595 silly gunzTarPerm extractEntry lib/jsdom/living/events/EventTarget-impl.js
+596 silly gunzTarPerm extractEntry lib/jsdom/living/events/FocusEvent-impl.js
+597 silly gunzTarPerm extractEntry someLimit.js
+598 silly gunzTarPerm modified mode [ 'someLimit.js', 436, 438 ]
+599 silly gunzTarPerm extractEntry auto.js
+600 silly gunzTarPerm modified mode [ 'auto.js', 436, 438 ]
+601 silly gunzTarPerm extractEntry lib/jsdom/living/events/HashChangeEvent-impl.js
+602 silly gunzTarPerm extractEntry lib/jsdom/living/events/Event-impl.js
+603 silly gunzTarPerm extractEntry someSeries.js
+604 silly gunzTarPerm modified mode [ 'someSeries.js', 436, 438 ]
+605 silly gunzTarPerm extractEntry asyncify.js
+606 silly gunzTarPerm modified mode [ 'asyncify.js', 436, 438 ]
+607 silly gunzTarPerm extractEntry lib/jsdom/living/events/MessageEvent-impl.js
+608 silly gunzTarPerm extractEntry lib/jsdom/living/events/MouseEvent-impl.js
+609 silly gunzTarPerm extractEntry sortBy.js
+610 silly gunzTarPerm modified mode [ 'sortBy.js', 436, 438 ]
+611 silly gunzTarPerm extractEntry applyEachSeries.js
+612 silly gunzTarPerm modified mode [ 'applyEachSeries.js', 436, 438 ]
+613 silly gunzTarPerm extractEntry lib/jsdom/living/events/PopStateEvent-impl.js
+614 silly gunzTarPerm extractEntry lib/jsdom/living/events/ProgressEvent-impl.js
+615 silly gunzTarPerm extractEntry lib/jsdom/living/events/TouchEvent-impl.js
+616 silly gunzTarPerm extractEntry lib/jsdom/living/events/ErrorEvent-impl.js
+617 silly gunzTarPerm extractEntry lib/jsdom/living/events/UIEvent-impl.js
+618 silly gunzTarPerm extractEntry lib/jsdom/living/events/KeyboardEvent-impl.js
+619 silly gunzTarPerm extractEntry timeout.js
+620 silly gunzTarPerm modified mode [ 'timeout.js', 436, 438 ]
+621 silly gunzTarPerm extractEntry applyEach.js
+622 silly gunzTarPerm modified mode [ 'applyEach.js', 436, 438 ]
+623 silly gunzTarPerm extractEntry lib/jsdom/living/attributes/Attr-impl.js
+624 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/CharacterData-impl.js
+625 silly gunzTarPerm extractEntry times.js
+626 silly gunzTarPerm modified mode [ 'times.js', 436, 438 ]
+627 silly gunzTarPerm extractEntry apply.js
+628 silly gunzTarPerm modified mode [ 'apply.js', 436, 438 ]
+629 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLLIElement-impl.js
+630 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLLabelElement-impl.js
+631 silly gunzTarPerm extractEntry whilst.js
+632 silly gunzTarPerm modified mode [ 'whilst.js', 436, 438 ]
+633 silly gunzTarPerm extractEntry timesLimit.js
+634 silly gunzTarPerm modified mode [ 'timesLimit.js', 436, 438 ]
+635 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLLegendElement-impl.js
+636 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLLinkElement-impl.js
+637 silly gunzTarPerm extractEntry timesSeries.js
+638 silly gunzTarPerm modified mode [ 'timesSeries.js', 436, 438 ]
+639 silly gunzTarPerm extractEntry filterSeries.js
+640 silly gunzTarPerm modified mode [ 'filterSeries.js', 436, 438 ]
+641 silly gunzTarPerm extractEntry index.js
+642 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+643 silly gunzTarPerm extractEntry internal/applyEach.js
+644 silly gunzTarPerm modified mode [ 'internal/applyEach.js', 436, 438 ]
+645 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLInputElement-impl.js
+646 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLMediaElement-impl.js
+647 silly gunzTarPerm extractEntry internal/eachOfLimit.js
+648 silly gunzTarPerm modified mode [ 'internal/eachOfLimit.js', 436, 438 ]
+649 silly gunzTarPerm extractEntry internal/filter.js
+650 silly gunzTarPerm modified mode [ 'internal/filter.js', 436, 438 ]
+651 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+652 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLMetaElement-impl.js
+653 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLMeterElement-impl.js
+654 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLModElement-impl.js
+655 silly gunzTarPerm extractEntry internal/findGetResult.js
+656 silly gunzTarPerm modified mode [ 'internal/findGetResult.js', 436, 438 ]
+657 silly gunzTarPerm extractEntry internal/doSeries.js
+658 silly gunzTarPerm modified mode [ 'internal/doSeries.js', 436, 438 ]
+659 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLImageElement-impl.js
+660 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLOListElement-impl.js
+661 silly gunzTarPerm extractEntry internal/initialParams.js
+662 silly gunzTarPerm modified mode [ 'internal/initialParams.js', 436, 438 ]
+663 silly gunzTarPerm extractEntry internal/iterator.js
+664 silly gunzTarPerm modified mode [ 'internal/iterator.js', 436, 438 ]
+665 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLIFrameElement-impl.js
+666 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLObjectElement-impl.js
+667 silly gunzTarPerm extractEntry internal/map.js
+668 silly gunzTarPerm modified mode [ 'internal/map.js', 436, 438 ]
+669 silly gunzTarPerm extractEntry internal/notId.js
+670 silly gunzTarPerm modified mode [ 'internal/notId.js', 436, 438 ]
+671 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLHyperlinkElementUtils-impl.js
+672 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLOptGroupElement-impl.js
+673 silly gunzTarPerm extractEntry internal/once.js
+674 silly gunzTarPerm modified mode [ 'internal/once.js', 436, 438 ]
+675 silly gunzTarPerm extractEntry internal/doParallelLimit.js
+676 silly gunzTarPerm modified mode [ 'internal/doParallelLimit.js', 436, 438 ]
+677 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLHtmlElement-impl.js
+678 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLOptionElement-impl.js
+679 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLHeadingElement-impl.js
+680 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLOutputElement-impl.js
+681 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLHeadElement-impl.js
+682 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLParagraphElement-impl.js
+683 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLHRElement-impl.js
+684 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLParamElement-impl.js
+685 silly gunzTarPerm extractEntry internal/onlyOnce.js
+686 silly gunzTarPerm modified mode [ 'internal/onlyOnce.js', 436, 438 ]
+687 silly gunzTarPerm extractEntry internal/doParallel.js
+688 silly gunzTarPerm modified mode [ 'internal/doParallel.js', 436, 438 ]
+689 silly gunzTarPerm extractEntry internal/parallel.js
+690 silly gunzTarPerm modified mode [ 'internal/parallel.js', 436, 438 ]
+691 silly gunzTarPerm extractEntry internal/doLimit.js
+692 silly gunzTarPerm modified mode [ 'internal/doLimit.js', 436, 438 ]
+693 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLFrameSetElement-impl.js
+694 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLPreElement-impl.js
+695 silly gunzTarPerm extractEntry internal/queue.js
+696 silly gunzTarPerm modified mode [ 'internal/queue.js', 436, 438 ]
+697 silly gunzTarPerm extractEntry internal/createTester.js
+698 silly gunzTarPerm modified mode [ 'internal/createTester.js', 436, 438 ]
+699 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLFrameElement-impl.js
+700 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLProgressElement-impl.js
+701 silly gunzTarPerm extractEntry internal/reject.js
+702 silly gunzTarPerm modified mode [ 'internal/reject.js', 436, 438 ]
+703 silly gunzTarPerm extractEntry internal/consoleFunc.js
+704 silly gunzTarPerm modified mode [ 'internal/consoleFunc.js', 436, 438 ]
+705 silly gunzTarPerm extractEntry internal/setImmediate.js
+706 silly gunzTarPerm modified mode [ 'internal/setImmediate.js', 436, 438 ]
+707 silly gunzTarPerm extractEntry internal/concat.js
+708 silly gunzTarPerm modified mode [ 'internal/concat.js', 436, 438 ]
+709 silly gunzTarPerm extractEntry internal/withoutIndex.js
+710 silly gunzTarPerm modified mode [ 'internal/withoutIndex.js', 436, 438 ]
+711 silly gunzTarPerm extractEntry internal/getIterator.js
+712 silly gunzTarPerm modified mode [ 'internal/getIterator.js', 436, 438 ]
+713 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLFormElement-impl.js
+714 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLQuoteElement-impl.js
+715 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLFontElement-impl.js
+716 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLScriptElement-impl.js
+717 silly gunzTarPerm extractEntry dist/async.js
+718 silly gunzTarPerm modified mode [ 'dist/async.js', 436, 438 ]
+719 silly gunzTarPerm extractEntry dist/async.min.js
+720 silly gunzTarPerm modified mode [ 'dist/async.min.js', 436, 438 ]
+721 silly gunzTarPerm extractEntry component.json
+722 silly gunzTarPerm modified mode [ 'component.json', 436, 438 ]
+723 silly gunzTarPerm extractEntry bower.json
+724 silly gunzTarPerm modified mode [ 'bower.json', 436, 438 ]
+725 silly gunzTarPerm extractEntry CHANGELOG.md
+726 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+727 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b\node_modules is being purged
+728 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b\node_modules
+729 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLFieldSetElement-impl.js
+730 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLSelectElement-impl.js
+731 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLEmbedElement-impl.js
+732 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLSourceElement-impl.js
+733 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLElement-impl.js
+734 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLSpanElement-impl.js
+735 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLDivElement-impl.js
+736 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLStyleElement-impl.js
+737 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLDirectoryElement-impl.js
+738 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTableCaptionElement-impl.js
+739 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLDialogElement-impl.js
+740 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTableCellElement-impl.js
+741 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLDataListElement-impl.js
+742 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTableColElement-impl.js
+743 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLDataElement-impl.js
+744 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTableDataCellElement-impl.js
+745 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLDListElement-impl.js
+746 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTableElement-impl.js
+747 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLCanvasElement-impl.js
+748 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTableHeaderCellElement-impl.js
+749 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLButtonElement-impl.js
+750 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTableRowElement-impl.js
+751 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLBodyElement-impl.js
+752 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTableSectionElement-impl.js
+753 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLBaseElement-impl.js
+754 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTemplateElement-impl.js
+755 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLBRElement-impl.js
+756 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTextAreaElement-impl.js
+757 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLAudioElement-impl.js
+758 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTimeElement-impl.js
+759 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLAreaElement-impl.js
+760 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTitleElement-impl.js
+761 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLAppletElement-impl.js
+762 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLTrackElement-impl.js
+763 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLAnchorElement-impl.js
+764 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLUListElement-impl.js
+765 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/GlobalEventHandlers-impl.js
+766 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLUnknownElement-impl.js
+767 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/ElementContentEditable-impl.js
+768 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLVideoElement-impl.js
+769 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/ElementCSSInlineStyle-impl.js
+770 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/LinkStyle-impl.js
+771 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/Element-impl.js
+772 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/Node-impl.js
+773 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/DocumentType-impl.js
+774 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/NonDocumentTypeChildNode-impl.js
+775 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/DocumentFragment-impl.js
+776 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/NonElementParentNode-impl.js
+777 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/Document-impl.js
+778 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/ParentNode-impl.js
+779 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/DOMImplementation-impl.js
+780 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/ProcessingInstruction-impl.js
+781 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/Comment-impl.js
+782 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/Text-impl.js
+783 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/ChildNode-impl.js
+784 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/WindowEventHandlers-impl.js
+785 silly gunzTarPerm extractEntry lib/jsdom/living/nodes/HTMLMapElement-impl.js
+786 silly gunzTarPerm extractEntry lib/jsdom/living/generated/utils.js
+787 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLModElement.js
+788 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLOListElement.js
+789 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLObjectElement.js
+790 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLMeterElement.js
+791 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLOptionElement.js
+792 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLOutputElement.js
+793 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLParagraphElement.js
+794 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLParamElement.js
+795 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLPreElement.js
+796 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLMetaElement.js
+797 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLProgressElement.js
+798 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLMenuElement.js
+799 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLQuoteElement.js
+800 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLMediaElement.js
+801 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLScriptElement.js
+802 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLMapElement.js
+803 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLSelectElement.js
+804 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLLinkElement.js
+805 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLSourceElement.js
+806 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLLegendElement.js
+807 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLSpanElement.js
+808 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLLabelElement.js
+809 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLStyleElement.js
+810 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLLIElement.js
+811 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTableCaptionElement.js
+812 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLInputElement.js
+813 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTableCellElement.js
+814 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLImageElement.js
+815 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTableColElement.js
+816 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLIFrameElement.js
+817 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTableDataCellElement.js
+818 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLHyperlinkElementUtils.js
+819 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTableElement.js
+820 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLHtmlElement.js
+821 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTableHeaderCellElement.js
+822 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLHeadingElement.js
+823 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTableRowElement.js
+824 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLHeadElement.js
+825 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTableSectionElement.js
+826 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLHRElement.js
+827 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTemplateElement.js
+828 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLFrameSetElement.js
+829 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTextAreaElement.js
+830 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLFrameElement.js
+831 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTimeElement.js
+832 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLFormElement.js
+833 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTitleElement.js
+834 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLFontElement.js
+835 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLTrackElement.js
+836 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLFieldSetElement.js
+837 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLUListElement.js
+838 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLEmbedElement.js
+839 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLUnknownElement.js
+840 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLElement.js
+841 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLVideoElement.js
+842 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLDivElement.js
+843 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HashChangeEvent.js
+844 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLDirectoryElement.js
+845 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HashChangeEventInit.js
+846 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLDialogElement.js
+847 silly gunzTarPerm extractEntry lib/jsdom/living/generated/History.js
+848 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLDataListElement.js
+849 silly gunzTarPerm extractEntry lib/jsdom/living/generated/KeyboardEvent.js
+850 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLDataElement.js
+851 silly gunzTarPerm extractEntry lib/jsdom/living/generated/KeyboardEventInit.js
+852 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLDListElement.js
+853 silly gunzTarPerm extractEntry lib/jsdom/living/generated/LinkStyle.js
+854 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLCanvasElement.js
+855 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Location.js
+856 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLButtonElement.js
+857 silly gunzTarPerm extractEntry lib/jsdom/living/generated/MessageEvent.js
+858 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLBodyElement.js
+859 silly gunzTarPerm extractEntry lib/jsdom/living/generated/MessageEventInit.js
+860 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLBaseElement.js
+861 silly gunzTarPerm extractEntry lib/jsdom/living/generated/MouseEvent.js
+862 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLBRElement.js
+863 silly gunzTarPerm extractEntry lib/jsdom/living/generated/MouseEventInit.js
+864 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLAudioElement.js
+865 silly gunzTarPerm extractEntry lib/jsdom/living/generated/MutationEvent.js
+866 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLAreaElement.js
+867 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Navigator.js
+868 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLAppletElement.js
+869 silly gunzTarPerm extractEntry lib/jsdom/living/generated/NavigatorConcurrentHardware.js
+870 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLAnchorElement.js
+871 silly gunzTarPerm extractEntry lib/jsdom/living/generated/NavigatorCookies.js
+872 silly gunzTarPerm extractEntry lib/jsdom/living/generated/GlobalEventHandlers.js
+873 silly gunzTarPerm extractEntry lib/jsdom/living/generated/NavigatorID.js
+874 silly gunzTarPerm extractEntry lib/jsdom/living/generated/FocusEventInit.js
+875 silly gunzTarPerm extractEntry lib/jsdom/living/generated/NavigatorLanguage.js
+876 silly gunzTarPerm extractEntry lib/jsdom/living/generated/FocusEvent.js
+877 silly gunzTarPerm extractEntry lib/jsdom/living/generated/NavigatorOnLine.js
+878 silly gunzTarPerm extractEntry lib/jsdom/living/generated/EventTarget.js
+879 silly gunzTarPerm extractEntry lib/jsdom/living/generated/NavigatorPlugins.js
+880 silly gunzTarPerm extractEntry lib/jsdom/living/generated/EventModifierInit.js
+881 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Node.js
+882 silly gunzTarPerm extractEntry lib/jsdom/living/generated/EventInit.js
+883 silly gunzTarPerm extractEntry lib/jsdom/living/generated/NonDocumentTypeChildNode.js
+884 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Event.js
+885 silly gunzTarPerm extractEntry lib/jsdom/living/generated/NonElementParentNode.js
+886 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ErrorEventInit.js
+887 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ParentNode.js
+888 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ErrorEvent.js
+889 silly gunzTarPerm extractEntry lib/jsdom/living/generated/PopStateEvent.js
+890 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ElementContentEditable.js
+891 silly gunzTarPerm extractEntry lib/jsdom/living/generated/PopStateEventInit.js
+892 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ElementCSSInlineStyle.js
+893 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ProcessingInstruction.js
+894 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Element.js
+895 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ProgressEvent.js
+896 silly gunzTarPerm extractEntry lib/jsdom/living/generated/DocumentType.js
+897 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ProgressEventInit.js
+898 silly gunzTarPerm extractEntry lib/jsdom/living/generated/DocumentFragment.js
+899 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ScrollIntoViewOptions.js
+900 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Document.js
+901 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ScrollOptions.js
+902 silly gunzTarPerm extractEntry lib/jsdom/living/generated/DOMImplementation.js
+903 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Text.js
+904 silly gunzTarPerm extractEntry lib/jsdom/living/generated/CustomEventInit.js
+905 silly gunzTarPerm extractEntry lib/jsdom/living/generated/TouchEvent.js
+906 silly gunzTarPerm extractEntry lib/jsdom/living/generated/CustomEvent.js
+907 silly gunzTarPerm extractEntry lib/jsdom/living/generated/TreeWalker.js
+908 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Comment.js
+909 silly gunzTarPerm extractEntry lib/jsdom/living/generated/UIEvent.js
+910 silly gunzTarPerm extractEntry lib/jsdom/living/generated/ChildNode.js
+911 silly gunzTarPerm extractEntry lib/jsdom/living/generated/UIEventInit.js
+912 silly gunzTarPerm extractEntry lib/jsdom/living/generated/CharacterData.js
+913 silly gunzTarPerm extractEntry lib/jsdom/living/generated/WindowEventHandlers.js
+914 silly gunzTarPerm extractEntry lib/jsdom/living/generated/Attr.js
+915 silly gunzTarPerm extractEntry lib/jsdom/living/generated/HTMLOptGroupElement.js
+916 silly gunzTarPerm extractEntry lib/jsdom/living/generated/.gitkeep
+917 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/document-base-url.js
+918 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/traversal.js
+919 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/focusing.js
+920 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/headers.js
+921 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/internal-constants.js
+922 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/encoding.js
+923 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/proxied-window-event-handlers.js
+924 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/runtime-script-errors.js
+925 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/selectors.js
+926 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/stylesheets.js
+927 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/validate-names.js
+928 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/ordered-set-parser.js
+929 silly gunzTarPerm extractEntry lib/jsdom/living/helpers/encodings.json
+930 silly gunzTarPerm extractEntry lib/jsdom/living/navigator/Navigator-impl.js
+931 silly gunzTarPerm extractEntry lib/jsdom/living/navigator/NavigatorConcurrentHardware-impl.js
+932 silly gunzTarPerm extractEntry lib/jsdom/living/navigator/NavigatorCookies-impl.js
+933 silly gunzTarPerm extractEntry lib/jsdom/living/navigator/NavigatorID-impl.js
+934 silly gunzTarPerm extractEntry lib/jsdom/living/navigator/NavigatorLanguage-impl.js
+935 silly gunzTarPerm extractEntry lib/jsdom/living/navigator/NavigatorOnLine-impl.js
+936 silly gunzTarPerm extractEntry lib/jsdom/living/navigator/NavigatorPlugins-impl.js
+937 silly gunzTarPerm extractEntry lib/jsdom/web-idl/DOMException.js
+938 silly gunzTarPerm extractEntry lib/jsdom/web-idl/dom-exception-table.json
+939 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04\node_modules is being purged
+940 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04\node_modules
+941 silly gentlyRm D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b\node_modules is being purged
+942 verbose gentlyRm don't care about contents; nuking D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b\node_modules
+943 silly doParallel preinstall 7
+944 silly preinstall nan@2.3.3 D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b
+945 info lifecycle nan@2.3.3~preinstall: nan@2.3.3
+946 silly preinstall async@2.0.0-rc.5 D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04
+947 info lifecycle async@2.0.0-rc.5~preinstall: async@2.0.0-rc.5
+948 silly preinstall express@4.13.4 D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea
+949 info lifecycle express@4.13.4~preinstall: express@4.13.4
+950 silly preinstall htmlparser2@3.9.0 D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714
+951 info lifecycle htmlparser2@3.9.0~preinstall: htmlparser2@3.9.0
+952 silly preinstall jsdom@9.1.0 D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b
+953 info lifecycle jsdom@9.1.0~preinstall: jsdom@9.1.0
+954 silly preinstall sleep@3.0.1 D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94
+955 info lifecycle sleep@3.0.1~preinstall: sleep@3.0.1
+956 silly preinstall underscore@1.8.3 D:\Programming\Naruto-Arena\node_modules\.staging\underscore-db6bfe75
+957 info lifecycle underscore@1.8.3~preinstall: underscore@1.8.3
+958 silly lifecycle nan@2.3.3~preinstall: no script for preinstall, continuing
+959 silly lifecycle async@2.0.0-rc.5~preinstall: no script for preinstall, continuing
+960 silly lifecycle express@4.13.4~preinstall: no script for preinstall, continuing
+961 silly lifecycle htmlparser2@3.9.0~preinstall: no script for preinstall, continuing
+962 silly lifecycle jsdom@9.1.0~preinstall: no script for preinstall, continuing
+963 silly lifecycle sleep@3.0.1~preinstall: no script for preinstall, continuing
+964 silly lifecycle underscore@1.8.3~preinstall: no script for preinstall, continuing
+965 silly doReverseSerial remove 0
+966 silly doSerial move 0
+967 silly doSerial finalize 7
+968 silly finalize D:\Programming\Naruto-Arena\node_modules\nan
+969 silly finalize D:\Programming\Naruto-Arena\node_modules\async
+970 silly finalize D:\Programming\Naruto-Arena\node_modules\express
+971 silly finalize D:\Programming\Naruto-Arena\node_modules\htmlparser2
+972 silly finalize D:\Programming\Naruto-Arena\node_modules\jsdom
+973 silly finalize D:\Programming\Naruto-Arena\node_modules\sleep
+974 silly finalize D:\Programming\Naruto-Arena\node_modules\underscore
+975 silly doSerial build 7
+976 silly build nan@2.3.3
+977 info linkStuff nan@2.3.3
+978 silly linkStuff nan@2.3.3 has D:\Programming\Naruto-Arena\node_modules as its parent node_modules
+979 verbose linkBins nan@2.3.3
+980 verbose linkMans nan@2.3.3
+981 silly build async@2.0.0-rc.5
+982 info linkStuff async@2.0.0-rc.5
+983 silly linkStuff async@2.0.0-rc.5 has D:\Programming\Naruto-Arena\node_modules as its parent node_modules
+984 verbose linkBins async@2.0.0-rc.5
+985 verbose linkMans async@2.0.0-rc.5
+986 silly build express@4.13.4
+987 info linkStuff express@4.13.4
+988 silly linkStuff express@4.13.4 has D:\Programming\Naruto-Arena\node_modules as its parent node_modules
+989 verbose linkBins express@4.13.4
+990 verbose linkMans express@4.13.4
+991 silly build htmlparser2@3.9.0
+992 info linkStuff htmlparser2@3.9.0
+993 silly linkStuff htmlparser2@3.9.0 has D:\Programming\Naruto-Arena\node_modules as its parent node_modules
+994 verbose linkBins htmlparser2@3.9.0
+995 verbose linkMans htmlparser2@3.9.0
+996 silly build jsdom@9.1.0
+997 info linkStuff jsdom@9.1.0
+998 silly linkStuff jsdom@9.1.0 has D:\Programming\Naruto-Arena\node_modules as its parent node_modules
+999 verbose linkBins jsdom@9.1.0
+1000 verbose linkMans jsdom@9.1.0
+1001 silly build sleep@3.0.1
+1002 info linkStuff sleep@3.0.1
+1003 silly linkStuff sleep@3.0.1 has D:\Programming\Naruto-Arena\node_modules as its parent node_modules
+1004 verbose linkBins sleep@3.0.1
+1005 verbose linkMans sleep@3.0.1
+1006 silly build underscore@1.8.3
+1007 info linkStuff underscore@1.8.3
+1008 silly linkStuff underscore@1.8.3 has D:\Programming\Naruto-Arena\node_modules as its parent node_modules
+1009 verbose linkBins underscore@1.8.3
+1010 verbose linkMans underscore@1.8.3
+1011 silly doSerial global-link 0
+1012 silly doParallel update-linked 0
+1013 silly doSerial install 7
+1014 silly install nan@2.3.3 D:\Programming\Naruto-Arena\node_modules\.staging\nan-cef00e0b
+1015 info lifecycle nan@2.3.3~install: nan@2.3.3
+1016 silly lifecycle nan@2.3.3~install: no script for install, continuing
+1017 silly install async@2.0.0-rc.5 D:\Programming\Naruto-Arena\node_modules\.staging\async-b0cabe04
+1018 info lifecycle async@2.0.0-rc.5~install: async@2.0.0-rc.5
+1019 silly lifecycle async@2.0.0-rc.5~install: no script for install, continuing
+1020 silly install express@4.13.4 D:\Programming\Naruto-Arena\node_modules\.staging\express-8fc221ea
+1021 info lifecycle express@4.13.4~install: express@4.13.4
+1022 silly lifecycle express@4.13.4~install: no script for install, continuing
+1023 silly install htmlparser2@3.9.0 D:\Programming\Naruto-Arena\node_modules\.staging\htmlparser2-26edb714
+1024 info lifecycle htmlparser2@3.9.0~install: htmlparser2@3.9.0
+1025 silly lifecycle htmlparser2@3.9.0~install: no script for install, continuing
+1026 silly install jsdom@9.1.0 D:\Programming\Naruto-Arena\node_modules\.staging\jsdom-88533c0b
+1027 info lifecycle jsdom@9.1.0~install: jsdom@9.1.0
+1028 silly lifecycle jsdom@9.1.0~install: no script for install, continuing
+1029 silly install sleep@3.0.1 D:\Programming\Naruto-Arena\node_modules\.staging\sleep-69d36a94
+1030 info lifecycle sleep@3.0.1~install: sleep@3.0.1
+1031 verbose lifecycle sleep@3.0.1~install: unsafe-perm in lifecycle true
+1032 verbose lifecycle sleep@3.0.1~install: PATH: D:\Programming\NodeJS\node_modules\npm\bin\node-gyp-bin;D:\Programming\Naruto-Arena\node_modules\sleep\node_modules\.bin;D:\Programming\Naruto-Arena\node_modules\.bin;C:\Paths\NodeJS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ncmd\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\bin\;D:\Links\gradle-2.11\bin;D:\Links\;D:\Startup;C:\Paths\NodeJS;C:\Paths\MongoDB;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\Git\cmd;C:\Users\Stealthmate\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Stealthmate\AppData\Local\Programs\Python\Python35-32\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\;C:\Users\Stealthmate\AppData\Roaming\npm;
+1033 verbose lifecycle sleep@3.0.1~install: CWD: D:\Programming\Naruto-Arena\node_modules\sleep
+1034 silly lifecycle sleep@3.0.1~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+1035 silly lifecycle sleep@3.0.1~install: Returned: code: 1  signal: null
+1036 info lifecycle sleep@3.0.1~install: Failed to exec install script
+1037 verbose unlock done using C:\Users\Stealthmate\AppData\Roaming\npm-cache\_locks\staging-2fda25e5da6a5f8d.lock for D:\Programming\Naruto-Arena\node_modules\.staging
+1038 silly rollbackFailedOptional Starting
+1039 silly rollbackFailedOptional Finishing
+1040 silly runTopLevelLifecycles Starting
+1041 silly runTopLevelLifecycles Finishing
+1042 silly install printInstalled
+1043 warn nadb@1.0.0 No description
+1044 warn nadb@1.0.0 No repository field.
+1045 warn nadb@1.0.0 No license field.
+1046 verbose stack Error: sleep@3.0.1 install: `node-gyp rebuild`
+1046 verbose stack Exit status 1
+1046 verbose stack     at EventEmitter.<anonymous> (D:\Programming\NodeJS\node_modules\npm\lib\utils\lifecycle.js:239:16)
+1046 verbose stack     at emitTwo (events.js:106:13)
+1046 verbose stack     at EventEmitter.emit (events.js:191:7)
+1046 verbose stack     at ChildProcess.<anonymous> (D:\Programming\NodeJS\node_modules\npm\lib\utils\spawn.js:24:14)
+1046 verbose stack     at emitTwo (events.js:106:13)
+1046 verbose stack     at ChildProcess.emit (events.js:191:7)
+1046 verbose stack     at maybeClose (internal/child_process.js:850:16)
+1046 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+1047 verbose pkgid sleep@3.0.1
+1048 verbose cwd D:\Programming\Naruto-Arena
+1049 error Windows_NT 6.3.9600
+1050 error argv "C:\\Paths\\NodeJS\\node.exe" "C:\\Paths\\NodeJS\\node_modules\\npm\\bin\\npm-cli.js" "install" "sleep"
+1051 error node v6.0.0
+1052 error npm  v3.8.6
+1053 error code ELIFECYCLE
+1054 error sleep@3.0.1 install: `node-gyp rebuild`
+1054 error Exit status 1
+1055 error Failed at the sleep@3.0.1 install script 'node-gyp rebuild'.
+1055 error Make sure you have the latest version of node.js and npm installed.
+1055 error If you do, this is most likely a problem with the sleep package,
+1055 error not with npm itself.
+1055 error Tell the author that this fails on your system:
+1055 error     node-gyp rebuild
+1055 error You can get information on how to open an issue for this project with:
+1055 error     npm bugs sleep
+1055 error Or if that isn't available, you can get their info via:
+1055 error     npm owner ls sleep
+1055 error There is likely additional logging output above.
+1056 verbose exit [ 1, true ]
