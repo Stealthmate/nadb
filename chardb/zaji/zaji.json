@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"zaji",
+	"name":"Zaji",
+	"tags":[
+		"zaji"],
+	"description":"Zaji is a Konoha Chuunin, and one who constantly boasts about his abilities, regardless of it is warranted or not. Zaji is a sensor, using his abilities to sense out enemies and prevent them attacking.",
+	"abilities": [
+		[
+			{
+				"name":"Chakra Sense",
+				"description":"Zaji senses the battlefield and his enemies. For 2 turns, Zaji and his allies will be invulnerable to all original damage of 25 or less. The following 2 turns, if 'Exploding Chakra Kunai' is used, the physical damage it deals will deal an additional 5 damage.",
+				"cost":"g",
+				"cd":2,
+				"classes":["mental", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Momentum Reversal",
+				"description":"Zaji uses his speed to reverse a powerful skill. For 1 turn, the first new skill the enemy team uses that deals an original damage of 35 or more will be countered. Also, for 1 turn 'Exploding Chakra Kunai' will deal an additional 10 physical damage. This skill is invisible.",
+				"cost":"t",
+				"cd":1,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Exploding Chakra Kunai",
+				"description":"Using a kunai set to explode with chakra, Zaji deals 15 physical damage to one enemy and 1 turn after, that enemy will receive 15 chakra damage*.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "chakra", "ranged", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Zaji Kunai Block",
+				"description":"This skill makes Zaji invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

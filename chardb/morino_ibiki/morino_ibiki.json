@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"morino_ibiki",
+	"name":"Morino Ibiki",
+	"tags":[
+		"morino", "ibiki"],
+	"description":"A Konoha jounin, and the leader of the Torture and Interrogation force, Ibiki is a hard, sadistic man, who enjoys communicating through pain. Like his personality, Ibiki enjoys torturing his enemies, putting them in awkward situations where they have no choice but to lose.",
+	"abilities": [
+		[
+			{
+				"name":"Payback",
+				"description":"Ibiki gains a permanent 10 points of damage reduction. For the rest of the game, Ibiki can use this skill to deal 15 damage to one enemy, and an additional 5 damage for each time a new damage skill was used on Ibiki since this skill was used. This damage resets each time it is used.",
+				"cost":"r",
+				"cd":0,
+				"classes":["mental", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Summoning: Iron Maiden",
+				"description":"Ibiki summons a giant cat and traps one enemy inside of it. For 3 turns, each time that enemy uses a new harmful skill that enemy will receive 25 piercing damage. Ibiki will also gain 30 destructible defense when this skill is used.",
+				"cost":"nr",
+				"cd":3,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Summoning: Torture Chamber",
+				"description":"Ibiki traps one enemy inside his torture chambers. For 3 turns, each turn that enemy does not use a new skill, they will receive 25 piercing damage. Ibiki will also gain 30 destructible defense when this skill is used.",
+				"cost":"nr",
+				"cd":3,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Close Evasion",
+				"description":"This skill makes Morino Ibiki invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}

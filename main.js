@@ -14,12 +14,15 @@ function getResource(req, res) {
 	FS.stat(path, 
 		function (err, stats) {
 			if (err) {
-			   return Logger.log(err, Logger.LVL_ERROR);
+			   Logger.log("File not found (probably): " + path, Logger.LVL_ERROR);
+			   res.status = 404;
+			   res.send("");
+			   return;
 		   }
 		   
 		   // Check file type
 		   if(stats.isFile()) {
-			   res.sendFile(path);
+				res.sendFile(path);
 		   } 		
 		})
 }

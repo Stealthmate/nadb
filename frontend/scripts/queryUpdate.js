@@ -16,7 +16,7 @@ function updateSuggestions() {
 	var results = $("#resultlist");
 	results.empty();
 	var query = $("#searchbox").val();
-	
+	console.log(query)
 	if(query.length == 0) {
 		shouldprocess = false;
 		return;

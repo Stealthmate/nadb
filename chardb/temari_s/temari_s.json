@@ -1,0 +1,41 @@
+{
+	"charinfo": {
+		"id": "temari_s",
+		"name": "Temari (S)",
+		"description": "Temari (S) has grown over the years. She is now a Jounin as well as the sister of Kankuro and Gaara. Temari is also the Hidden Sand Village's ambassador to the Hidden Leaf Village.",
+		"tags": ["temari", "shippuuden"],
+		"abilities": [[{
+			"name": "First Moon",
+			"description": "Temari (S) uses First Moon. Wind Scythe is improved and deals an additional 5 damage permanently. Temari (S) gains 25% damage reduction permanently and this skill becomes Second Moon permanently when used.",
+			"cost": "",
+			"cd": 0,
+			"classes": ["physical",
+			"instant"]
+		}],
+		[{
+			"name": "Ally Protection",
+			"description": "Temari (S) uses Ally Protection on 1 teammate. For 1 turn that teammate will gain 50% damage reduction and be unable to be killed by enemy skills. ",
+			"cost": "t",
+			"cd": 2,
+			"classes": ["physical",
+			"instant"]
+		}],
+		[{
+			"name": "Wind Scythe",
+			"description": "Using Wind Scythe Temari (S) deals 20 damage to 1 enemy.",
+			"cost": "n",
+			"cd": 0,
+			"classes": ["physical",
+			"ranged",
+			"instant"]
+		}],
+		[{
+			"name": "Fan Offensive Defense ",
+			"description": "This skill makes Temari (S) invulnerable for 1 turn.",
+			"cost": "r",
+			"cd": 4,
+			"classes": ["physical",
+			"instant"]
+		}]]
+	}
+}

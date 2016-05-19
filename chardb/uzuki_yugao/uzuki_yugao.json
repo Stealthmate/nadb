@@ -1,0 +1,45 @@
+{"charinfo": {
+	"id":"uzuki_yugao",
+	"name":"Uzuki Yugao",
+	"tags":[
+		"uzuki", "yugao"],
+	"description":"A member of Konoha's Anbu faction; Yugao is a hard working kunoichi who puts all her might into anything she does. In combat, Yugao mixes sword, speed, and jutsu for some devastating results.",
+	"abilities": [
+		[
+			{
+				"name":"Hazy Moon Night",
+				"description":"Yugao covers herself in a haze, and strikes one enemy, dealing 50 damage to one enemy.",
+				"cost":"tg",
+				"cd":1,
+				"classes":["physical", "melee", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Moon Haze",
+				"description":"Yugao lets the shade of the moon grant her strength. For 1 turn, Yugao will gain 20 destructible defense and the next time 'Hazy Moon Night' is used, it will deal 25 additional damage. This effect stacks.",
+				"cost":"t",
+				"cd":0,
+				"classes":["physical", "instant"]
+			}
+		],
+		[
+			{
+				"name":"Sealing Technique",
+				"description":"Yugao negates one enemy's abilities. For 2 turns, that enemy will ignore all damage reduction, destructible defense, counters, reflects, invulnerabilities and ignores on them. This skill ignores invulnerability, and cannot be countered, reflected, or ignored.",
+				"cost":"g",
+				"cd":1,
+				"classes":["instant"]
+			}
+		],
+		[
+			{
+				"name":"Yugao Parry",
+				"description":"This skill makes Uzuki Yugao invulnerable for 1 turn.",
+				"cost":"r",
+				"cd":4,
+				"classes":["physical", "instant"]
+			}
+		]
+	]
+}}
