@@ -6,11 +6,21 @@
 	background-clip: padding-box;
 	background-color:#F5F1DE;
 	box-sizing: border-box;
-	float:left;
 	width: 80%;
 	height: 100%;
 	padding-top: 2vh;
+	padding-bottom: 1vh;
+	transition: left 0.2s, width 0.2s;
+	position: absolute;
+	left: 20%;
+	top: 0px;
+	bottom: 0px;
 	
+}
+
+#searchpane[collapse="true"]+#infopane {
+	width: 100%;
+	left: 0px;
 }
 
 #teamspane {
@@ -32,9 +42,11 @@
 }
 
 .member {
+	position: relative;
 	width: 100%;
 	height: 11vw;
 	margin-right: 0px;
+	transition: background-color 0.2s;
 }
 
 #player .member {
@@ -44,8 +56,8 @@
 	padding-right: 1vw;
 }
 
-.member[marked="true"] {
-	background-color: #0BF;
+.member[marked="true"]  {
+	background-color: rgba(0, 180, 230, 0.3);
 }
 
 .name {
@@ -59,9 +71,16 @@
 	width: 8vw;
 	height: 8vw;
 	border-style: solid;
+	border-color: #FA0;
 	border-width: 1px;
+	transition: border-width 0.2s;
+	
+	position: absolute;
 }
 
+.avatar[marked="true"] {
+	border-width: 8px;
+}
 
 #enemy .avatar {
 	transform: scaleX(-1);
@@ -70,9 +89,19 @@
 .abilities {
 	display: inline-block;
 	width: 25vw;
+	position: absolute;
+}
+
+#player .abilities {
+	left: 9.3vw;
+}
+
+#enemy .abilities {
+	right: 9.3vw;
 }
 
 .ability {
+	box-sizing: border-box;
 	width: 6vw;
 	height: 8vw;
 	display: inline-block;
@@ -80,16 +109,25 @@
 	bottom: 2px;
 }
 
+#teamspane .icon {
+	position: absolute;
+	bottom: -1px;
+}
+
 .icon {
 	box-sizing: border-box;
+	
 	width: 6vw;
 	height: 6vw;
+	
 	border-style: solid;
 	border-width: 1px;
+	border-color: #0AF;
+	transition: border-width 0.2s;
+	
 }
 
 .icon[locked="true"] {
-	border-color: #0AF;
 	border-width: 10px;
 }
 
@@ -153,9 +191,18 @@
 }
 
 #teamspane .classes {
+	display: block;
+	box-sizing: border-box;
 	padding: 0px;
 	background: white;
 	background-clip: content-box;
 	margin-left: -1px;
+	height: 1.2vw;
 	
+	position: absolute;
+	top: 0.7vw;
+}
+
+#teamspane .classes:empty {
+	background: rgba(0, 0, 0, 0);
 }

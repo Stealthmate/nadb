@@ -1,32 +1,47 @@
-const KEY_UP = 38;
-const KEY_DOWN = 40;
-const KEY_ENTER = 13;
-const KEY_DELETE = 46;
+const SUGGESTION_TEMPLATE = 
+	"<li onmouseenter=\"selectMe(this);\" onmouseleave=\"deselectMe(this);\" onclick=\"confirmSelect();\" class=\"searchresult\" data-selected=\"false\">" +
+		"<span class=\"searchresult_name\">%name</span>" +
+		"<img class=\"searchresult_avatar\" src=\"resource/images/characters/%id/avatar.jpg\"></img>" +
+	"</li>";
+
 
 var shouldprocess = true;
 var charobjs = [];
 
 var selected = 0;
 
-function updateSuggestions() {
+function buildSuggestion(charobj) {
 	
+	var t_name = "%name";
+	var t_id = "%id";
+	
+	var str = SUGGESTION_TEMPLATE.replace(t_name, charobj.name).replace(t_id, charobj.id);
+	
+	return str;
+}
+
+function checkInput() {
+	console.log(event.which);
+	if ((event.which >= 49 && event.which <=58)) event.preventDefault();
+}
+
+function updateSuggestions() {
+
 	selected = 0;
 	charobjs = [];
 	
 	var results = $("#resultlist");
 	results.empty();
 	var query = $("#searchbox").val();
-	console.log(query)
-	if(query.length == 0) {
-		shouldprocess = false;
-		return;
+	if(query.length == 0) { 
+		query="all"
 	}
 	
 	shouldprocess = false;
 	
 	$.ajax({
 		url : "charinfo",
-		type : "get", //send it through get method
+		type : "get",
 		data : {
 			searchquery : query
 		},
@@ -38,11 +53,7 @@ function updateSuggestions() {
 			
 			for(var i = 0; i<=response.length - 1; i++) {
 				charobjs.push(response[i]);
-				results.append(
-				"<li onmouseenter=\"selectMe(this);\" onmouseleave=\"deselectMe(this);\" onclick=\"confirmSelect();\" class=\"searchresult\" data-selected=\"false\">"+
-				"<span class=\"searchresult_name\">"+response[i].name+"</span>"+
-				"<img class=\"searchresult_avatar\" src=\"resource/images/characters/"+response[i].id+"/avatar.jpg\"></img>"+
-				"</li>");
+				results.append(buildSuggestion(response[i]));
 				
 			}
 			shouldprocess=false;
@@ -54,9 +65,18 @@ function updateSuggestions() {
 	
 	shouldprocess = true;
 	
+	$("#searchbox").focus();
+	
+}
+
+function shouldCapture() {
+	return $("#searchpane").attr("collapse") == "false";
 }
 
 function selectMe(self) {
+	
+	if(!shouldCapture()) return;
+	
 	var i = $(".searchresult").index(self);
 	if(selected > 0) $($(".searchresult").get(selected-1)).attr("data-selected", "false");
 	selectSuggestion(i+1);
@@ -64,6 +84,9 @@ function selectMe(self) {
 }
 
 function deselectMe(self) {
+	
+	if(!shouldCapture()) return;
+	
 	deselect($(".searchresult").index(self)+1);
 	selected = 0;
 }
@@ -78,23 +101,25 @@ function selectSuggestion(n) {
 }
 
 function scrollBy(n) {
-	console.log(n);
-	$("#searchpane").scrollTop($("#searchpane").scrollTop() + ($(".searchresult").outerHeight()*n));
+	$("#resultlist").scrollTop($("#resultlist").scrollTop() + ($(".searchresult").outerHeight()*n));
 }
 
 function scrollIfNeeded() {
-	var view_h = $("#searchpane").height();
+	var view_h = $("#resultlist").height();
 	var li_h = $(".searchresult").outerHeight();
-	console.log(li_h);
+	
 	var max_li = Math.floor(view_h/li_h) - 1;
 	
-	var current_top = Math.floor($("#searchpane").scrollTop()/li_h)+1;;
+	var current_top = Math.floor($("#resultlist").scrollTop()/li_h)+1;;
 	
 	if(selected < current_top) scrollBy(selected - current_top);
 	if(selected > current_top + max_li) scrollBy(selected - current_top - max_li);
 }
 
 function selectNext() {
+	
+	if(!shouldCapture()) return;
+	
 	var elemlist = $(".searchresult");
 	if(elemlist.length == 0) return;
 	
@@ -109,6 +134,9 @@ function selectNext() {
 }
 
 function selectPrev() {
+	
+	if(!shouldCapture()) return;
+	
 	var elemlist = $(".searchresult");
 	if(elemlist.length == 0) return;
 	
@@ -122,26 +150,13 @@ function selectPrev() {
 }
 
 function confirmSelect() {
+	
+	if(!shouldCapture()) return;
+	
 	setMarkedMember(charobjs[selected-1]);
 }
 
-function onKeyDown() {
-	var key = event.which;
-	if(key == KEY_DOWN) {	
-		event.preventDefault();
-		selectNext();
-	}
-	else if(key == KEY_UP) {
-		event.preventDefault();
-		selectPrev();
-	}
-	
-	else if(key == KEY_ENTER) {
-		event.preventDefault();
-		confirmSelect();
-	}
-	
-	else if(key == KEY_DELETE) {
-		clearMarkedMember();
-	}
-}
+var SUGGESTIONS_FUNCS = {};
+SUGGESTIONS_FUNCS.selectAboveSuggestion = selectPrev;
+SUGGESTIONS_FUNCS.selectBelowSuggestion = selectNext;
+SUGGESTIONS_FUNCS.confirmSelectedSuggestion = confirmSelect;

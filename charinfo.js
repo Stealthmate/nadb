@@ -100,7 +100,8 @@ function getInfo(req, res) {
 	
 	var response_list = [];
 	if(query == "all") {
-		for(var i=0; i<=CHARDB.length-1; i++) response_list.push(CHARDB[i].charinfo);
+		for(var i=0; i<=CHARDB.length-1; i++) response_list.push(CHARDB[i]);
+		Logger.log(response_list);
 		res.send(response_list);
 		return;
 	}
@@ -114,7 +115,6 @@ function getInfo(req, res) {
 		matches.push([]);
 		for(tagname in TAG_INDEX) {
 			if(tagname.indexOf(taglist[tag]) == 0) {
-				console.log("match tag "+ tagname + " " + taglist[tag]);
 				if(matches[0].length == 0) matches[0] = TAG_INDEX[tagname].slice();
 				else {
 					matches[0] = matches[0].concat(TAG_INDEX[tagname].slice());
@@ -123,8 +123,6 @@ function getInfo(req, res) {
 		}
 	}
 	matches = intersect_all(matches);
-	//Logger.log("Returning characters: ", Logger.LVL_VERBOSE);
-	//Logger.log(matches, Logger.LVL_VERBOSE)
 	
 	for(match in matches) {
 		response_list.push(getCharacterById(matches[match]));

@@ -1,20 +1,18 @@
 <%for (var i = 0; i<=2; i++) {%>
 	<div class="member" id="m<%=i+1%>" marked="false">
 		<div class="name"></div>
-		<img class="avatar" onclick="markMember(this)"></img>
+		<img class="avatar"></img>
 		<div class="abilities">
 			<%for (var j = 0; j<=3; j++) {%>
 				<span class="ability" id="ab<%=j+1%>">
 				
-					<div class="alternate" onclick="cycleAbility($(this).parent());" alternate="false"></div>
+					<div class="alternate" alternate="false"></div>
 					
-					<table class="classes">
-					</table>
+					<table class="classes"></table>
 					
-					<img class="icon" onmouseover="onHover(this);" onmouseleave="onExit();" onclick="lockDescription(this)" locked="false"></img>
+					<img class="icon" locked="false"></img>
 					
-					<table class="cost" nocost="true">
-					</table>
+					<table class="cost" nocost="true"></table>
 					
 				</span>
 			<%}%>

@@ -10,9 +10,10 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		
-		<script type="text/javascript" src="resource/scripts/queryUpdate.js"> </script>
-		<script type="text/javascript" src="resource/scripts/characterinfo.js"> </script>
-		<script type="text/javascript" src="resource/scripts/ability.js"> </script>
+		<script type="text/javascript" src="resource/scripts/queryUpdate.js" defer> </script>
+		<script type="text/javascript" src="resource/scripts/characterinfo.js" defer> </script>
+		<script type="text/javascript" src="resource/scripts/keyevents.js" defer> </script>
+		<script type="text/javascript" src="resource/scripts/mouseevents.js" defer> </script>
 		
 		<link rel="stylesheet" type="text/css" href="resource/styles/style_index.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/infopane.css">
@@ -21,78 +22,79 @@
 	</head>
 
 	
-	<body onkeydown="onKeyDown();">
-		<div id="searchpane">
+	<body onkeydown="onKeyDown();" onload="updateSuggestions();" unselectable="on" onselectstart="return false;">
+		<div id="searchpane" collapse="false">
 			<form style="margin-bottom: 1px;">
-				<input 
+				<input onblur=""
 				id="searchbox" 
 				name="characterQuery" 
-				type="text" 
+				type="text"
+				pattern="[A-Za-z]"
 				autocomplete="off"
-				placeholder="Character name"
-				oninput    = "updateSuggestions();"></input>
+				placeholder="Search characters..."
+				oninput    = "updateSuggestions();"
+				onkeydown  = "checkInput();" required></input>
 			</form>
 			
 			<ol id="resultlist">
 			</ol>
 		</div>
 
-	<div id="infopane">
-	
-		<div id="teamspane">
+		<div id="infopane">
 		
-			<div class="team" id="player">
-				<%- include("team"); %>
-				
-			</div>
+			<div id="teamspane">
 			
-			<div class="team" id="enemy" dir="rtl">
-				<%- include("team"); %>
-			</div>
-		
-		</div>
-		
-		<div id="descriptionpane"> 
-		
-			<div class="header">
-			
-				<img class="icon"></img>
-				
-				<div class="basicinfo">
-					
-					<div class="name">Ability</div>
-					<div class="description"></div>
-					
+				<div class="team" id="player">
+					<%- include("team"); %>
 					
 				</div>
 				
+				<div class="team" id="enemy" dir="rtl">
+					<%- include("team"); %>
+				</div>
 			
 			</div>
 			
-			<div class="stats">
+			<div id="descriptionpane"> 
 			
-				<span class="label">
-					Cost:
-					<table class="cost" nocost="true">
-						<td class="abilitycost tooltipped" id="n"><span class="tooltip"></span></td>
-					</table>
-					<span class="nocost">
-						None
+				<div class="header">
+				
+					<img class="icon" onmousedown="event.preventDefault();"></img>
+					
+					<div class="basicinfo">
+						
+						<div class="name">Ability</div>
+						<div class="description"></div>
+						
+						
+					</div>
+					
+				
+				</div>
+				
+				<div class="stats">
+				
+					<span class="label">
+						Cost:
+						<table class="cost" nocost="true">
+							<td class="abilitycost tooltipped" id="n"><span class="tooltip"></span></td>
+						</table>
+						<span class="nocost">
+							None
+						</span>
 					</span>
-				</span>
+					
+					
+					<span class="label">
+						Cooldown: <span class="cd"></span>
+					</span>
+					
+					<table class="classes">			</table>
+				</div>
 				
-				
-				<span class="label">
-					Cooldown: <span class="cd"></span>
-				</span>
-				
-				<table class="classes">			
-				</table>
 			</div>
-			
+		
 		</div>
-	
-	</div>
 	
 	</body>
 </html>

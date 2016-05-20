@@ -5,28 +5,41 @@ body {
 }
 
 #searchpane {
+	display: inline-block;
 	border-style:solid;
 	border-width: 1px;
 	box-sizing: border-box;
 	margin: 0px;
 	width: 20%;
 	height: 100%;
-	float:left;
-	background-color: #44AAFF;
+	background-color: #F5F1DE;
 	padding: 1px;
-	overflow: auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	transition: left 0.2s;
 }
+
+#searchpane[collapse="true"] {
+	left: -20%;
+}
+
 #searchbox {
 	width: 100%;
-	font-size: 2vmin;
-	background-color: #2288DD;
+	height: 3vmin;
+	font-size: 3vmin;
+	background-color: #ffcc00;
 	border: none;
 }
 
 #resultlist {
 	width: 100%;
+	height: calc(100% - 3vmin);
 	margin: 0px;
 	padding: 0px;
+	overflow: auto;
 }
 
 .searchresult {
@@ -38,7 +51,8 @@ body {
 	margin: 0px auto;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #0000FF;
+	border-color: #62561e;
+	padding-left: 1vw;
 }
 
 .searchresult[data-selected="true"] {
@@ -52,7 +66,7 @@ body {
 
 .searchresult_name {
 	display: table-cell;
-	text-align: center;
+	text-align: left;
 	font-size: 1.5em;
 	vertical-align: middle;
 }
