@@ -9,6 +9,7 @@ const KEY_3 = 51;
 const KEY_4 = 52;
 const KEY_5 = 53;
 const KEY_6 = 54;
+const KEY_ALT = 18;
 
 var KEY_COMMAND_MAP = [];
 
@@ -53,6 +54,12 @@ KEY_COMMAND_MAP[KEY_5] = {
 KEY_COMMAND_MAP[KEY_6] = {
 	cmd : _keyevents_markMemberByNumber
 }
+
+KEY_COMMAND_MAP[KEY_ALT] = {
+	cmd : INFO_FUNCS.cycleAlternateAbilities,
+	shouldPreventDefault : true
+}
+
 
 function onKeyDown() {
 	var key = event.which;

@@ -16,6 +16,7 @@
 		<script type="text/javascript" src="resource/scripts/mouseevents.js" defer> </script>
 		
 		<link rel="stylesheet" type="text/css" href="resource/styles/style_index.css">
+		<link rel="stylesheet" type="text/css" href="resource/styles/helppane.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/infopane.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/descriptionpane.css">
 		
@@ -23,6 +24,13 @@
 
 	
 	<body onkeydown="onKeyDown();" onload="updateSuggestions();" unselectable="on" onselectstart="return false;">
+		
+		<img id="helpbtn" src="resource/images/help.png"></img>
+		
+		<div id="helppane">
+		
+		</div>
+		
 		<div id="searchpane" collapse="false">
 			<form style="margin-bottom: 1px;">
 				<input onblur=""
@@ -49,7 +57,7 @@
 					
 				</div>
 				
-				<div class="team" id="enemy" dir="rtl">
+				<div class="team" id="enemy">
 					<%- include("team"); %>
 				</div>
 			

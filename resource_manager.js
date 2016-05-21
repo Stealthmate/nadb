@@ -1,7 +1,5 @@
 const charinfo = require('./charinfo.js');
 
-
-
 function load() {
 	charinfo.load();
 }

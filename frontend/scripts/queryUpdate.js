@@ -34,7 +34,7 @@ function updateSuggestions() {
 	results.empty();
 	var query = $("#searchbox").val();
 	if(query.length == 0) { 
-		query="all"
+		//query="all"
 	}
 	
 	shouldprocess = false;

@@ -262,9 +262,11 @@ function onExit() {
 	if(!ABILITY_DESCRIPTION_LOCKED) setAbilityDescription(null);
 }
 
-function cycleAbility() {
-	
-	var div_ab = $(this).parent();
+function cycleAbility(icon_ab) {
+	if(typeof icon_ab != 'object') {
+		icon_ab = $(".ability .icon[locked=\"true\"]");
+	}
+	var div_ab = icon_ab.parent();
 	var member = Math.floor($(".ability").index(div_ab) / 4);
 	
 	var ability = $(".ability").index(div_ab) - (member*4);
@@ -285,6 +287,13 @@ function escape_f() {
 	}
 }
 
+function showHelp() {
+	var val = $("#helppane").attr("show");
+	if(val === "true") val = true;
+	else val = false;
+	$("#helppane").attr("show", !val);
+}
+
 var INFO_FUNCS = {};
 INFO_FUNCS.markMemberByReference = markMemberByReference;
 INFO_FUNCS.markMemberByNumber = markMemberByNumber;
@@ -294,3 +303,5 @@ INFO_FUNCS.cycleAlternateAbilities = cycleAbility;
 INFO_FUNCS.setAbilityDescriptionOnHover = onHover;
 INFO_FUNCS.unsetAbilityDescriptionOnHover = onExit;
 INFO_FUNCS.lockAbilityDescription = lockDescription;
+
+INFO_FUNCS.showHelp = showHelp;

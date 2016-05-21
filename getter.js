@@ -130,10 +130,16 @@ function parse(err, window) {
 
 }
 
-jsdom.env(
-	"http://www.naruto-arena.com/characters-and-skills/",
-	["http://code.jquery.com/jquery.js"],
-	parse);
+/*jsdom.env(
+	"http://game.naruto-arena.com/images/skills/861/large.jpg",
+	[""],
+	parse);*/
+	
+download("http://game.naruto-arena.com/swf/loader.swf", "swf.swf", function () {});
+	
+/*for(var i=1;i<=902;i++) {
+	download("http://game.naruto-arena.com/images/skills/"+i+"/large.jpg", "imgfolder/"+i+".jpg", function () {});
+}*/
 	
 	
 /*var req = http.request(options, function (res) {
