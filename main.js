@@ -54,8 +54,6 @@ app.get('/document/*', getDocument);
 
 app.get('/:id?', function (req, res) {
 	var url = req.url;
-	Globals.cli.pause();
-	Globals.cli.resume();
 	res.setHeader('content-type', 'text/html');
 	if(url.length==1) res.render(INDEX);
 	else {

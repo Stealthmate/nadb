@@ -35,9 +35,7 @@ function loadData() {
 		if (stats.isFile()) {
 			var char_tag_index = JSON.parse(fs.readFileSync(CHARS_LOCATION+TAG_INDEX_FILE, "utf-8"));
 			for(character in char_tag_index) {
-				//Logger.log(character);
 				for(tag in char_tag_index[character]) {
-					//Logger.log(char_tag_index[character][tag]);
 					if(TAG_INDEX[char_tag_index[character][tag]] == null) TAG_INDEX[char_tag_index[character][tag]] = [];
 					TAG_INDEX[char_tag_index[character][tag]].push(character);
 				}
@@ -101,7 +99,6 @@ function getInfo(req, res) {
 	var response_list = [];
 	if(query == "all") {
 		for(var i=0; i<=CHARDB.length-1; i++) response_list.push(CHARDB[i]);
-		Logger.log(response_list);
 		res.send(response_list);
 		return;
 	}

@@ -42,10 +42,12 @@ class Member {
 			$(dom_ability + " .alternate").attr("alternate", true);
 		}
 		
+		$(dom_ability + ".cost").empty();
 		for(var j=0; j<=ability.cost.length - 1; j++) {
 			$(dom_ability + ".cost").append(COST_TEMPLATE.replace(/%chakra/g, ability.cost[j]));
 		}
 		
+		$(dom_ability + ".classes").empty();
 		for(var j=0; j<=ability.classes.length - 1; j++) {
 			$(dom_ability + ".classes").append(CLASS_TEMPLATE.replace(/%class/g, ability.classes[j]));
 		}
@@ -101,7 +103,6 @@ class Member {
 		if(index === abilityset.length-1) this.abilities[n].current_ability = abilityset[0];
 		else this.abilities[n].current_ability = abilityset[index+1];
 		
-		this.clearAbility(n);
 		this.renderAbility(n, this.abilities[n].current_ability);
 		
 	}
