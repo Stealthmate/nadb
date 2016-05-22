@@ -1,11 +1,38 @@
-function startHelp() {
+
+var STAGE = 0;
+
+
+function help1(done) {
 	
-	var next_btn = $(".nextbtn");
+	if(done) {	
+		return;
+	}
 	
-	$("#searchpane").addClass("highlight");
-	
-	next_btn.attr("stage", "1");
+	$("#helppane").attr("stage", "1");
 }
+
+function help2(done) {
+	
+	if(done) {
+		return;
+	}
+	
+	$("#helppane").attr("stage", "2");
+	
+}
+
+
+const HELP_STAGES = [
+help1, help2
+]
+
+function advance(n) {
+	HELP_STAGES[STAGE](true);
+	if(n > STAGE) STAGE = n-1;
+	else STAGE++;
+	HELP_STAGES[STAGE](false);
+}
+
 
 function showHelp() {
 	
@@ -16,8 +43,9 @@ function showHelp() {
 	else val = false;
 	$("#helppane").attr("show", !val);
 	
-	startHelp();
+	HELP_STAGES[STAGE](false);
 }
 
 HELP_FUNCS = {};
 HELP_FUNCS.showHelp = showHelp;
+HELP_FUNCS.advance = advance;

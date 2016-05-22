@@ -46,18 +46,14 @@ div {
 	transition: z-index 0.2s;
 }
 
-.highlight {
-	z-index: 6;
+.help {
+	display: none;
 }
 
-.nextbtn {
-	width: 5vw;
-	height: 5vw;
-	
-	position: absolute;
-}
-
-.nextbtn[stage="1"] {
-	top: 0px;
-	left: 20vw;
+#nextStage {
+	position: fixed !important;
+	bottom: 1vw !important;
+	right: 1vw !important;
+	top: initial;
+	left: initial;
 }

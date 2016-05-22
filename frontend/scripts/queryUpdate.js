@@ -21,7 +21,6 @@ function buildSuggestion(charobj) {
 }
 
 function checkInput() {
-	console.log(event.which);
 	if ((event.which >= 49 && event.which <=58)) event.preventDefault();
 }
 
@@ -152,6 +151,8 @@ function selectPrev() {
 function confirmSelect() {
 	
 	if(!shouldCapture()) return;
+	
+	HELP_FUNCS.advance(2);
 	
 	setMarkedMember(charobjs[selected-1]);
 }

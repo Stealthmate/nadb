@@ -1,0 +1,25 @@
+#helppane[stage="1"] > #help1 {
+	display: initial;
+}
+
+#helppane[stage="1"] + #searchpane {
+	z-index: 6;
+}
+
+.arrow {
+	width: 5vw;
+	height: 5vw;
+	
+	position: absolute;
+	top: 2vw;
+	left: 20vw;
+}
+
+.explanation {
+	position: absolute;
+	top: 3vw;
+	left: 26vw;
+	font-size: 1.5vw;
+	color: white;
+	font-family: "Arial";
+}
