@@ -78,8 +78,12 @@
 	position: absolute;
 }
 
+#player .avatar {
+	left: 0.5vw;
+}
+
 #enemy .avatar {
-	right: 0px;
+	right: 0.5vw;
 }
 
 .avatar[marked="true"] {

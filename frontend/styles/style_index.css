@@ -4,25 +4,6 @@ body {
 	width: 100%;
 }
 
-#helpbtn {
-	
-	z-index: 6;
-	
-	position:absolute;
-	right: 2px;
-	top: 2px;
-	
-	width: 1vw;
-	height: 1vw;
-	
-	transition: background-color 0.2s;
-}
-
-#helpbtn:hover {
-	background-color: #00AAFF;
-}
-
-
 #searchpane {
 	display: inline-block;
 	border-style:solid;
@@ -75,7 +56,7 @@ body {
 }
 
 .searchresult[data-selected="true"] {
-	background-color: pink;
+	background-color: orange;
 }
 
 .searchresult_avatar {

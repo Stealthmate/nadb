@@ -26,4 +26,4 @@ $(".ability .icon").on("mouseover", INFO_FUNCS.setAbilityDescriptionOnHover);
 $(".ability .icon").on("mouseleave", INFO_FUNCS.unsetAbilityDescriptionOnHover);
 $(".ability .icon").on("mousedown",_mouseevents_lockAbilityDescription);
 
-$("#helpbtn").on("mousedown", INFO_FUNCS.showHelp)
+$("#helpbtn").on("mousedown", HELP_FUNCS.showHelp)

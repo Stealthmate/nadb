@@ -111,6 +111,10 @@ class Member {
 		var dom_ability = dom_member + "#ab" + (n + 1) + " ";
 		
 		$(dom_ability + ".icon").removeAttr("src");
+		if($(dom_ability + ".icon").attr("locked")==="true") {
+			$(dom_ability + ".icon").attr("locked", false);
+			ABILITY_DESCRIPTION_LOCKED = false;
+		}
 		$(dom_ability + " .alternate").attr("alternate", false);
 		$(dom_ability + ".cost").empty();
 		$(dom_ability + ".classes").empty();
@@ -129,6 +133,8 @@ class Member {
 	
 	free() {
 		this.clear();
+		this.abilities = [];
+		this.name = "";
 		this.isFree = true;
 	}
 }
@@ -247,6 +253,8 @@ function onHover() {
 
 function lockDescription(icon) {
 	
+	if($(icon).attr("src")==="" || $(icon).attr("src") === undefined) return;
+	
 	var this_is_locked = $(icon).attr("locked")==="true";
 	if(ABILITY_DESCRIPTION_LOCKED && !this_is_locked) {
 		$(".ability .icon[locked=\"true\"]").attr("locked", false);
@@ -287,13 +295,6 @@ function escape_f() {
 	}
 }
 
-function showHelp() {
-	var val = $("#helppane").attr("show");
-	if(val === "true") val = true;
-	else val = false;
-	$("#helppane").attr("show", !val);
-}
-
 var INFO_FUNCS = {};
 INFO_FUNCS.markMemberByReference = markMemberByReference;
 INFO_FUNCS.markMemberByNumber = markMemberByNumber;
@@ -303,5 +304,3 @@ INFO_FUNCS.cycleAlternateAbilities = cycleAbility;
 INFO_FUNCS.setAbilityDescriptionOnHover = onHover;
 INFO_FUNCS.unsetAbilityDescriptionOnHover = onExit;
 INFO_FUNCS.lockAbilityDescription = lockDescription;
-
-INFO_FUNCS.showHelp = showHelp;
