@@ -44,6 +44,8 @@ class Member {
 		
 		$(dom_ability + ".cost").empty();
 		for(var j=0; j<=ability.cost.length - 1; j++) {
+			
+			$(dom_ability + ".cost").attr("nocost", false);
 			$(dom_ability + ".cost").append(COST_TEMPLATE.replace(/%chakra/g, ability.cost[j]));
 		}
 		
@@ -118,6 +120,7 @@ class Member {
 		}
 		$(dom_ability + " .alternate").attr("alternate", false);
 		$(dom_ability + ".cost").empty();
+		$(dom_ability + ".cost").attr("nocost", true);
 		$(dom_ability + ".classes").empty();
 	}
 	
