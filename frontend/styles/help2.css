@@ -1,0 +1,60 @@
+#helppane[stage="2"] ~ #searchpane {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#helppane[stage="2"] ~ #infopane {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#helppane[stage="2"] ~ #infopane #descriptionpane img {
+	z-index: 1;
+	opacity: 0.3;
+}
+
+#helppane[stage="2"] ~ #searchpane img {
+	z-index: 1;
+	opacity: 0.3;
+}
+
+#helppane[stage="2"] ~ #infopane #descriptionpane table {
+	z-index: 1;
+	opacity: 0.3;
+}
+
+#helppane[stage="2"] ~ #infopane #teamspane {
+	z-index: 7;
+	background-color: #F5F1DE;
+}
+
+#helppane[stage="2"] #help2 {
+	position: absolute;
+	
+	left: 20vw;
+	bottom: 20h;
+}
+
+#help2 .arrow {
+	width: 5vw;
+	height: 5vw;
+	
+	position: absolute;
+	top: 35vw;
+	left: 23.5vw;
+}
+
+#help2 #fromComponent {
+	transform: rotate(90deg);
+}
+
+#help2 .explanation {
+	position: absolute;
+	top: 41vw;
+	left: -18vw;
+	
+	width: 75vw;
+	height: 20vw;
+	
+	font-size: 1.5vw;
+	color: white;
+	font-family: "Arial";
+}

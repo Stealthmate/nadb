@@ -1,24 +1,37 @@
-#helppane[stage="1"] > #help1 {
-	display: initial;
-}
-
-#helppane[stage="1"] + #searchpane {
-	z-index: 6;
-}
-
-.arrow {
-	width: 5vw;
-	height: 5vw;
+#helppane[stage="1"] #help1 {
+	width: 79vw;
+	height: 90vh;
 	
-	position: absolute;
 	top: 2vw;
 	left: 20vw;
 }
 
-.explanation {
+#helppane[stage="1"] ~ #infopane {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#helppane[stage="1"] ~ #infopane img {
+	z-index: 1;
+	opacity: 0.3;
+}
+
+#helppane[stage="1"] ~ #infopane table {
+	z-index: 1;
+	opacity: 0.3;
+}
+
+#help1 .arrow {
+	width: 5vw;
+	height: 5vw;
+	
+	
+	top: 2vw;
+}
+
+#help1 .explanation {
 	position: absolute;
-	top: 3vw;
-	left: 26vw;
+	top: 0vw;
+	left: 6vw;
 	font-size: 1.5vw;
 	color: white;
 	font-family: "Arial";
