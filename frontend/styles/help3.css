@@ -1,36 +1,36 @@
-#helppane[stage="2"] ~ #searchpane {
+#helppane[stage="3"] ~ #searchpane {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-#helppane[stage="2"] ~ #infopane {
+#helppane[stage="3"] ~ #infopane {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-#helppane[stage="2"] ~ #infopane #descriptionpane img {
+#helppane[stage="3"] ~ #infopane #teamspane img {
 	z-index: 1;
 	opacity: 0.3;
 }
 
-#helppane[stage="2"] ~ #searchpane img {
+#helppane[stage="3"] ~ #searchpane img {
 	z-index: 1;
 	opacity: 0.3;
 }
 
-#helppane[stage="2"] ~ #infopane #descriptionpane table {
+#helppane[stage="3"] ~ #infopane #teamspane table {
 	z-index: 1;
 	opacity: 0.3;
 }
 
-#helppane[stage="2"] ~ #infopane #teamspane {
+#helppane[stage="3"] ~ #infopane #descriptionpane {
 	z-index: 7;
 	background-color: #F5F1DE;
 }
 
-#helppane[stage="2"] ~ #infopane .tooltip {
+#helppane[stage="3"] ~ #infopane .tooltip {
 	color: white;
 }
 
-#helppane[stage="2"] #help2 {
+#helppane[stage="3"] #help3 {
 	position: absolute;
 
 	left: 20vw;

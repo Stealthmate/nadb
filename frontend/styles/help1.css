@@ -1,7 +1,7 @@
 #helppane[stage="1"] #help1 {
 	width: 79vw;
 	height: 90vh;
-	
+
 	top: 2vw;
 	left: 20vw;
 }
@@ -23,8 +23,8 @@
 #help1 .arrow {
 	width: 5vw;
 	height: 5vw;
-	
-	
+
+
 	top: 2vw;
 }
 
@@ -32,7 +32,4 @@
 	position: absolute;
 	top: 0vw;
 	left: 6vw;
-	font-size: 1.5vw;
-	color: white;
-	font-family: "Arial";
 }
