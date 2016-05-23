@@ -14,26 +14,26 @@ const KEY_ALT = 18;
 var KEY_COMMAND_MAP = [];
 
 KEY_COMMAND_MAP[KEY_UP] = {
-	cmd : SUGGESTIONS_FUNCS.selectAboveSuggestion
+	cmd : SEARCHPANE_FUNCS.prevSuggestion
 };
 
 KEY_COMMAND_MAP[KEY_DOWN] = {
-	cmd : SUGGESTIONS_FUNCS.selectBelowSuggestion
+	cmd : SEARCHPANE_FUNCS.nextSuggestion
 }
 KEY_COMMAND_MAP[KEY_ENTER] = {
-	cmd : SUGGESTIONS_FUNCS.confirmSelectedSuggestion,
+	cmd : SEARCHPANE_FUNCS.confirmSelected,
 	shouldPreventDefault : true
 }
 
 KEY_COMMAND_MAP[KEY_DELETE] = {
-	cmd : INFO_FUNCS.deleteMarkedMember
+	cmd : TEAMSPANE_FUNCS.clearMarkedMember
 }
 KEY_COMMAND_MAP[KEY_ESCAPE] = {
-	cmd : INFO_FUNCS.escape_f
+	cmd : SEARCHPANE_FUNCS.collapse
 }
 
 function _keyevents_markMemberByNumber(key) {
-	INFO_FUNCS.markMemberByNumber(key - KEY_1);
+	TEAMSPANE_FUNCS.markMemberByID(key - KEY_1);
 }
 
 KEY_COMMAND_MAP[KEY_1] = {
@@ -56,10 +56,9 @@ KEY_COMMAND_MAP[KEY_6] = {
 }
 
 KEY_COMMAND_MAP[KEY_ALT] = {
-	cmd : INFO_FUNCS.cycleAlternateAbilities,
+	cmd : TEAMSPANE_FUNCS.cycleAbilityIcon,
 	shouldPreventDefault : true
 }
-
 
 function onKeyDown() {
 	var key = event.which;
