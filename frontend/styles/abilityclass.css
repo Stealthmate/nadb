@@ -1,6 +1,6 @@
 .abilityclass {
 	box-sizing: border-box;
-	
+
 	height: 1.1vw;
 	width: 1.1vw;
 	margin: 0px;
@@ -10,43 +10,43 @@
 }
 
 .abilityclass#action {
-	background: url('icon_action.png');
+	background: url('icons/icon_action.png');
 }
 
 .abilityclass#affliction {
-	background: url('icon_affliction.png');
+	background: url('icons/icon_affliction.png');
 }
 
 .abilityclass#chakra {
-	background: url('icon_chakra.png');
+	background: url('icons/icon_chakra.png');
 }
 
 .abilityclass#control {
-	background: url('icon_control.png');
+	background: url('icons/icon_control.png');
 }
 
 .abilityclass#instant {
-	background: url('icon_instant.png');
+	background: url('icons/icon_instant.png');
 }
 
 .abilityclass#melee {
-	background: url('icon_melee.png');
+	background: url('icons/icon_melee.png');
 }
 
 .abilityclass#physical {
-	background: url('icon_physical.png');
+	background: url('icons/icon_physical.png');
 }
 
 .abilityclass#mental {
-	background: url('icon_mental.png');
+	background: url('icons/icon_mental.png');
 }
 
 .abilityclass#ranged {
-	background: url('icon_ranged.png');
+	background: url('icons/icon_ranged.png');
 }
 
 .abilityclass#unique {
-	background: url('icon_unique.png');
+	background: url('icons/icon_unique.png');
 }
 
 
