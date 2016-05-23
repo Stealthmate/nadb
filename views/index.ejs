@@ -3,86 +3,91 @@
 	<head>
 
 		<meta charset="utf-8">
-		
+
 		</meta>
-	
+
 		<title>Shippuuden-Arena</title>
-		
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		
+
 		<script type="text/javascript" src="resource/scripts/queryUpdate.js" defer> </script>
 		<script type="text/javascript" src="resource/scripts/characterinfo.js" defer> </script>
 		<script type="text/javascript" src="resource/scripts/help.js" defer> </script>
+
+		<script type="text/javascript" src="resource/scripts/ui/searchpane.js" defer> </script>
+		<script type="text/javascript" src="resource/scripts/ui/teamspane.js" defer> </script>
+		<script type="text/javascript" src="resource/scripts/ui/descriptionpane.js" defer> </script>
+
 		<script type="text/javascript" src="resource/scripts/keyevents.js" defer> </script>
 		<script type="text/javascript" src="resource/scripts/mouseevents.js" defer> </script>
-		
+
 		<link rel="stylesheet" type="text/css" href="resource/styles/style_index.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/helppane.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/infopane.css">
 		<link rel="stylesheet" type="text/css" href="resource/styles/descriptionpane.css">
-		
+
 	</head>
 
-	
-	<body onkeydown="onKeyDown();" onload="updateSuggestions();" unselectable="on" onselectstart="return false;">
-		
+
+	<body onkeydown="onKeyDown();" unselectable="on" onselectstart="return false;">
+
 		<img id="helpbtn" src="resource/images/help.png"></img>
-		
+
 		<div id="helppane" show="false">
 			<img class="nextbtn" src="resource/images/next.png"></img>
 		</div>
-		
+
 		<div id="searchpane" collapse="false">
 			<form style="margin-bottom: 1px;">
-				<input onblur=""
-				id="searchbox" 
-				name="characterQuery" 
+				<input
+				id="searchbox"
+				name="characterQuery"
 				type="text"
 				pattern="[A-Za-z]"
 				autocomplete="off"
 				placeholder="Search characters..."
-				oninput    = "updateSuggestions();"
-				onkeydown  = "checkInput();" required></input>
+				oninput    = "SEARCHPANE_FUNCS.query()"
+				onkeydown  = "SEARCHPANE_FUNCS.blockNumberInput();" required></input>
 			</form>
-			
+
 			<ol id="resultlist">
 			</ol>
 		</div>
 
 		<div id="infopane">
-		
+
 			<div id="teamspane">
-			
+
 				<div class="team" id="player">
 					<%- include("team"); %>
-					
+
 				</div>
-				
+
 				<div class="team" id="enemy">
 					<%- include("team"); %>
 				</div>
-			
+
 			</div>
-			
-			<div id="descriptionpane"> 
-			
+
+			<div id="descriptionpane">
+
 				<div class="header">
-				
+
 					<img class="icon" onmousedown="event.preventDefault();"></img>
-					
+
 					<div class="basicinfo">
-						
+
 						<div class="name">Ability</div>
 						<div class="description"></div>
-						
-						
+
+
 					</div>
-					
-				
+
+
 				</div>
-				
+
 				<div class="stats">
-				
+
 					<span class="label">
 						Cost:
 						<table class="cost" nocost="true">
@@ -92,18 +97,18 @@
 							None
 						</span>
 					</span>
-					
-					
+
+
 					<span class="label">
 						Cooldown: <span class="cd"></span>
 					</span>
-					
+
 					<table class="classes">			</table>
 				</div>
-				
+
 			</div>
-		
+
 		</div>
-	
+
 	</body>
 </html>
