@@ -1,6 +1,7 @@
 
 @import url('landscape/index.css') screen and (min-aspect-ratio: 5/4);
-@import url('square/index.css') screen and (max-aspect-ratio: 5/4);
+@import url('square/index.css') screen and (min-aspect-ratio: 11/15) and (max-aspect-ratio: 5/4);
+@import url('portrait/index.css') screen and (max-aspect-ratio: 11/15);
 
 @import url('searchpane.css');
 @import url('infopane.css');

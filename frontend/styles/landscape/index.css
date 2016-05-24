@@ -2,7 +2,3 @@
 @import url('infopane.css');
 @import url('descriptionpane.css');
 @import url('helppane.css');
-html, body {
-    min-width: 1280px;
-    min-height: 720px;
-}

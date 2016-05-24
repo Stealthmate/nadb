@@ -1,22 +1,18 @@
 #infopane {
     position: absolute;
-    left: 20%;
+    left: 0px;
     top: 0px;
-    bottom: 0px;
-    padding: 0.1vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    width: 80%;
-    height: 100%;
-    transition: left 0.2s, width 0.2s;
+    padding: 5px;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    width: 100%;
+    height: 60vw;
 }
 #searchpane[collapse="true"]+#infopane {
-    left: 0px;
-    width: 100%;
 }
 #teamspane {
     width: 100%;
-    height: 33vw;
+    height: 45vw;
     overflow: hidden;
 }
 .team {
@@ -33,7 +29,7 @@
 .member {
     position: relative;
     width: 100%;
-    height: 11vw;
+    height: 15vw;
 }
 .name {
     height: 2.2vw;
@@ -44,8 +40,8 @@
     display: inline-block;
     box-sizing: border-box;
     position: absolute;
-    width: 8vw;
-    height: 8vw;
+    width: 11vw;
+    height: 11vw;
 }
 #player .avatar {
     left: 0.5vw;
@@ -55,20 +51,20 @@
 }
 .abilities {
     display: flex;
-    width: 25vw;
+    width: 34vw;
     position: absolute;
 }
 #player .abilities {
-    left: 9vw;
+    left: 12vw;
 }
 #enemy .abilities {
-    right: 9vw;
+    right: 12vw;
     flex-direction: row-reverse;
 }
 .ability {
     box-sizing: border-box;
-    width: 6vw;
-    height: 8vw;
+    width: 8vw;
+    height: 11vw;
     display: inline-block;
     position: relative;
     bottom: 2px;
@@ -80,15 +76,15 @@
     bottom: -1px;
 }
 .icon {
-    width: 6vw;
-    height: 6vw;
+    width: 8vw;
+    height: 8vw;
 }
 .alternate {
     width: 1.5vw;
     height: 1.5vw;
     z-index: 2;
     position: absolute;
-    top: 2.1vw;
+    top: 2.8vh;
 }
 #player .alternate {
     left: 4.4vw;
@@ -97,7 +93,7 @@
     left: 0.2vw;
 }
 .tooltip {
-    width: 9vw;
+    width: 120px;
     text-align: center;
     position: fixed;
     bottom: 2vh;
