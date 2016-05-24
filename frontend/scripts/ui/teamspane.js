@@ -15,7 +15,6 @@ function getAbilityObjectFromAbilityIcon(icon) {
 }
 
 function mark(i, val) {
-	console.log("Marking " + i);
 	var team = "#player ";
 
 	if(i > 3) {
@@ -35,14 +34,12 @@ function markMemberByNumber(n) {
 	}
 	if(markedMember > 0) mark(markedMember, false);
 	markedMember = n+1;
-	console.log("To mark " + markedMember);
 	mark(markedMember, true);
 }
 
 function markMemberByReference(ref) {
 	var avatar = ref.find(".avatar");
 	var member_i = $(".member .avatar").index(avatar);
-	console.log("Ref " + member_i);
 	markMemberByNumber(member_i);
 }
 
