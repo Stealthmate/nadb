@@ -1,6 +1,6 @@
 var TEAM_MEMBERS = [new Member(0), new Member(1), new Member(2), new Member(3), new Member(4), new Member(5)];
 
-var markedMember = -1;
+var markedMember = 0;
 
 function getAbilityObjectFromAbilityIcon(icon) {
 	var member = Math.floor($(".ability .icon").index(icon) / 4);
@@ -15,6 +15,7 @@ function getAbilityObjectFromAbilityIcon(icon) {
 }
 
 function mark(i, val) {
+	console.log("Marking " + i);
 	var team = "#player ";
 
 	if(i > 3) {
@@ -27,23 +28,26 @@ function mark(i, val) {
 }
 
 function markMemberByNumber(n) {
-	if(markedMember > 0) mark(markedMember, false);
 	if(markedMember == n + 1) {
-		markedMember = -1;
+		mark(markedMember, false);
+		markedMember = 0;
 		return;
 	}
-	markedMember = n + 1;
+	if(markedMember > 0) mark(markedMember, false);
+	markedMember = n+1;
+	console.log("To mark " + markedMember);
 	mark(markedMember, true);
 }
 
 function markMemberByReference(ref) {
 	var avatar = ref.find(".avatar");
 	var member_i = $(".member .avatar").index(avatar);
+	console.log("Ref " + member_i);
 	markMemberByNumber(member_i);
 }
 
 function clearMarkedMember() {
-	if(markedMember <= 0) return;
+	if(markedMember <= 0) return
 	TEAM_MEMBERS[markedMember-1].free();
 	setAbilityDescription(null);
 }
