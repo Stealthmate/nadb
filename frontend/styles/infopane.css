@@ -1,15 +1,10 @@
-@import url('landscape/infopane.css');
-@import url('square/infopane.css');
-@import url('portrait/infopane.css');
-
 @import url('abilityclass.css');
 @import url('abilitycost.css');
 
 #infopane {
-	background-clip: padding-box;
-	background-color:#F5F1DE;
 	box-sizing: border-box;
-
+	background-clip: padding-box;
+	background-color: inherit;
 }
 
 #teamspane {
@@ -19,26 +14,12 @@
 .team {
 }
 
-.team#player {
-	float: left;
-	padding-left: 1vw;
-}
-
-.team#enemy {
-	float: right;
-	padding-right: 1vw;
-}
-
 .member {
-	position: relative;
 	transition: background-color 0.2s;
 }
 
 .member[marked="true"]  {
 	background-color: rgba(0, 180, 230, 0.3);
-}
-
-.name {
 }
 
 #enemy .name {
@@ -51,17 +32,8 @@
 	border-style: solid;
 	border-color: #FA0;
 	border-width: 1px;
+
 	transition: border-width 0.2s;
-
-	position: absolute;
-}
-
-#player .avatar {
-	left: 0.5vw;
-}
-
-#enemy .avatar {
-	right: 0.5vw;
 }
 
 .avatar[marked="true"] {
@@ -72,25 +44,8 @@
 	transform: scaleX(-1);
 }
 
-.abilities {
-	display: flex;
-}
-
-#player .abilities {
-}
-
-#enemy .abilities {
-	flex-direction: row-reverse;
-}
-
 .ability {
 	box-sizing: border-box;
-	display: inline-block;
-	position: relative;
-}
-
-#teamspane .icon {
-	position: absolute;
 }
 
 .icon {
@@ -115,13 +70,6 @@
 	border-color: black;
 	border-width: 1px;
 	background-size: 100% 100%;
-	z-index: 2
-}
-
-#player .alternate {
-}
-
-#enemy .alternate {
 }
 
 .alternate[alternate="false"] {
@@ -130,10 +78,7 @@
 
 .tooltip {
 	visibility: hidden;
-    text-align: center;
     border-radius: 6px;
-
-    z-index: 5;
 
 	text-transform: capitalize;
 
@@ -150,12 +95,8 @@
 
 #teamspane .cost {
 	background: white;
-	padding: 1px;
-
 	border-style: solid;
 	border-width: 1px;
-
-	display: inline-block;
 }
 
 #teamspane .cost[nocost="true"] {
@@ -163,12 +104,9 @@
 }
 
 #teamspane .classes {
-	display: block;
 	box-sizing: border-box;
-	padding: 0px;
 	background: white;
 	background-clip: content-box;
-	margin-left: -1px;
 }
 
 #teamspane .classes:empty {

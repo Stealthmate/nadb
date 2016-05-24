@@ -1,7 +1,3 @@
-@import url('landscape/index.css');
-@import url('square/index.css');
-@import url('portrait/index.css');
-
 #searchpane {
 	box-sizing: border-box;
 
