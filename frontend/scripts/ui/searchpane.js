@@ -101,23 +101,23 @@ function scrollHorizontallyBy(n) {
 }
 
 function scrollIfNeeded() {
-    if ($("#resultlist").css("column-count") == "4") {
-        var view_w = $("#resultlist").width();
+    if ($("#resultlist").css("column-count") !== "1") {
+        var view_w = $("#resultlist").prop("clientWidth");
         var li_w = $(".searchresult").outerWidth();
 
-	    var view_h = $("#resultlist").height();
+	    var view_h = $("#resultlist").prop("clientHeight")
 		var li_h = $(".searchresult").outerHeight();
 
 		var max_li_vertical = Math.floor(view_h / li_h);
 		var max_li_horizontal = Math.floor(view_w / li_w);
         var max_li = max_li_horizontal * max_li_vertical;
-		
+
         var current_first = Math.floor($("#resultlist").scrollLeft() * max_li_vertical / li_w) + 1;
 
-		var diff = current_first - selected_suggestion - 1;
+		var diff = current_first - selected_suggestion;
 		var scroll_amount = 0;
-		if(diff < 0) scroll_amount = -Math.floor((diff + max_li)/ max_li)*max_li_horizontal;
-		else if (diff >= 0) scroll_amount = (Math.floor(-diff/max_li) - 1) * max_li/max_li_vertical;
+		if(diff < 0)        scroll_amount = Math.floor(-diff / max_li)*max_li_horizontal;
+		else if (diff > 0) scroll_amount = -Math.floor((diff + max_li) / max_li)*max_li/max_li_vertical;
 		scrollHorizontallyBy(scroll_amount);
         return;
     }
