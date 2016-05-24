@@ -2,12 +2,6 @@
 @import url('square/index.css');
 @import url('portrait/index.css');
 
-body {
-	margin: 0px;
-	box-sizing: border-box;
-	width: 100%;
-}
-
 #searchpane {
 	box-sizing: border-box;
 

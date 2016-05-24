@@ -1,0 +1,11 @@
+@import url('searchpane.css');
+@import url('infopane.css');
+@import url('descriptionpane.css');
+@import url('helppane.css');
+
+
+body {
+	margin: 0px;
+	box-sizing: border-box;
+	width: 100%;
+}
