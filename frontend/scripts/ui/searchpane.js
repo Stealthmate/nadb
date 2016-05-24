@@ -104,14 +104,20 @@ function scrollIfNeeded() {
     if ($("#resultlist").css("column-count") == "4") {
         var view_w = $("#resultlist").width();
         var li_w = $(".searchresult").outerWidth();
-        var max_li = (Math.floor(view_w / li_w)) * 4;
-        var current_first = Math.floor($("#resultlist").scrollLeft() * 4 / li_w) + 1;
+
+	    var view_h = $("#resultlist").height();
+		var li_h = $(".searchresult").outerHeight();
+
+		var max_li_vertical = Math.floor(view_h / li_h);
+		var max_li_horizontal = Math.floor(view_w / li_w);
+        var max_li = max_li_horizontal * max_li_vertical;
+		
+        var current_first = Math.floor($("#resultlist").scrollLeft() * max_li_vertical / li_w) + 1;
 
 		var diff = current_first - selected_suggestion - 1;
-
 		var scroll_amount = 0;
-		if(diff < 0) scroll_amount = -Math.floor((diff + max_li)/ max_li)*4;
-		else if (diff >= 0) scroll_amount = (Math.floor(-diff/max_li) - 1) * max_li/4;
+		if(diff < 0) scroll_amount = -Math.floor((diff + max_li)/ max_li)*max_li_horizontal;
+		else if (diff >= 0) scroll_amount = (Math.floor(-diff/max_li) - 1) * max_li/max_li_vertical;
 		scrollHorizontallyBy(scroll_amount);
         return;
     }
@@ -125,8 +131,6 @@ function scrollIfNeeded() {
 	var diff = current_first - selected_suggestion - 1;
 
 	var scroll_amount = 0;
-	console.log(diff);
-	console.log("Max " + max_li)
 	if(diff < 0) scroll_amount = -Math.floor((diff + max_li)/ max_li)*max_li;
 	else if (diff >= 0) scroll_amount = (Math.floor(-diff/max_li) - 1) * max_li;
 	scrollVerticallyBy(scroll_amount);
