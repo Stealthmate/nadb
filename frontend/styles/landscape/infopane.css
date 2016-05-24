@@ -1,0 +1,185 @@
+@media screen and (min-aspect-ratio: 5/4) {
+    #infopane {
+        padding: 5px;
+        background-clip: padding-box;
+        background-color: #F5F1DE;
+        box-sizing: border-box;
+        width: 80%;
+        height: 100%;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        transition: left 0.2s, width 0.2s;
+        position: absolute;
+        left: 20%;
+        top: 0px;
+        bottom: 0px;
+    }
+    #searchpane[collapse="true"]+#infopane {
+        width: 100%;
+        left: 0px;
+    }
+    #teamspane {
+        width: 100%;
+        height: auto;
+        height: 33vw;
+        overflow: hidden;
+    }
+    .team {
+        width: 37vmax;
+    }
+    .team#player {
+        float: left;
+        padding-left: 1vw;
+    }
+    .team#enemy {
+        float: right;
+        padding-right: 1vw;
+    }
+    .member {
+        position: relative;
+        width: 100%;
+        height: 11vw;
+        transition: background-color 0.2s;
+    }
+    .member[marked="true"] {
+        background-color: rgba(0, 180, 230, 0.3);
+    }
+    .name {
+        font-size: 1.7vw;
+        height: 2.2vw;
+        width: 100%;
+    }
+    #enemy .name {
+        text-align: right;
+    }
+    .avatar {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 8vw;
+        height: 8vw;
+        border-style: solid;
+        border-color: #FA0;
+        border-width: 1px;
+        transition: border-width 0.2s;
+        position: absolute;
+    }
+    #player .avatar {
+        left: 0.5vw;
+    }
+    #enemy .avatar {
+        right: 0.5vw;
+    }
+    .avatar[marked="true"] {
+        border-width: 8px;
+    }
+    #enemy .avatar {
+        transform: scaleX(-1);
+    }
+    .abilities {
+        display: flex;
+        width: 25vw;
+        position: absolute;
+    }
+    #player .abilities {
+        left: 9vw;
+    }
+    #enemy .abilities {
+        right: 9vw;
+        flex-direction: row-reverse;
+    }
+    .ability {
+        box-sizing: border-box;
+        width: 6vw;
+        height: 8vw;
+        display: inline-block;
+        position: relative;
+        bottom: 2px;
+        margin-left: 0.2vw;
+        margin-right: 0.2vw;
+    }
+    #teamspane .icon {
+        position: absolute;
+        bottom: -1px;
+    }
+    .icon {
+        box-sizing: border-box;
+        width: 6vw;
+        height: 6vw;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #0AF;
+        transition: border-width 0.2s;
+    }
+    .icon[locked="true"] {
+        border-width: 10px;
+    }
+    .alternate {
+        box-sizing: border-box;
+        content: url("icons/icon_alt.png");
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        background-size: 100% 100%;
+        width: 1.5vw;
+        height: 1.5vw;
+        z-index: 2;
+        position: absolute;
+        top: 2.8vh;
+    }
+    #player .alternate {
+        left: 4.4vw;
+    }
+    #enemy .alternate {
+        left: 0.2vw;
+    }
+    .alternate[alternate="false"] {
+        display: none;
+    }
+    .tooltip {
+        visibility: hidden;
+        width: 120px;
+        text-align: center;
+        border-radius: 6px;
+        position: fixed;
+        bottom: 2vh;
+        right: 2vw;
+        z-index: 5;
+        text-transform: capitalize;
+        font-size: 2vmin;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 30px;
+        border-color: orange;
+        padding: 0.5vmin;
+    }
+    .tooltipped:hover .tooltip {
+        visibility: visible;
+    }
+    #teamspane .cost {
+        background: white;
+        padding: 1px;
+        position: absolute;
+        bottom: 0px;
+        border-style: solid;
+        border-width: 1px;
+        display: inline-block;
+    }
+    #teamspane .cost[nocost="true"] {
+        display: none;
+    }
+    #teamspane .classes {
+        display: block;
+        box-sizing: border-box;
+        padding: 0px;
+        background: white;
+        background-clip: content-box;
+        margin-left: -1px;
+        height: 1.2vw;
+        position: absolute;
+        top: 0.7vw;
+    }
+    #teamspane .classes:empty {
+        background: rgba(0, 0, 0, 0);
+    }
+}

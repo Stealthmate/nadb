@@ -1,0 +1,68 @@
+@media screen and (max-aspect-ratio: 5/4) {
+
+    #searchpane {
+    	width: 100%;
+    	height: 40%;
+    	position: absolute;
+    	left: 0px;
+    	top: initial;
+    	bottom: 0px;
+    	right: 0px;
+    }
+
+    #searchpane[collapse="true"] {
+    	bottom: -20%;
+    }
+
+    #searchbox {
+    	width: 100%;
+    	height: 3vmin;
+    	font-size: 2.5vmin;
+    }
+
+    #resultlist {
+    	width: 100%;
+    	height: calc(100% - 3vmin);
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .searchresult {
+    	height: 100%;
+        width: 5vw;
+        margin: 0px;
+        display: inline-block;
+        position: relative;
+        /*float: right;*/
+    }
+
+    .searchresult_avatar {
+        width: 5vw;
+        height: 5vw;
+        display: block;
+        vertical-align: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .searchresult_name {
+    	font-size: 2vh;
+        width: 50%;
+        margin: 0 auto;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        display: block;
+        position: absolute;
+        top: 5vw;
+        right: 1.5vh;
+        padding-top: 1vh;
+    }
+
+    form {
+    	width: 100%;
+    	font-size: 30px;
+    }
+
+}
