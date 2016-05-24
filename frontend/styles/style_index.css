@@ -2,11 +2,6 @@
 @import url('square/index.css');
 @import url('portrait/index.css');
 
-/*html, body {
-	min-width: 1280px;
-	min-height: 720px;
-}*/
-
 body {
 	margin: 0px;
 	box-sizing: border-box;
@@ -14,17 +9,13 @@ body {
 }
 
 #searchpane {
-	display: inline-block;
+	box-sizing: border-box;
+
+	background-color: #F5F1DE;
+
 	border-style:solid;
 	border-width: 1px;
-	box-sizing: border-box;
-	margin: 0px;
-	background-color: #F5F1DE;
-	padding: 1px;
-	transition: left 0.2s;
-}
 
-#searchpane[collapse="true"] {
 }
 
 #searchbox {
@@ -32,20 +23,13 @@ body {
 	border: none;
 }
 
-#resultlist {
-	margin: 0px;
-	padding: 0px;
-}
-
 .searchresult {
 	box-sizing: border-box;
-	overflow: hidden;
 	list-style-type: none;
-	margin: 0px auto;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #62561e;
-	padding-left: 1vw;
+	overflow: hidden;
 }
 
 .searchresult[data-selected="true"] {
@@ -54,4 +38,5 @@ body {
 
 
 form {
+	width: 100%;
 }

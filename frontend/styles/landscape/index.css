@@ -1,50 +1,52 @@
 @media screen and (min-aspect-ratio: 5/4) {
-
+    html, body {
+        min-width: 1280px;
+        min-height: 720px;
+    }
     #searchpane {
-    	width: 20%;
-    	height: 100%;
-    	position: absolute;
-    	left: 0px;
-    	top: 0px;
-    	bottom: 0px;
-    	right: 0px;
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 1px;
+        width: 20%;
+        height: 100%;
+        transition: left 0.2s;
     }
-
     #searchpane[collapse="true"] {
-    	left: -20%;
+        left: -20%;
     }
-
     #searchbox {
-    	width: 100%;
-    	height: 3vmin;
-    	font-size: 2.5vmin;
+        width: 100%;
+        height: 3vmin;
+        font-size: 2.5vmin;
     }
-
     #resultlist {
-    	width: 100%;
-    	height: calc(100% - 3vmin);
-    	overflow: auto;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: calc(100% - 3vmin);
+        overflow: auto;
     }
-
     .searchresult {
-    	width: 100%;
-    	display: table;
+        display: table;
+    	margin: 0px auto;
+        padding-left: 1vw;
+        width: 100%;
     }
-
     .searchresult_name {
-    	font-size: 1.5em;
-    	text-align: left;
-    	vertical-align: middle;
+        font-size: 1.5em;
+        text-align: left;
+        vertical-align: middle;
     }
-
     .searchresult_avatar {
-    	float:right;
-    	vertical-align: middle;
+        float: right;
+        vertical-align: middle;
     }
-
     form {
-    	width: 100%;
-    	font-size: 30px;
+        font-size: 30px;
     }
-
 }
