@@ -49,6 +49,9 @@ function lockDescription(icon) {
 
 	if($(icon).attr("src")==="" || $(icon).attr("src") === undefined) return;
 
+
+	HELP_FUNCS.advance(3);
+
 	var this_is_locked = $(icon).attr("locked")==="true";
 	if(ABILITY_DESCRIPTION_LOCKED && !this_is_locked) {
 		$(".ability .icon[locked=\"true\"]").attr("locked", false);

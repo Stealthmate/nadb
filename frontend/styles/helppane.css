@@ -3,11 +3,11 @@
 	z-index: 6;
 
 	position:absolute;
-	right: 2px;
-	top: 2px;
+	right: 0.3vw;
+	top: 2vh;
 
-	width: 1vw;
-	height: 1vw;
+	width: 2vmin;
+	height: 2vmin;
 
 	transition: background-color 0.2s;
 }
@@ -45,10 +45,10 @@
 	border-color: white;
 	border-radius: 20px;
 
-	font-size: 1.5vw;
+	font-size: 2vmin;
 	color: white;
 	font-family: "Arial";
-	
+
 	padding: 10px;
 	background-clip: border-box;
 }
@@ -69,6 +69,8 @@ div {
 
 
 .arrow {
+	width: 5vw;
+	height: 5vw;
 	position: absolute;
 }
 

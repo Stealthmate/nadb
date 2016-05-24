@@ -11,10 +11,6 @@ function generateSuggestions(response) {
 		return;
 	}
 
-	/*for(var i = 0; i<=response.length - 1; i++) {
-		charobjs.push(response[i]);
-	}*/
-
 	charobjs = response;
 
 	shouldprocess=false;

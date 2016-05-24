@@ -50,7 +50,7 @@ function clearMarkedMember() {
 }
 
 function setMarkedMember(charobj) {
-	if(markedMember < 0) {
+	if(markedMember == 0) {
 		for(var i=0;i<=5;i++) {
 			if(TEAM_MEMBERS[i].isFree) {
 				TEAM_MEMBERS[i].render(charobj);

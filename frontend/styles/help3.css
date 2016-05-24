@@ -16,7 +16,7 @@
 	opacity: 0.3;
 }
 
-#helppane[stage="3"] ~ #infopane #teamspane table {
+#helppane[stage="3"] ~ #infopane #teamspane .classes {
 	z-index: 1;
 	opacity: 0.3;
 }
@@ -37,7 +37,7 @@
 	bottom: 20h;
 }
 
-#help2 .arrow {
+#help3 .arrow {
 	width: 5vw;
 	height: 5vw;
 
@@ -46,11 +46,11 @@
 	left: 23.5vw;
 }
 
-#help2 #fromComponent {
+#help3 #fromComponent {
 	transform: rotate(90deg);
 }
 
-#help2 .explanation {
+#help3 .explanation {
 	position: absolute;
 	top: 41vw;
 	left: -18vw;

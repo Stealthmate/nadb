@@ -59,14 +59,15 @@ class Member {
 
 		this.clear();
 		if(characterobject == null) return;
+		this.characterobject = characterobject;
 		this.isFree = false;
 		//Initialize properties
-		this.name = characterobject.name;
-		this.id = characterobject.id;
-		this.description = characterobject.description;
+		this.name = this.characterobject.name;
+		this.id = this.characterobject.id;
+		this.description = this.characterobject.description;
 		this.avatar = CHAR_AVATAR.replace("%character", this.id);
 
-		this.abilities = characterobject.abilities;
+		this.abilities = this.characterobject.abilities;
 
 		//Set DOM object values
 		var dom_member = "#" + this.team + " #m" + (this.n + 1) + " ";

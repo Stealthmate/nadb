@@ -38,11 +38,7 @@
 }
 
 #help2 .arrow {
-	width: 5vw;
-	height: 5vw;
-
-	position: absolute;
-	top: 35vw;
+	top: 34vw;
 	left: 23.5vw;
 }
 
@@ -52,9 +48,9 @@
 
 #help2 .explanation {
 	position: absolute;
-	top: 41vw;
+	top: 80vh;
 	left: -18vw;
 
-	width: 75vw;
-	height: 20vw;
+	width: 90vw;
+	height: 13vh;
 }
