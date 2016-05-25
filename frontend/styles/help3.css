@@ -26,8 +26,10 @@
 	background-color: #F5F1DE;
 }
 
-#helppane[stage="3"] ~ #infopane .tooltip {
+#helppane[stage="3"] ~ div .tooltip {
 	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 1;
 }
 
 #helppane[stage="3"] #help3 {

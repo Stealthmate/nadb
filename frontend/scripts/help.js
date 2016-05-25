@@ -12,12 +12,12 @@ function help1(done) {
 		}*/
 		return;
 	}
-	temp_members = TEAM_MEMBERS.slice();
+	/*temp_members = TEAM_MEMBERS.slice();
 	for(var i = 0; i<=5; i++) {
 		TEAM_MEMBERS[i].free();
-	}
+	}*/
 
-
+	$("#helpbtn").css("display", "none");
 	if(markedMember > 0) SEARCHPANE_FUNCS.collapse();
 	if($("#searchpane").attr("collapse")==="true") SEARCHPANE_FUNCS.collapse();
 	$("#searchbox").val("");
@@ -45,6 +45,7 @@ function help3(done) {
 		return;
 	}
 
+	$("#helpbtn").css("display", "initial");
 	$("#helppane").attr("stage", "3");
 }
 
