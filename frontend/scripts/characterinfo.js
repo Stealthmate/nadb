@@ -58,8 +58,8 @@ class Member {
 	render(characterobject) {
 
 		this.clear();
-		if(characterobject == null) return;
-		this.characterobject = characterobject;
+		if(characterobject === null) return;
+		if(characterobject !== undefined ) this.characterobject = characterobject;
 		this.isFree = false;
 		//Initialize properties
 		this.name = this.characterobject.name;

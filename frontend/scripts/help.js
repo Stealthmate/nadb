@@ -6,12 +6,10 @@ function help1(done) {
 
 	if(done) {
 
-		TEAM_MEMBERS = temp_members.slice();
+		/*TEAM_MEMBERS = temp_members.slice();
 		for(var i = 0; i<=5; i++) {
-			for(i in TEAM_MEMBERS) {
-				TEAM_MEMBERS[i].render();
-			}
-		}
+			TEAM_MEMBERS[i].render();
+		}*/
 		return;
 	}
 	temp_members = TEAM_MEMBERS.slice();
@@ -19,8 +17,11 @@ function help1(done) {
 		TEAM_MEMBERS[i].free();
 	}
 
-	if($("#searchpane").attr("collapse")==="true") SEARCHPANE_FUNCS.collapse();
 
+	if(markedMember > 0) SEARCHPANE_FUNCS.collapse();
+	if($("#searchpane").attr("collapse")==="true") SEARCHPANE_FUNCS.collapse();
+	$("#searchbox").val("");
+	SEARCHPANE_FUNCS.query();
 	$("#helppane").attr("stage", "1");
 }
 
