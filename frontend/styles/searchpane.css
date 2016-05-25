@@ -10,7 +10,15 @@
 
 #searchbox {
 	background-color: #ffcc00;
+	background-clip: border-box;
+	padding-left: 5px;
 	border: none;
+}
+
+form:focus, #searchbox:focus {
+	outline-style: solid;
+	outline-width: 1px;
+	outline-color: #BB8800;
 }
 
 .searchresult {
