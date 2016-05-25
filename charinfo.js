@@ -7,13 +7,13 @@ var CHARDB = [];
 var TAG_INDEX = {};
 
 function loadData() {
-	
+
 	var fs = require('fs');
 	var n_err = 0;
 	Logger.log("Reading character data...", Logger.LVL_INFO);
-	
+
 	var currently_reading = "";
-	
+
 	try {
 		var char_folder_list = fs.readdirSync(CHARS_LOCATION);
 		for (var i=0;i<=char_folder_list.length-1; i++) {
@@ -26,9 +26,9 @@ function loadData() {
 				CHARDB.push(JSON.parse(charinfo).charinfo);
 			}
 		}
-		
+
 		Logger.log("Finished reading character data.", Logger.LVL_INFO);
-		
+
 		Logger.log("Reading tag index...", Logger.LVL_INFO);
 		currently_reading = CHARS_LOCATION + TAG_INDEX_FILE;
 		var stats = fs.statSync(CHARS_LOCATION+TAG_INDEX_FILE);
@@ -41,15 +41,15 @@ function loadData() {
 				}
 			}
 		}
-		
+
 		Logger.log("Finished reading tag index.", Logger.LVL_INFO);
-		
+
 	} catch (e) {
 		Logger.log("Could not read " + currently_reading, Logger.LVL_ERROR);
 		Logger.log(e, Logger.LVL_ERROR)
 		n_err++;
 	}
-	
+
 	Logger.log("Loaded character data. (" + n_err + " errors)");
 }
 
@@ -72,7 +72,7 @@ function getCharacterById(id) {
 	for(chars in CHARDB) {
 		if(CHARDB[chars].id == id) return CHARDB[chars];
 	}
-	
+
 	Logger.log("Could not find character by id: " + id, Logger.LVL_ERROR);
 }
 function intersect_all(lists)
@@ -88,14 +88,14 @@ function intersect_all(lists)
     return partialInt;
 }
 function getInfo(req, res) {
-	
+
 	var query = req.url.substr(req.url.indexOf("searchquery")+12).toLowerCase().replace(/\++/g, "+").replace(/^\+/g, "");
 
 	var taglist = query.split("+");
 	for(tag in taglist) {
 		if(taglist[tag].length==0) taglist.splice(tag, 1);
 	}
-	
+
 	var response_list = [];
 	if(query == "all") {
 		for(var i=0; i<=CHARDB.length-1; i++) response_list.push(CHARDB[i]);
@@ -106,7 +106,7 @@ function getInfo(req, res) {
 		res.send(response_list);
 		return;
 	}
-	
+
 	var matches = [];
 	for(tag in taglist) {
 		matches.push([]);
@@ -116,15 +116,16 @@ function getInfo(req, res) {
 				else {
 					matches[0] = matches[0].concat(TAG_INDEX[tagname].slice());
 				}
-			}		
+			}
 		}
 	}
 	matches = intersect_all(matches);
-	
+
 	for(match in matches) {
 		response_list.push(getCharacterById(matches[match]));
 	}
 
+	res.setHeader("cache-control", "max-age=3600");
 	res.send(response_list);
 }
 

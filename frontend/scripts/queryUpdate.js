@@ -27,6 +27,9 @@ function query_error(err) {
 var QUERY_OBJ = {
 	url: QUERY_URL,
 	type: QUERY_METHOD,
+	headers: {
+		"cache-control":"max-age:3600"
+	},
 	data: {
 		searchquery: ""
 	},

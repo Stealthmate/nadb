@@ -8,10 +8,10 @@ const Globals = require('./globals.js');
 const Logger = Globals.Logger;
 
 function getResource(req, res) {
-	
+
 	var path = RES_ROOT + req.url.replace("resource", "frontend");
 	if(path.indexOf('characters') >=0) path = path.replace("frontend/images/characters/", "chardb/");
-	FS.stat(path, 
+	FS.stat(path,
 		function (err, stats) {
 			if (err) {
 			   Logger.log("File not found (probably): " + path, Logger.LVL_ERROR);
@@ -19,27 +19,28 @@ function getResource(req, res) {
 			   res.send("");
 			   return;
 		   }
-		   
+
 		   // Check file type
 		   if(stats.isFile()) {
+			   	res.setHeader("cache-control", "3600");
 				res.sendFile(path);
-		   } 		
+		   }
 		})
 }
 
 function getDocument(req, res) {
-	
+
 	var path = RES_ROOT + req.url.replace("document", "frontend");
-	FS.stat(path, 
+	FS.stat(path,
 		function (err, stats) {
 			if (err) {
 			   return Logger.log(err, Logger.LVL_ERROR);
 		   }
-		   
+
 		   // Check file type
 		   if(stats.isFile()) {
 			   res.sendFile(path);
-		   } 		
+		   }
 		})
 }
 
