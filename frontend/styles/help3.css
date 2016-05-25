@@ -34,27 +34,21 @@
 	position: absolute;
 
 	left: 20vw;
-	bottom: 20h;
 }
 
 #help3 .arrow {
-	width: 5vw;
-	height: 5vw;
-
-	position: absolute;
-	top: 35vw;
+	top: 29.5vw;
 	left: 23.5vw;
 }
 
 #help3 #fromComponent {
-	transform: rotate(90deg);
+	transform: rotate(-90deg);
 }
 
 #help3 .explanation {
 	position: absolute;
-	top: 41vw;
+	bottom: -30vw;
 	left: -18vw;
 
-	width: 75vw;
-	height: 20vw;
+	width: 90vw;
 }

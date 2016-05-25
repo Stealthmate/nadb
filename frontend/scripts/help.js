@@ -28,6 +28,7 @@ var temp;
 
 function help2(done) {
 	if(done) {
+		KEY_COMMAND_MAP[KEY_ESCAPE].cmd = SEARCHPANE_FUNCS.collapse;
 		return;
 	}
 

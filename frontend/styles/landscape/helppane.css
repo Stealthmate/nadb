@@ -1,0 +1,48 @@
+#helpbtn {
+	position:absolute;
+	right: 0.3vw;
+	top: 2vh;
+
+	width: 2vmin;
+	height: 2vmin;
+
+}
+
+#helppane {
+
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+	width: 0px;
+	height: 0px;
+}
+
+.explanation {
+
+	font-size: 2vh;
+
+	padding: 10px;
+}
+
+.help {
+	display: none;
+	position: absolute;
+}
+
+
+.arrow {
+	width: 5vw;
+	height: 5vw;
+	position: absolute;
+}
+
+#nextStage {
+	position: fixed !important;
+	bottom: 1vw !important;
+	right: 1vw !important;
+	top: initial;
+	left: initial;
+}

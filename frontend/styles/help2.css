@@ -34,11 +34,10 @@
 	position: absolute;
 
 	left: 20vw;
-	bottom: 20h;
 }
 
 #help2 .arrow {
-	top: 34vw;
+	top: 33.5vw;
 	left: 23.5vw;
 }
 
@@ -48,9 +47,8 @@
 
 #help2 .explanation {
 	position: absolute;
-	top: 80vh;
+	top: 38vw;
 	left: -18vw;
 
 	width: 90vw;
-	height: 13vh;
 }

@@ -2,13 +2,6 @@
 
 	z-index: 6;
 
-	position:absolute;
-	right: 0.3vw;
-	top: 2vh;
-
-	width: 2vmin;
-	height: 2vmin;
-
 	transition: background-color 0.2s;
 }
 
@@ -19,17 +12,6 @@
 #helppane {
 
 	z-index: 2;
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-
-	width: 0px;
-	height: 0px;
-
-	/*width: 100%;
-	height: 100%;*/
 
 	opacity: 0;
 
@@ -45,11 +27,9 @@
 	border-color: white;
 	border-radius: 20px;
 
-	font-size: 2vmin;
 	color: white;
 	font-family: "Arial";
 
-	padding: 10px;
 	background-clip: border-box;
 }
 
@@ -62,30 +42,14 @@ div {
 	transition: z-index 0.2s;
 }
 
-.help {
-	display: none;
-	position: absolute;
-}
-
-
-.arrow {
-	width: 5vw;
-	height: 5vw;
-	position: absolute;
-}
-
-#nextStage {
-	position: fixed !important;
-	bottom: 1vw !important;
-	right: 1vw !important;
-	top: initial;
-	left: initial;
-}
-
 #helppane[stage="1"] > #help1 {
 	display: initial;
 }
 
 #helppane[stage="2"] > #help2 {
+	display: initial;
+}
+
+#helppane[stage="3"] > #help3 {
 	display: initial;
 }
