@@ -1,0 +1,65 @@
+#descriptionpane {
+	overflow: hidden;
+	padding: 1vw;
+}
+
+#descriptionpane .icon {
+	height: 7vw;
+	width: 7vw;
+	vertical-align: top;
+}
+
+#descriptionpane .basicinfo {
+	display: inline-block;
+	width: 60vw;
+	height: 7vw;
+}
+
+#descriptionpane .name {
+	font-size: 1.7vw;
+	height: auto;
+	width: 25vw;
+	margin-top: -0.3vw;
+}
+
+#descrptionpane .cost {
+	padding: 1px;
+	position: initial;
+}
+
+#descriptionpane .nocost {
+	display: none;
+	font-size: 1.4vw;
+	height: 1.5vw;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#descriptionpane .label {
+	font-size: 1.5vw;
+}
+
+#descriptionpane .cd {
+	font-size: 2vw;
+}
+
+#descriptionpane .classes {
+	position: absolute;
+	bottom: 1vw;
+	right: 0.5vw;
+}
+
+#descriptionpane .abilityclass {
+	width: 3vw;
+	height: 3vw;
+}
+
+#descriptionpane .description {
+	font-size: 1.3vw;
+	width: 100%;
+}
+
+#descriptionpane .stats {
+	width: 100%;
+	position: relative;
+}
