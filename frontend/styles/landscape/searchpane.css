@@ -28,9 +28,15 @@
 }
 .searchresult {
     display: table;
+	position: relative;
+	/*bottom: -200*/
     margin: 0px auto;
     padding-right: 1vw;
     width: 100%;
+	/*transition: bottom 0.4s;*/
+}
+.searchresult[appear="true"] {
+	bottom: 0px;
 }
 .searchresult_name {
     display: table-cell;

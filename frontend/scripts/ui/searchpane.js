@@ -39,6 +39,7 @@ function populateSuggestions(charobjs) {
     }
 
     $("#searchbox").focus();
+    setTimeout(function () {$("li").attr("appear", "true")}, 10);
 }
 
 function blockNumbers() {
@@ -173,7 +174,7 @@ function confirmSelect() {
     if (!shouldCapture()) return;
 
 	HELP_FUNCS.advance(2);
-    
+
     TEAMSPANE_FUNCS.setMarkedMember(charobjs[selected_suggestion - 1]);
 }
 
