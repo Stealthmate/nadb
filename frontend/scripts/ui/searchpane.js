@@ -102,7 +102,8 @@ function scrollHorizontallyBy(n) {
 }
 
 function scrollIfNeeded() {
-    if ($("#resultlist").css("column-count") !== "1") {
+    console.log($("#resultlist").css("column-count"))
+    if ($("#resultlist").css("column-count") !== "auto") {
         var view_w = $("#resultlist").prop("clientWidth");
         var li_w = $(".searchresult").outerWidth();
 
