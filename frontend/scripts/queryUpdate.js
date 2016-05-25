@@ -40,7 +40,7 @@ function updateSuggestions(query) {
 	charobjs = [];
 
 	if(query.length == 0) {
-		//query="all"
+		query="all";
 	}
 
 	shouldprocess = false;
